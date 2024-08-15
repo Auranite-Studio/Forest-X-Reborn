@@ -18,14 +18,14 @@ description="The revival of the legendary Forest X Second Edition addon, but onl
 [[dependencies.forest]]
     modId="neoforge"
     type="required"
-    versionRange="[21.0.151,)"
+    versionRange="[21.1.1,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.forest]]
     modId="minecraft"
     type="required"
-    versionRange="[1.21]"
+    versionRange="[1.21.1]"
     ordering="AFTER"
     side="BOTH"
 

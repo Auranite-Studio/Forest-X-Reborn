@@ -27,7 +27,6 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FollowMobGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.PathfinderMob;
@@ -138,15 +137,8 @@ public class CrocodileEntity extends Monster implements GeoEntity {
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
-					SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-			            event.register(ForestModEntities.CROCODILE.get(),
-					        SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-					(entityType, world, reason, pos, random) ->
-							(world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) &&
-							world.getRawBrightness(pos, 0) > 8)
-				,
-				RegisterSpawnPlacementsEvent.Operation.REPLACE
-			);
+		event.register(ForestModEntities.CROCODILE.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8), RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

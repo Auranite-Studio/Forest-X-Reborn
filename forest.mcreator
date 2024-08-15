@@ -42,8 +42,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/item/silver_block.json",
+          "src/main/resources/data/forest/loot_table/blocks/silver_block.json",
           "src/main/java/ru/power_umc/forestxreborn/block/SilverBlockBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/silver_block.json",
           "src/main/resources/assets/forest/models/block/silver_block.json",
           "src/main/resources/assets/forest/blockstates/silver_block.json"
         ]
@@ -99,12 +99,12 @@
         "files": [
           "src/main/resources/data/forest/neoforge/biome_modifier/wildflower_biome_modifier.json",
           "src/main/resources/assets/forest/models/item/wildflower.json",
+          "src/main/resources/data/forest/loot_table/blocks/wildflower.json",
           "src/main/java/ru/power_umc/forestxreborn/block/WildflowerBlock.java",
           "src/main/resources/data/forest/worldgen/placed_feature/wildflower.json",
           "src/main/resources/data/forest/worldgen/configured_feature/wildflower.json",
           "src/main/resources/assets/forest/models/block/wildflower.json",
-          "src/main/resources/assets/forest/blockstates/wildflower.json",
-          "src/main/resources/data/forest/loot_tables/blocks/wildflower.json"
+          "src/main/resources/assets/forest/blockstates/wildflower.json"
         ]
       },
       "path": "~/Plants"
@@ -118,11 +118,11 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/LavanderBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/lavander.json",
           "src/main/resources/assets/forest/blockstates/lavander.json",
           "src/main/resources/data/forest/neoforge/biome_modifier/lavander_biome_modifier.json",
           "src/main/resources/data/forest/worldgen/placed_feature/lavander.json",
           "src/main/resources/assets/forest/models/block/lavander.json",
+          "src/main/resources/data/forest/loot_table/blocks/lavander.json",
           "src/main/resources/assets/forest/models/item/lavander.json",
           "src/main/resources/data/forest/worldgen/configured_feature/lavander.json"
         ]
@@ -139,10 +139,10 @@
         "files": [
           "src/main/resources/data/forest/worldgen/placed_feature/burning_blossom.json",
           "src/main/resources/assets/forest/models/item/burning_blossom.json",
-          "src/main/resources/data/forest/loot_tables/blocks/burning_blossom.json",
           "src/main/resources/data/forest/worldgen/configured_feature/burning_blossom.json",
           "src/main/resources/assets/forest/blockstates/burning_blossom.json",
           "src/main/resources/data/forest/neoforge/biome_modifier/burning_blossom_biome_modifier.json",
+          "src/main/resources/data/forest/loot_table/blocks/burning_blossom.json",
           "src/main/resources/assets/forest/models/block/burning_blossom.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BurningblossomBlock.java"
         ]
@@ -158,9 +158,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/blockstates/crushed_sandstone.json",
-          "src/main/resources/data/forest/loot_tables/blocks/crushed_sandstone.json",
           "src/main/resources/assets/forest/models/item/crushed_sandstone.json",
           "src/main/resources/assets/forest/models/block/crushed_sandstone.json",
+          "src/main/resources/data/forest/loot_table/blocks/crushed_sandstone.json",
           "src/main/java/ru/power_umc/forestxreborn/block/CrushedSandstoneBlock.java"
         ]
       },
@@ -175,7 +175,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/item/red_crushed_sandstone.json",
-          "src/main/resources/data/forest/loot_tables/blocks/red_crushed_sandstone.json",
+          "src/main/resources/data/forest/loot_table/blocks/red_crushed_sandstone.json",
           "src/main/resources/assets/forest/blockstates/red_crushed_sandstone.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RedCrushedSandstoneBlock.java",
           "src/main/resources/assets/forest/models/block/red_crushed_sandstone.json"
@@ -192,9 +192,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/crushed_sandstone_stairs_inner.json",
-          "src/main/resources/data/forest/loot_tables/blocks/crushed_sandstone_stairs.json",
           "src/main/resources/assets/forest/models/block/crushed_sandstone_stairs.json",
           "src/main/resources/assets/forest/blockstates/crushed_sandstone_stairs.json",
+          "src/main/resources/data/forest/loot_table/blocks/crushed_sandstone_stairs.json",
           "src/main/resources/assets/forest/models/block/crushed_sandstone_stairs_outer.json",
           "src/main/java/ru/power_umc/forestxreborn/block/CrushedSandstoneStairsBlock.java",
           "src/main/resources/assets/forest/models/item/crushed_sandstone_stairs.json"
@@ -211,8 +211,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/crushed_sandstone_slab.json",
+          "src/main/resources/data/forest/loot_table/blocks/crushed_sandstone_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/CrushedSandstoneSlabBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/crushed_sandstone_slab.json",
           "src/main/resources/assets/forest/models/block/crushed_sandstone_slab_full.json",
           "src/main/resources/assets/forest/models/block/crushed_sandstone_slab_top.json",
           "src/main/resources/assets/forest/blockstates/crushed_sandstone_slab.json",
@@ -234,8 +234,8 @@
           "src/main/resources/assets/forest/models/block/crushed_sandstone_wall_side_tall.json",
           "src/main/resources/assets/forest/blockstates/crushed_sandstone_wall.json",
           "src/main/resources/assets/forest/models/block/crushed_sandstone_wall.json",
-          "src/main/resources/data/forest/loot_tables/blocks/crushed_sandstone_wall.json",
           "src/main/java/ru/power_umc/forestxreborn/block/CrushedSandstoneWallBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/crushed_sandstone_wall.json",
           "src/main/resources/assets/forest/models/block/crushed_sandstone_wall_inventory.json"
         ]
       },
@@ -252,9 +252,9 @@
           "src/main/resources/assets/forest/models/block/red_crushed_sandstone_stairs_inner.json",
           "src/main/resources/assets/forest/blockstates/red_crushed_sandstone_stairs.json",
           "src/main/resources/assets/forest/models/block/red_crushed_sandstone_stairs_outer.json",
-          "src/main/resources/data/forest/loot_tables/blocks/red_crushed_sandstone_stairs.json",
           "src/main/resources/assets/forest/models/item/red_crushed_sandstone_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RedCrushedSandstoneStairsBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/red_crushed_sandstone_stairs.json",
           "src/main/resources/assets/forest/models/block/red_crushed_sandstone_stairs.json"
         ]
       },
@@ -271,9 +271,9 @@
           "src/main/resources/assets/forest/models/block/red_crushed_sandstone_slab_full.json",
           "src/main/resources/assets/forest/models/item/red_crushed_sandstone_slab.json",
           "src/main/resources/assets/forest/models/block/red_crushed_sandstone_slab_top.json",
-          "src/main/resources/data/forest/loot_tables/blocks/red_crushed_sandstone_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RedCrushedSandstoneSlabBlock.java",
           "src/main/resources/assets/forest/models/block/red_crushed_sandstone_slab.json",
+          "src/main/resources/data/forest/loot_table/blocks/red_crushed_sandstone_slab.json",
           "src/main/resources/assets/forest/blockstates/red_crushed_sandstone_slab.json"
         ]
       },
@@ -289,10 +289,10 @@
         "files": [
           "src/main/resources/assets/forest/models/block/red_crushed_sandstone_wall_side_tall.json",
           "src/main/resources/assets/forest/models/block/red_crushed_sandstone_wall_post.json",
+          "src/main/resources/data/forest/loot_table/blocks/red_crushed_sandstone_wall.json",
           "src/main/resources/assets/forest/models/item/red_crushed_sandstone_wall.json",
           "src/main/resources/assets/forest/blockstates/red_crushed_sandstone_wall.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RedCrushedSandstoneWallBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/red_crushed_sandstone_wall.json",
           "src/main/resources/assets/forest/models/block/red_crushed_sandstone_wall.json",
           "src/main/resources/assets/forest/models/block/red_crushed_sandstone_wall_inventory.json"
         ]
@@ -379,7 +379,7 @@
       "registry_name": "snail_shell",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/snail_shell.json",
+          "src/main/resources/data/forest/loot_table/blocks/snail_shell.json",
           "src/main/resources/assets/forest/models/item/snail_shell.json",
           "src/main/java/ru/power_umc/forestxreborn/block/SnailShellBlock.java",
           "src/main/resources/assets/forest/blockstates/snail_shell.json",
@@ -399,7 +399,7 @@
           "src/main/java/ru/power_umc/forestxreborn/block/OakParquetBlock.java",
           "src/main/resources/assets/forest/models/block/oak_parquet.json",
           "src/main/resources/assets/forest/blockstates/oak_parquet.json",
-          "src/main/resources/data/forest/loot_tables/blocks/oak_parquet.json",
+          "src/main/resources/data/forest/loot_table/blocks/oak_parquet.json",
           "src/main/resources/assets/forest/models/item/oak_parquet.json"
         ]
       },
@@ -415,9 +415,9 @@
         "files": [
           "src/main/resources/assets/forest/models/block/birch_parquet.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BirchParquetBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/birch_parquet.json",
           "src/main/resources/assets/forest/blockstates/birch_parquet.json",
-          "src/main/resources/assets/forest/models/item/birch_parquet.json"
+          "src/main/resources/assets/forest/models/item/birch_parquet.json",
+          "src/main/resources/data/forest/loot_table/blocks/birch_parquet.json"
         ]
       },
       "path": "~/Parquet"
@@ -432,8 +432,8 @@
         "files": [
           "src/main/resources/assets/forest/blockstates/spruce_parquet.json",
           "src/main/resources/assets/forest/models/item/spruce_parquet.json",
+          "src/main/resources/data/forest/loot_table/blocks/spruce_parquet.json",
           "src/main/resources/assets/forest/models/block/spruce_parquet.json",
-          "src/main/resources/data/forest/loot_tables/blocks/spruce_parquet.json",
           "src/main/java/ru/power_umc/forestxreborn/block/SpruceParquetBlock.java"
         ]
       },
@@ -449,8 +449,8 @@
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/AcaciaParquetBlock.java",
           "src/main/resources/assets/forest/models/block/acacia_parquet.json",
-          "src/main/resources/data/forest/loot_tables/blocks/acacia_parquet.json",
           "src/main/resources/assets/forest/blockstates/acacia_parquet.json",
+          "src/main/resources/data/forest/loot_table/blocks/acacia_parquet.json",
           "src/main/resources/assets/forest/models/item/acacia_parquet.json"
         ]
       },
@@ -464,7 +464,7 @@
       "registry_name": "tropical_parquet",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/tropical_parquet.json",
+          "src/main/resources/data/forest/loot_table/blocks/tropical_parquet.json",
           "src/main/resources/assets/forest/blockstates/tropical_parquet.json",
           "src/main/resources/assets/forest/models/item/tropical_parquet.json",
           "src/main/resources/assets/forest/models/block/tropical_parquet.json",
@@ -481,10 +481,10 @@
       "registry_name": "crimson_parquet",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/crimson_parquet.json",
           "src/main/resources/assets/forest/models/item/crimson_parquet.json",
           "src/main/resources/assets/forest/models/block/crimson_parquet.json",
           "src/main/java/ru/power_umc/forestxreborn/block/CrimsonParquetBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/crimson_parquet.json",
           "src/main/resources/assets/forest/blockstates/crimson_parquet.json"
         ]
       },
@@ -499,10 +499,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/blockstates/warped_parquet.json",
-          "src/main/resources/data/forest/loot_tables/blocks/warped_parquet.json",
           "src/main/java/ru/power_umc/forestxreborn/block/WarpedParquetBlock.java",
           "src/main/resources/assets/forest/models/item/warped_parquet.json",
-          "src/main/resources/assets/forest/models/block/warped_parquet.json"
+          "src/main/resources/assets/forest/models/block/warped_parquet.json",
+          "src/main/resources/data/forest/loot_table/blocks/warped_parquet.json"
         ]
       },
       "path": "~/Parquet"
@@ -516,10 +516,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/item/pumice.json",
+          "src/main/resources/data/forest/loot_table/blocks/pumice.json",
           "src/main/resources/assets/forest/models/block/pumice.json",
           "src/main/resources/assets/forest/blockstates/pumice.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/PumiceBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/pumice.json"
+          "src/main/java/ru/power_umc/forestxreborn/block/PumiceBlock.java"
         ]
       },
       "path": "~/Pumice"
@@ -628,7 +628,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/marble.json",
-          "src/main/resources/data/forest/loot_tables/blocks/marble.json",
+          "src/main/resources/data/forest/loot_table/blocks/marble.json",
           "src/main/resources/assets/forest/models/item/marble.json",
           "src/main/resources/assets/forest/blockstates/marble.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MarbleBlock.java"
@@ -645,8 +645,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/marble_bricks.json",
-          "src/main/resources/data/forest/loot_tables/blocks/marble_bricks.json",
           "src/main/resources/assets/forest/models/item/marble_bricks.json",
+          "src/main/resources/data/forest/loot_table/blocks/marble_bricks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MarbleBricksBlock.java",
           "src/main/resources/assets/forest/blockstates/marble_bricks.json"
         ]
@@ -661,10 +661,10 @@
       "registry_name": "polished_marble",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/polished_marble.json",
           "src/main/resources/assets/forest/models/item/polished_marble.json",
           "src/main/resources/assets/forest/models/block/polished_marble.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedMarbleBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/polished_marble.json",
           "src/main/resources/assets/forest/blockstates/polished_marble.json"
         ]
       },
@@ -704,11 +704,11 @@
       "registry_name": "polished_marble_slab",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/polished_marble_slab.json",
           "src/main/resources/assets/forest/models/block/polished_marble_slab.json",
           "src/main/resources/assets/forest/blockstates/polished_marble_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedMarbleSlabBlock.java",
           "src/main/resources/assets/forest/models/block/polished_marble_slab_full.json",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_marble_slab.json",
           "src/main/resources/assets/forest/models/block/polished_marble_slab_top.json",
           "src/main/resources/assets/forest/models/item/polished_marble_slab.json"
         ]
@@ -726,8 +726,8 @@
           "src/main/resources/assets/forest/models/block/marble_bricks_slab_top.json",
           "src/main/resources/assets/forest/blockstates/marble_bricks_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MarbleBricksSlabBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/marble_bricks_slab.json",
           "src/main/resources/assets/forest/models/item/marble_bricks_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/marble_bricks_slab.json",
           "src/main/resources/assets/forest/models/block/marble_bricks_slab_full.json",
           "src/main/resources/assets/forest/models/block/marble_bricks_slab.json"
         ]
@@ -744,7 +744,7 @@
         "files": [
           "src/main/resources/assets/forest/models/block/polished_marble_stairs_outer.json",
           "src/main/resources/assets/forest/models/block/polished_marble_stairs.json",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_marble_stairs.json",
+          "src/main/resources/data/forest/loot_table/blocks/polished_marble_stairs.json",
           "src/main/resources/assets/forest/models/block/polished_marble_stairs_inner.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedMarbleStairsBlock.java",
           "src/main/resources/assets/forest/blockstates/polished_marble_stairs.json",
@@ -764,7 +764,7 @@
           "src/main/java/ru/power_umc/forestxreborn/block/MarbleBricksStairsBlock.java",
           "src/main/resources/assets/forest/models/item/marble_bricks_stairs.json",
           "src/main/resources/assets/forest/models/block/marble_bricks_stairs_inner.json",
-          "src/main/resources/data/forest/loot_tables/blocks/marble_bricks_stairs.json",
+          "src/main/resources/data/forest/loot_table/blocks/marble_bricks_stairs.json",
           "src/main/resources/assets/forest/blockstates/marble_bricks_stairs.json",
           "src/main/resources/assets/forest/models/block/marble_bricks_stairs.json",
           "src/main/resources/assets/forest/models/block/marble_bricks_stairs_outer.json"
@@ -832,10 +832,10 @@
       "registry_name": "raw_silver_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/raw_silver_block.json",
           "src/main/resources/assets/forest/blockstates/raw_silver_block.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RawSilverBlockBlock.java",
           "src/main/resources/assets/forest/models/item/raw_silver_block.json",
+          "src/main/resources/data/forest/loot_table/blocks/raw_silver_block.json",
           "src/main/resources/assets/forest/models/block/raw_silver_block.json"
         ]
       },
@@ -940,9 +940,9 @@
       "registry_name": "dark_oak_parquet",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/dark_oak_parquet.json",
           "src/main/resources/assets/forest/models/item/dark_oak_parquet.json",
           "src/main/java/ru/power_umc/forestxreborn/block/DarkOakParquetBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/dark_oak_parquet.json",
           "src/main/resources/assets/forest/blockstates/dark_oak_parquet.json",
           "src/main/resources/assets/forest/models/block/dark_oak_parquet.json"
         ]
@@ -1017,16 +1017,16 @@
     {
       "name": "DesertRose",
       "type": "plant",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "desert_rose",
       "metadata": {
         "files": [
           "src/main/resources/data/forest/neoforge/biome_modifier/desert_rose_biome_modifier.json",
-          "src/main/resources/data/forest/loot_tables/blocks/desert_rose.json",
           "src/main/resources/assets/forest/models/block/desert_rose.json",
           "src/main/resources/data/forest/worldgen/placed_feature/desert_rose.json",
           "src/main/resources/data/forest/worldgen/configured_feature/desert_rose.json",
+          "src/main/resources/data/forest/loot_table/blocks/desert_rose.json",
           "src/main/java/ru/power_umc/forestxreborn/block/DesertRoseBlock.java",
           "src/main/resources/assets/forest/models/item/desert_rose.json",
           "src/main/resources/assets/forest/blockstates/desert_rose.json"
@@ -1055,8 +1055,8 @@
       "registry_name": "mangrove_parquet",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/mangrove_parquet.json",
           "src/main/resources/assets/forest/models/item/mangrove_parquet.json",
+          "src/main/resources/data/forest/loot_table/blocks/mangrove_parquet.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MangroveParquetBlock.java",
           "src/main/resources/assets/forest/blockstates/mangrove_parquet.json",
           "src/main/resources/assets/forest/models/block/mangrove_parquet.json"
@@ -1086,9 +1086,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/item/dense_web.json",
+          "src/main/resources/data/forest/loot_table/blocks/dense_web.json",
           "src/main/resources/assets/forest/blockstates/dense_web.json",
           "src/main/resources/assets/forest/models/block/dense_web.json",
-          "src/main/resources/data/forest/loot_tables/blocks/dense_web.json",
           "src/main/java/ru/power_umc/forestxreborn/block/DenseWebBlock.java"
         ]
       },
@@ -1128,11 +1128,11 @@
       "registry_name": "dense_web_with_spider",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/dense_web_with_spider.json",
           "src/main/java/ru/power_umc/forestxreborn/block/DenseWebWithSpiderBlock.java",
           "src/main/resources/assets/forest/blockstates/dense_web_with_spider.json",
           "src/main/resources/assets/forest/models/block/dense_web_with_spider.json",
-          "src/main/resources/assets/forest/models/item/dense_web_with_spider.json"
+          "src/main/resources/assets/forest/models/item/dense_web_with_spider.json",
+          "src/main/resources/data/forest/loot_table/blocks/dense_web_with_spider.json"
         ]
       },
       "path": "~/DenseWeb"
@@ -1254,12 +1254,12 @@
       "registry_name": "rhyolite",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/rhyolite.json",
           "src/main/resources/assets/forest/models/item/rhyolite.json",
           "src/main/resources/data/forest/worldgen/configured_feature/rhyolite.json",
           "src/main/resources/assets/forest/models/block/rhyolite.json",
           "src/main/resources/data/forest/worldgen/placed_feature/rhyolite.json",
           "src/main/resources/assets/forest/blockstates/rhyolite.json",
-          "src/main/resources/data/forest/loot_tables/blocks/rhyolite.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RhyoliteBlock.java",
           "src/main/resources/data/forest/neoforge/biome_modifier/rhyolite_biome_modifier.json"
         ]
@@ -1303,7 +1303,7 @@
           "src/main/resources/assets/forest/models/item/polished_rhyolite.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedRhyoliteBlock.java",
           "src/main/resources/assets/forest/blockstates/polished_rhyolite.json",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_rhyolite.json",
+          "src/main/resources/data/forest/loot_table/blocks/polished_rhyolite.json",
           "src/main/resources/assets/forest/models/block/polished_rhyolite.json"
         ]
       },
@@ -1317,8 +1317,8 @@
       "registry_name": "rhyolite_bricks",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/rhyolite_bricks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RhyoliteBricksBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/rhyolite_bricks.json",
           "src/main/resources/assets/forest/models/item/rhyolite_bricks.json",
           "src/main/resources/assets/forest/models/block/rhyolite_bricks.json",
           "src/main/resources/assets/forest/blockstates/rhyolite_bricks.json"
@@ -1435,8 +1435,8 @@
           "src/main/resources/data/forest/worldgen/configured_feature/sandslate.json",
           "src/main/resources/assets/forest/models/block/sandslate.json",
           "src/main/resources/assets/forest/models/item/sandslate.json",
-          "src/main/resources/data/forest/loot_tables/blocks/sandslate.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/SandslateBlock.java"
+          "src/main/java/ru/power_umc/forestxreborn/block/SandslateBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/sandslate.json"
         ]
       },
       "path": "~/Sandslate"
@@ -1466,9 +1466,9 @@
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/ChiseledRhyoliteBlock.java",
           "src/main/resources/assets/forest/blockstates/chiseled_rhyolite.json",
-          "src/main/resources/data/forest/loot_tables/blocks/chiseled_rhyolite.json",
           "src/main/resources/assets/forest/models/item/chiseled_rhyolite.json",
-          "src/main/resources/assets/forest/models/block/chiseled_rhyolite.json"
+          "src/main/resources/assets/forest/models/block/chiseled_rhyolite.json",
+          "src/main/resources/data/forest/loot_table/blocks/chiseled_rhyolite.json"
         ]
       },
       "path": "~/Rhyolite"
@@ -1495,9 +1495,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/marble_bricks_wall_inventory.json",
-          "src/main/resources/data/forest/loot_tables/blocks/marble_bricks_wall.json",
           "src/main/resources/assets/forest/models/item/marble_bricks_wall.json",
           "src/main/resources/assets/forest/models/block/marble_bricks_wall.json",
+          "src/main/resources/data/forest/loot_table/blocks/marble_bricks_wall.json",
           "src/main/resources/assets/forest/blockstates/marble_bricks_wall.json",
           "src/main/resources/assets/forest/models/block/marble_bricks_wall_post.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MarbleBricksWallBlock.java",
@@ -1515,7 +1515,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/item/polished_marble_wall.json",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_marble_wall.json",
+          "src/main/resources/data/forest/loot_table/blocks/polished_marble_wall.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedMarbleWallBlock.java",
           "src/main/resources/assets/forest/models/block/polished_marble_wall_post.json",
           "src/main/resources/assets/forest/blockstates/polished_marble_wall.json",
@@ -1631,7 +1631,7 @@
           "src/main/resources/assets/forest/models/item/blueberry_bush_0.json",
           "src/main/resources/assets/forest/blockstates/blueberry_bush_0.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BlueberryBush0Block.java",
-          "src/main/resources/data/forest/loot_tables/blocks/blueberry_bush_0.json",
+          "src/main/resources/data/forest/loot_table/blocks/blueberry_bush_0.json",
           "src/main/resources/assets/forest/models/block/blueberry_bush_0.json"
         ]
       },
@@ -1647,7 +1647,7 @@
         "files": [
           "src/main/resources/assets/forest/models/item/blueberry_bush_1.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BlueberryBush1Block.java",
-          "src/main/resources/data/forest/loot_tables/blocks/blueberry_bush_1.json",
+          "src/main/resources/data/forest/loot_table/blocks/blueberry_bush_1.json",
           "src/main/resources/assets/forest/blockstates/blueberry_bush_1.json",
           "src/main/resources/assets/forest/models/block/blueberry_bush_1.json"
         ]
@@ -1767,7 +1767,7 @@
           "src/main/resources/assets/forest/models/block/polished_pumice.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedPumiceBlock.java",
           "src/main/resources/assets/forest/models/item/polished_pumice.json",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_pumice.json"
+          "src/main/resources/data/forest/loot_table/blocks/polished_pumice.json"
         ]
       },
       "path": "~/Pumice"
@@ -1782,7 +1782,7 @@
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/PumiceBricksBlock.java",
           "src/main/resources/assets/forest/models/block/pumice_bricks.json",
-          "src/main/resources/data/forest/loot_tables/blocks/pumice_bricks.json",
+          "src/main/resources/data/forest/loot_table/blocks/pumice_bricks.json",
           "src/main/resources/assets/forest/models/item/pumice_bricks.json",
           "src/main/resources/assets/forest/blockstates/pumice_bricks.json"
         ]
@@ -1851,7 +1851,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/blockstates/lettuce_stage_0.json",
-          "src/main/resources/data/forest/loot_tables/blocks/lettuce_stage_0.json",
+          "src/main/resources/data/forest/loot_table/blocks/lettuce_stage_0.json",
           "src/main/java/ru/power_umc/forestxreborn/block/LettuceStage0Block.java",
           "src/main/resources/assets/forest/models/block/lettuce_stage_0.json",
           "src/main/resources/assets/forest/models/item/lettuce_stage_0.json"
@@ -1870,8 +1870,8 @@
           "src/main/resources/assets/forest/models/item/lettuce_stage_1.json",
           "src/main/resources/assets/forest/blockstates/lettuce_stage_1.json",
           "src/main/java/ru/power_umc/forestxreborn/block/LettuceStage1Block.java",
-          "src/main/resources/data/forest/loot_tables/blocks/lettuce_stage_1.json",
-          "src/main/resources/assets/forest/models/block/lettuce_stage_1.json"
+          "src/main/resources/assets/forest/models/block/lettuce_stage_1.json",
+          "src/main/resources/data/forest/loot_table/blocks/lettuce_stage_1.json"
         ]
       },
       "path": "~/Harvest/Lettuce"
@@ -1884,9 +1884,9 @@
       "registry_name": "lettuce_stage_2",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/lettuce_stage_2.json",
           "src/main/resources/assets/forest/blockstates/lettuce_stage_2.json",
           "src/main/resources/assets/forest/models/block/lettuce_stage_2.json",
-          "src/main/resources/data/forest/loot_tables/blocks/lettuce_stage_2.json",
           "src/main/java/ru/power_umc/forestxreborn/block/LettuceStage2Block.java",
           "src/main/resources/assets/forest/models/item/lettuce_stage_2.json"
         ]
@@ -1961,11 +1961,11 @@
       "registry_name": "polished_sandslate",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/polished_sandslate.json",
           "src/main/resources/assets/forest/models/item/polished_sandslate.json",
           "src/main/resources/assets/forest/models/block/polished_sandslate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedSandslateBlock.java",
-          "src/main/resources/assets/forest/blockstates/polished_sandslate.json"
+          "src/main/resources/assets/forest/blockstates/polished_sandslate.json",
+          "src/main/resources/data/forest/loot_table/blocks/polished_sandslate.json"
         ]
       },
       "path": "~/Sandslate"
@@ -1978,9 +1978,9 @@
       "registry_name": "sandslate_faceted_bricks",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/sandslate_faceted_bricks.json",
           "src/main/resources/assets/forest/models/item/sandslate_faceted_bricks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/SandslateFacetedBricksBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/sandslate_faceted_bricks.json",
           "src/main/resources/assets/forest/models/block/sandslate_faceted_bricks.json",
           "src/main/resources/assets/forest/blockstates/sandslate_faceted_bricks.json"
         ]
@@ -1996,10 +1996,10 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/CobbledSandslateBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/cobbled_sandslate.json",
           "src/main/resources/assets/forest/models/item/cobbled_sandslate.json",
           "src/main/resources/assets/forest/blockstates/cobbled_sandslate.json",
-          "src/main/resources/assets/forest/models/block/cobbled_sandslate.json",
-          "src/main/resources/data/forest/loot_tables/blocks/cobbled_sandslate.json"
+          "src/main/resources/assets/forest/models/block/cobbled_sandslate.json"
         ]
       },
       "path": "~/Sandslate"
@@ -2026,10 +2026,10 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/TruncatedPumiceBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/truncated_pumice.json",
           "src/main/resources/assets/forest/models/item/truncated_pumice.json",
           "src/main/resources/assets/forest/models/block/truncated_pumice.json",
-          "src/main/resources/assets/forest/blockstates/truncated_pumice.json",
-          "src/main/resources/data/forest/loot_tables/blocks/truncated_pumice.json"
+          "src/main/resources/assets/forest/blockstates/truncated_pumice.json"
         ]
       },
       "path": "~/Pumice"
@@ -2044,8 +2044,8 @@
         "files": [
           "src/main/resources/assets/forest/blockstates/truncated_carved_pumice.json",
           "src/main/java/ru/power_umc/forestxreborn/block/TruncatedCarvedPumiceBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/truncated_carved_pumice.json",
           "src/main/resources/assets/forest/models/item/truncated_carved_pumice.json",
+          "src/main/resources/data/forest/loot_table/blocks/truncated_carved_pumice.json",
           "src/main/resources/assets/forest/models/block/truncated_carved_pumice.json"
         ]
       },
@@ -2137,7 +2137,7 @@
       "registry_name": "sandslate_bricks",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/sandslate_bricks.json",
+          "src/main/resources/data/forest/loot_table/blocks/sandslate_bricks.json",
           "src/main/resources/assets/forest/models/item/sandslate_bricks.json",
           "src/main/resources/assets/forest/blockstates/sandslate_bricks.json",
           "src/main/resources/assets/forest/models/block/sandslate_bricks.json",
@@ -2272,7 +2272,7 @@
           "src/main/resources/assets/forest/models/block/polished_rhyolite_slab_full.json",
           "src/main/resources/assets/forest/models/block/polished_rhyolite_slab_top.json",
           "src/main/resources/assets/forest/models/block/polished_rhyolite_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_rhyolite_slab.json",
+          "src/main/resources/data/forest/loot_table/blocks/polished_rhyolite_slab.json",
           "src/main/resources/assets/forest/models/item/polished_rhyolite_slab.json"
         ]
       },
@@ -2287,10 +2287,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/blockstates/polished_rhyolite_stairs.json",
+          "src/main/resources/data/forest/loot_table/blocks/polished_rhyolite_stairs.json",
           "src/main/resources/assets/forest/models/item/polished_rhyolite_stairs.json",
           "src/main/resources/assets/forest/models/block/polished_rhyolite_stairs_inner.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedRhyoliteStairsBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_rhyolite_stairs.json",
           "src/main/resources/assets/forest/models/block/polished_rhyolite_stairs_outer.json",
           "src/main/resources/assets/forest/models/block/polished_rhyolite_stairs.json"
         ]
@@ -2307,11 +2307,11 @@
         "files": [
           "src/main/resources/assets/forest/blockstates/rhyolite_bricks_slab.json",
           "src/main/resources/assets/forest/models/block/rhyolite_bricks_slab_top.json",
+          "src/main/resources/data/forest/loot_table/blocks/rhyolite_bricks_slab.json",
           "src/main/resources/assets/forest/models/block/rhyolite_bricks_slab.json",
           "src/main/resources/assets/forest/models/block/rhyolite_bricks_slab_full.json",
           "src/main/resources/assets/forest/models/item/rhyolite_bricks_slab.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/RhyoliteBricksSlabBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/rhyolite_bricks_slab.json"
+          "src/main/java/ru/power_umc/forestxreborn/block/RhyoliteBricksSlabBlock.java"
         ]
       },
       "path": "~/Rhyolite"
@@ -2328,8 +2328,8 @@
           "src/main/resources/assets/forest/models/item/rhyolite_bricks_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RhyoliteBricksStairsBlock.java",
           "src/main/resources/assets/forest/blockstates/rhyolite_bricks_stairs.json",
+          "src/main/resources/data/forest/loot_table/blocks/rhyolite_bricks_stairs.json",
           "src/main/resources/assets/forest/models/block/rhyolite_bricks_stairs_outer.json",
-          "src/main/resources/data/forest/loot_tables/blocks/rhyolite_bricks_stairs.json",
           "src/main/resources/assets/forest/models/block/rhyolite_bricks_stairs_inner.json"
         ]
       },
@@ -2346,9 +2346,9 @@
           "src/main/resources/assets/forest/models/block/polished_rhyolite_wall_side_tall.json",
           "src/main/resources/assets/forest/models/block/polished_rhyolite_wall_post.json",
           "src/main/resources/assets/forest/models/item/polished_rhyolite_wall.json",
+          "src/main/resources/data/forest/loot_table/blocks/polished_rhyolite_wall.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedRhyoliteWallBlock.java",
           "src/main/resources/assets/forest/blockstates/polished_rhyolite_wall.json",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_rhyolite_wall.json",
           "src/main/resources/assets/forest/models/block/polished_rhyolite_wall.json",
           "src/main/resources/assets/forest/models/block/polished_rhyolite_wall_inventory.json"
         ]
@@ -2363,8 +2363,8 @@
       "registry_name": "rhyolite_bricks_wall",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/rhyolite_bricks_wall.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RhyoliteBricksWallBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/rhyolite_bricks_wall.json",
           "src/main/resources/assets/forest/models/item/rhyolite_bricks_wall.json",
           "src/main/resources/assets/forest/models/block/rhyolite_bricks_wall_inventory.json",
           "src/main/resources/assets/forest/models/block/rhyolite_bricks_wall_post.json",
@@ -2384,11 +2384,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/rhyolite_slab_top.json",
+          "src/main/resources/data/forest/loot_table/blocks/rhyolite_slab.json",
           "src/main/resources/assets/forest/models/block/rhyolite_slab.json",
           "src/main/resources/assets/forest/models/item/rhyolite_slab.json",
           "src/main/resources/assets/forest/models/block/rhyolite_slab_full.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RhyoliteSlabBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/rhyolite_slab.json",
           "src/main/resources/assets/forest/blockstates/rhyolite_slab.json"
         ]
       },
@@ -2403,11 +2403,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/blockstates/rhyolite_stairs.json",
+          "src/main/resources/data/forest/loot_table/blocks/rhyolite_stairs.json",
           "src/main/resources/assets/forest/models/block/rhyolite_stairs_outer.json",
           "src/main/resources/assets/forest/models/block/rhyolite_stairs.json",
           "src/main/resources/assets/forest/models/block/rhyolite_stairs_inner.json",
           "src/main/resources/assets/forest/models/item/rhyolite_stairs.json",
-          "src/main/resources/data/forest/loot_tables/blocks/rhyolite_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RhyoliteStairsBlock.java"
         ]
       },
@@ -2423,10 +2423,10 @@
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/RhyoliteWallBlock.java",
           "src/main/resources/assets/forest/blockstates/rhyolite_wall.json",
-          "src/main/resources/data/forest/loot_tables/blocks/rhyolite_wall.json",
           "src/main/resources/assets/forest/models/block/rhyolite_wall_inventory.json",
           "src/main/resources/assets/forest/models/block/rhyolite_wall_side_tall.json",
           "src/main/resources/assets/forest/models/block/rhyolite_wall_post.json",
+          "src/main/resources/data/forest/loot_table/blocks/rhyolite_wall.json",
           "src/main/resources/assets/forest/models/block/rhyolite_wall.json",
           "src/main/resources/assets/forest/models/item/rhyolite_wall.json"
         ]
@@ -2564,7 +2564,7 @@
           "src/main/resources/assets/forest/models/block/polished_pumice_slab.json",
           "src/main/resources/assets/forest/models/block/polished_pumice_slab_full.json",
           "src/main/resources/assets/forest/models/item/polished_pumice_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_pumice_slab.json"
+          "src/main/resources/data/forest/loot_table/blocks/polished_pumice_slab.json"
         ]
       },
       "path": "~/Pumice"
@@ -2579,10 +2579,10 @@
         "files": [
           "src/main/resources/assets/forest/models/block/polished_pumice_stairs_outer.json",
           "src/main/resources/assets/forest/blockstates/polished_pumice_stairs.json",
+          "src/main/resources/data/forest/loot_table/blocks/polished_pumice_stairs.json",
           "src/main/resources/assets/forest/models/block/polished_pumice_stairs.json",
           "src/main/resources/assets/forest/models/block/polished_pumice_stairs_inner.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedPumiceStairsBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_pumice_stairs.json",
           "src/main/resources/assets/forest/models/item/polished_pumice_stairs.json"
         ]
       },
@@ -2596,10 +2596,10 @@
       "registry_name": "polished_pumice_wall",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/polished_pumice_wall.json",
           "src/main/resources/assets/forest/models/block/polished_pumice_wall.json",
           "src/main/resources/assets/forest/models/block/polished_pumice_wall_side_tall.json",
           "src/main/resources/assets/forest/models/block/polished_pumice_wall_inventory.json",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_pumice_wall.json",
           "src/main/resources/assets/forest/models/block/polished_pumice_wall_post.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedPumiceWallBlock.java",
           "src/main/resources/assets/forest/blockstates/polished_pumice_wall.json",
@@ -2621,8 +2621,8 @@
           "src/main/resources/assets/forest/models/block/pumice_bricks_slab_full.json",
           "src/main/resources/assets/forest/models/item/pumice_bricks_slab.json",
           "src/main/resources/assets/forest/models/block/pumice_bricks_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/pumice_bricks_slab.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/PumiceBricksSlabBlock.java"
+          "src/main/java/ru/power_umc/forestxreborn/block/PumiceBricksSlabBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/pumice_bricks_slab.json"
         ]
       },
       "path": "~/Pumice"
@@ -2640,8 +2640,8 @@
           "src/main/resources/assets/forest/models/block/pumice_bricks_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PumiceBricksStairsBlock.java",
           "src/main/resources/assets/forest/models/block/pumice_bricks_stairs_inner.json",
-          "src/main/resources/data/forest/loot_tables/blocks/pumice_bricks_stairs.json",
-          "src/main/resources/assets/forest/models/block/pumice_bricks_stairs_outer.json"
+          "src/main/resources/assets/forest/models/block/pumice_bricks_stairs_outer.json",
+          "src/main/resources/data/forest/loot_table/blocks/pumice_bricks_stairs.json"
         ]
       },
       "path": "~/Pumice"
@@ -2657,8 +2657,8 @@
           "src/main/resources/assets/forest/models/item/pumice_bricks_wall.json",
           "src/main/resources/assets/forest/models/block/pumice_bricks_wall_post.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PumiceBricksWallBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/pumice_bricks_wall.json",
           "src/main/resources/assets/forest/models/block/pumice_bricks_wall_inventory.json",
-          "src/main/resources/data/forest/loot_tables/blocks/pumice_bricks_wall.json",
           "src/main/resources/assets/forest/blockstates/pumice_bricks_wall.json",
           "src/main/resources/assets/forest/models/block/pumice_bricks_wall_side_tall.json",
           "src/main/resources/assets/forest/models/block/pumice_bricks_wall.json"
@@ -2678,9 +2678,9 @@
           "src/main/resources/assets/forest/models/block/truncated_pumice_slab_top.json",
           "src/main/java/ru/power_umc/forestxreborn/block/TruncatedPumiceSlabBlock.java",
           "src/main/resources/assets/forest/models/block/truncated_pumice_slab.json",
+          "src/main/resources/data/forest/loot_table/blocks/truncated_pumice_slab.json",
           "src/main/resources/assets/forest/models/item/truncated_pumice_slab.json",
-          "src/main/resources/assets/forest/blockstates/truncated_pumice_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/truncated_pumice_slab.json"
+          "src/main/resources/assets/forest/blockstates/truncated_pumice_slab.json"
         ]
       },
       "path": "~/Pumice"
@@ -2695,11 +2695,11 @@
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/TruncatedPumiceStairsBlock.java",
           "src/main/resources/assets/forest/models/block/truncated_pumice_stairs_inner.json",
+          "src/main/resources/data/forest/loot_table/blocks/truncated_pumice_stairs.json",
           "src/main/resources/assets/forest/models/block/truncated_pumice_stairs_outer.json",
           "src/main/resources/assets/forest/models/item/truncated_pumice_stairs.json",
           "src/main/resources/assets/forest/models/block/truncated_pumice_stairs.json",
-          "src/main/resources/assets/forest/blockstates/truncated_pumice_stairs.json",
-          "src/main/resources/data/forest/loot_tables/blocks/truncated_pumice_stairs.json"
+          "src/main/resources/assets/forest/blockstates/truncated_pumice_stairs.json"
         ]
       },
       "path": "~/Pumice"
@@ -2712,9 +2712,9 @@
       "registry_name": "truncated_pumice_wall",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/truncated_pumice_wall.json",
           "src/main/resources/assets/forest/models/block/truncated_pumice_wall_post.json",
           "src/main/resources/assets/forest/blockstates/truncated_pumice_wall.json",
-          "src/main/resources/data/forest/loot_tables/blocks/truncated_pumice_wall.json",
           "src/main/resources/assets/forest/models/item/truncated_pumice_wall.json",
           "src/main/resources/assets/forest/models/block/truncated_pumice_wall.json",
           "src/main/java/ru/power_umc/forestxreborn/block/TruncatedPumiceWallBlock.java",
@@ -2736,8 +2736,8 @@
           "src/main/resources/assets/forest/models/block/pumice_slab_full.json",
           "src/main/resources/assets/forest/models/block/pumice_slab.json",
           "src/main/resources/assets/forest/blockstates/pumice_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/pumice_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PumiceSlabBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/pumice_slab.json",
           "src/main/resources/assets/forest/models/item/pumice_slab.json"
         ]
       },
@@ -2752,12 +2752,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/pumice_stairs_outer.json",
+          "src/main/resources/data/forest/loot_table/blocks/pumice_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PumiceStairsBlock.java",
           "src/main/resources/assets/forest/models/item/pumice_stairs.json",
           "src/main/resources/assets/forest/blockstates/pumice_stairs.json",
           "src/main/resources/assets/forest/models/block/pumice_stairs.json",
-          "src/main/resources/assets/forest/models/block/pumice_stairs_inner.json",
-          "src/main/resources/data/forest/loot_tables/blocks/pumice_stairs.json"
+          "src/main/resources/assets/forest/models/block/pumice_stairs_inner.json"
         ]
       },
       "path": "~/Pumice"
@@ -2770,9 +2770,9 @@
       "registry_name": "pumice_wall",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/pumice_wall.json",
           "src/main/resources/assets/forest/models/block/pumice_wall.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PumiceWallBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/pumice_wall.json",
           "src/main/resources/assets/forest/blockstates/pumice_wall.json",
           "src/main/resources/assets/forest/models/item/pumice_wall.json",
           "src/main/resources/assets/forest/models/block/pumice_wall_side_tall.json",
@@ -2946,7 +2946,7 @@
       "registry_name": "cobbled_sandslate_slab",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/cobbled_sandslate_slab.json",
+          "src/main/resources/data/forest/loot_table/blocks/cobbled_sandslate_slab.json",
           "src/main/resources/assets/forest/models/block/cobbled_sandslate_slab_top.json",
           "src/main/resources/assets/forest/models/block/cobbled_sandslate_slab.json",
           "src/main/resources/assets/forest/blockstates/cobbled_sandslate_slab.json",
@@ -2965,7 +2965,7 @@
       "registry_name": "cobbled_sandslate_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/cobbled_sandslate_stairs.json",
+          "src/main/resources/data/forest/loot_table/blocks/cobbled_sandslate_stairs.json",
           "src/main/resources/assets/forest/models/item/cobbled_sandslate_stairs.json",
           "src/main/resources/assets/forest/blockstates/cobbled_sandslate_stairs.json",
           "src/main/resources/assets/forest/models/block/cobbled_sandslate_stairs.json",
@@ -2990,7 +2990,7 @@
           "src/main/resources/assets/forest/models/block/cobbled_sandslate_wall_inventory.json",
           "src/main/resources/assets/forest/models/block/cobbled_sandslate_wall_side_tall.json",
           "src/main/resources/assets/forest/models/block/cobbled_sandslate_wall.json",
-          "src/main/resources/data/forest/loot_tables/blocks/cobbled_sandslate_wall.json",
+          "src/main/resources/data/forest/loot_table/blocks/cobbled_sandslate_wall.json",
           "src/main/resources/assets/forest/blockstates/cobbled_sandslate_wall.json"
         ]
       },
@@ -3008,9 +3008,9 @@
           "src/main/resources/assets/forest/models/block/polished_sandslate_slab.json",
           "src/main/resources/assets/forest/models/block/polished_sandslate_slab_top.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedSandslateSlabBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/polished_sandslate_slab.json",
           "src/main/resources/assets/forest/models/item/polished_sandslate_slab.json",
-          "src/main/resources/assets/forest/blockstates/polished_sandslate_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_sandslate_slab.json"
+          "src/main/resources/assets/forest/blockstates/polished_sandslate_slab.json"
         ]
       },
       "path": "~/Sandslate"
@@ -3026,8 +3026,8 @@
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedSandslateStairsBlock.java",
           "src/main/resources/assets/forest/models/block/polished_sandslate_stairs.json",
           "src/main/resources/assets/forest/models/block/polished_sandslate_stairs_outer.json",
+          "src/main/resources/data/forest/loot_table/blocks/polished_sandslate_stairs.json",
           "src/main/resources/assets/forest/models/item/polished_sandslate_stairs.json",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_sandslate_stairs.json",
           "src/main/resources/assets/forest/blockstates/polished_sandslate_stairs.json",
           "src/main/resources/assets/forest/models/block/polished_sandslate_stairs_inner.json"
         ]
@@ -3046,9 +3046,9 @@
           "src/main/resources/assets/forest/models/item/polished_sandslate_wall.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolishedSandslateWallBlock.java",
           "src/main/resources/assets/forest/blockstates/polished_sandslate_wall.json",
-          "src/main/resources/data/forest/loot_tables/blocks/polished_sandslate_wall.json",
           "src/main/resources/assets/forest/models/block/polished_sandslate_wall.json",
           "src/main/resources/assets/forest/models/block/polished_sandslate_wall_side_tall.json",
+          "src/main/resources/data/forest/loot_table/blocks/polished_sandslate_wall.json",
           "src/main/resources/assets/forest/models/block/polished_sandslate_wall_inventory.json"
         ]
       },
@@ -3065,7 +3065,7 @@
           "src/main/java/ru/power_umc/forestxreborn/block/SandslateBricksSlabBlock.java",
           "src/main/resources/assets/forest/models/block/sandslate_bricks_slab_full.json",
           "src/main/resources/assets/forest/models/block/sandslate_bricks_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/sandslate_bricks_slab.json",
+          "src/main/resources/data/forest/loot_table/blocks/sandslate_bricks_slab.json",
           "src/main/resources/assets/forest/models/item/sandslate_bricks_slab.json",
           "src/main/resources/assets/forest/blockstates/sandslate_bricks_slab.json",
           "src/main/resources/assets/forest/models/block/sandslate_bricks_slab_top.json"
@@ -3082,12 +3082,12 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/SandslateBricksStairsBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/sandslate_bricks_stairs.json",
           "src/main/resources/assets/forest/models/item/sandslate_bricks_stairs.json",
           "src/main/resources/assets/forest/blockstates/sandslate_bricks_stairs.json",
           "src/main/resources/assets/forest/models/block/sandslate_bricks_stairs_inner.json",
           "src/main/resources/assets/forest/models/block/sandslate_bricks_stairs.json",
-          "src/main/resources/assets/forest/models/block/sandslate_bricks_stairs_outer.json"
+          "src/main/resources/assets/forest/models/block/sandslate_bricks_stairs_outer.json",
+          "src/main/resources/data/forest/loot_table/blocks/sandslate_bricks_stairs.json"
         ]
       },
       "path": "~/Sandslate"
@@ -3100,7 +3100,7 @@
       "registry_name": "sandslate_bricks_wall",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/sandslate_bricks_wall.json",
+          "src/main/resources/data/forest/loot_table/blocks/sandslate_bricks_wall.json",
           "src/main/resources/assets/forest/models/block/sandslate_bricks_wall_side_tall.json",
           "src/main/java/ru/power_umc/forestxreborn/block/SandslateBricksWallBlock.java",
           "src/main/resources/assets/forest/blockstates/sandslate_bricks_wall.json",
@@ -3924,9 +3924,9 @@
         "files": [
           "src/main/resources/assets/forest/models/block/gingerbread_block.json",
           "src/main/resources/assets/forest/blockstates/gingerbread_block.json",
+          "src/main/resources/data/forest/loot_table/blocks/gingerbread_block.json",
           "src/main/java/ru/power_umc/forestxreborn/block/GingerbreadBlockBlock.java",
-          "src/main/resources/assets/forest/models/item/gingerbread_block.json",
-          "src/main/resources/data/forest/loot_tables/blocks/gingerbread_block.json"
+          "src/main/resources/assets/forest/models/item/gingerbread_block.json"
         ]
       },
       "path": "~/Gingerbread/GingerbreadBlocks"
@@ -3939,11 +3939,11 @@
       "registry_name": "raw_gingerbread_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/raw_gingerbread_block.json",
           "src/main/resources/assets/forest/models/block/raw_gingerbread_block.json",
           "src/main/resources/assets/forest/models/item/raw_gingerbread_block.json",
           "src/main/resources/assets/forest/blockstates/raw_gingerbread_block.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/RawGingerbreadBlockBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/raw_gingerbread_block.json"
+          "src/main/java/ru/power_umc/forestxreborn/block/RawGingerbreadBlockBlock.java"
         ]
       },
       "path": "~/Gingerbread/GingerbreadBlocks"
@@ -3983,7 +3983,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/item/gingerbread_bricks.json",
-          "src/main/resources/data/forest/loot_tables/blocks/gingerbread_bricks.json",
+          "src/main/resources/data/forest/loot_table/blocks/gingerbread_bricks.json",
           "src/main/resources/assets/forest/models/block/gingerbread_bricks.json",
           "src/main/resources/assets/forest/blockstates/gingerbread_bricks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/GingerbreadBricksBlock.java"
@@ -4012,13 +4012,13 @@
       "registry_name": "blue_rose",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/blue_rose.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BlueRoseBlock.java",
           "src/main/resources/assets/forest/models/block/blue_rose.json",
           "src/main/resources/assets/forest/blockstates/blue_rose.json",
           "src/main/resources/data/forest/neoforge/biome_modifier/blue_rose_biome_modifier.json",
           "src/main/resources/data/forest/worldgen/placed_feature/blue_rose.json",
           "src/main/resources/data/forest/worldgen/configured_feature/blue_rose.json",
-          "src/main/resources/data/forest/loot_tables/blocks/blue_rose.json",
           "src/main/resources/assets/forest/models/item/blue_rose.json"
         ]
       },
@@ -4128,8 +4128,8 @@
       "registry_name": "sunshroom",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/sunshroom.json",
           "src/main/resources/assets/forest/models/item/sunshroom.json",
+          "src/main/resources/data/forest/loot_table/blocks/sunshroom.json",
           "src/main/resources/assets/forest/models/block/sunshroom.json",
           "src/main/resources/assets/forest/blockstates/sunshroom.json",
           "src/main/java/ru/power_umc/forestxreborn/block/SunshroomBlock.java"
@@ -4146,10 +4146,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/moonshroom.json",
+          "src/main/resources/data/forest/loot_table/blocks/moonshroom.json",
           "src/main/resources/assets/forest/models/item/moonshroom.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MoonshroomBlock.java",
-          "src/main/resources/assets/forest/blockstates/moonshroom.json",
-          "src/main/resources/data/forest/loot_tables/blocks/moonshroom.json"
+          "src/main/resources/assets/forest/blockstates/moonshroom.json"
         ]
       },
       "path": "~/Mushrooms"
@@ -4253,8 +4253,8 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/entity/BlackPlanksBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/black_planks.json",
           "src/main/resources/assets/forest/blockstates/black_planks.json",
-          "src/main/resources/data/forest/loot_tables/blocks/black_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BlackPlanksBlock.java",
           "src/main/resources/assets/forest/models/item/black_planks.json",
           "src/main/resources/assets/forest/models/block/black_planks.json"
@@ -4270,9 +4270,9 @@
       "registry_name": "blue_planks",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/blue_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BluePlanksBlock.java",
           "src/main/resources/assets/forest/blockstates/blue_planks.json",
+          "src/main/resources/data/forest/loot_table/blocks/blue_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/BluePlanksBlockEntity.java",
           "src/main/resources/assets/forest/models/block/blue_planks.json",
           "src/main/resources/assets/forest/models/item/blue_planks.json"
@@ -4288,9 +4288,9 @@
       "registry_name": "brown_planks",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/brown_planks.json",
           "src/main/resources/assets/forest/blockstates/brown_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BrownPlanksBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/brown_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/BrownPlanksBlockEntity.java",
           "src/main/resources/assets/forest/models/item/brown_planks.json",
           "src/main/resources/assets/forest/models/block/brown_planks.json"
@@ -4308,7 +4308,7 @@
         "files": [
           "src/main/resources/assets/forest/models/item/cyan_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/CyanPlanksBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/cyan_planks.json",
+          "src/main/resources/data/forest/loot_table/blocks/cyan_planks.json",
           "src/main/resources/assets/forest/models/block/cyan_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/CyanPlanksBlockEntity.java",
           "src/main/resources/assets/forest/blockstates/cyan_planks.json"
@@ -4325,11 +4325,11 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/GrayPlanksBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/gray_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/GrayPlanksBlockEntity.java",
           "src/main/resources/assets/forest/blockstates/gray_planks.json",
           "src/main/resources/assets/forest/models/item/gray_planks.json",
-          "src/main/resources/assets/forest/models/block/gray_planks.json"
+          "src/main/resources/assets/forest/models/block/gray_planks.json",
+          "src/main/resources/data/forest/loot_table/blocks/gray_planks.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedPlanks"
@@ -4343,9 +4343,9 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/entity/GreenPlanksBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/green_planks.json",
           "src/main/resources/assets/forest/models/block/green_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/GreenPlanksBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/green_planks.json",
           "src/main/resources/assets/forest/blockstates/green_planks.json",
           "src/main/resources/assets/forest/models/item/green_planks.json"
         ]
@@ -4360,7 +4360,7 @@
       "registry_name": "light_blue_planks",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/light_blue_planks.json",
+          "src/main/resources/data/forest/loot_table/blocks/light_blue_planks.json",
           "src/main/resources/assets/forest/blockstates/light_blue_planks.json",
           "src/main/resources/assets/forest/models/item/light_blue_planks.json",
           "src/main/resources/assets/forest/models/block/light_blue_planks.json",
@@ -4379,7 +4379,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/item/light_gray_planks.json",
-          "src/main/resources/data/forest/loot_tables/blocks/light_gray_planks.json",
+          "src/main/resources/data/forest/loot_table/blocks/light_gray_planks.json",
           "src/main/resources/assets/forest/blockstates/light_gray_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/LightGrayPlanksBlock.java",
           "src/main/resources/assets/forest/models/block/light_gray_planks.json",
@@ -4397,8 +4397,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/item/lime_planks.json",
+          "src/main/resources/data/forest/loot_table/blocks/lime_planks.json",
           "src/main/resources/assets/forest/blockstates/lime_planks.json",
-          "src/main/resources/data/forest/loot_tables/blocks/lime_planks.json",
           "src/main/resources/assets/forest/models/block/lime_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/LimePlanksBlock.java",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/LimePlanksBlockEntity.java"
@@ -4415,10 +4415,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/blockstates/magenta_planks.json",
+          "src/main/resources/data/forest/loot_table/blocks/magenta_planks.json",
           "src/main/resources/assets/forest/models/block/magenta_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MagentaPlanksBlock.java",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/MagentaPlanksBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/magenta_planks.json",
           "src/main/resources/assets/forest/models/item/magenta_planks.json"
         ]
       },
@@ -4435,8 +4435,8 @@
           "src/main/resources/assets/forest/models/block/orange_planks.json",
           "src/main/resources/assets/forest/models/item/orange_planks.json",
           "src/main/resources/assets/forest/blockstates/orange_planks.json",
+          "src/main/resources/data/forest/loot_table/blocks/orange_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/OrangePlanksBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/orange_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/OrangePlanksBlock.java"
         ]
       },
@@ -4450,11 +4450,11 @@
       "registry_name": "pink_planks",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/pink_planks.json",
           "src/main/resources/assets/forest/models/block/pink_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PinkPlanksBlock.java",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/PinkPlanksBlockEntity.java",
           "src/main/resources/assets/forest/models/item/pink_planks.json",
+          "src/main/resources/data/forest/loot_table/blocks/pink_planks.json",
           "src/main/resources/assets/forest/blockstates/pink_planks.json"
         ]
       },
@@ -4469,11 +4469,11 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/entity/PurplePlanksBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/purple_planks.json",
           "src/main/resources/assets/forest/models/item/purple_planks.json",
           "src/main/resources/assets/forest/blockstates/purple_planks.json",
           "src/main/resources/assets/forest/models/block/purple_planks.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/PurplePlanksBlock.java"
+          "src/main/java/ru/power_umc/forestxreborn/block/PurplePlanksBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/purple_planks.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedPlanks"
@@ -4486,12 +4486,12 @@
       "registry_name": "red_planks",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/red_planks.json",
           "src/main/resources/assets/forest/models/block/red_planks.json",
           "src/main/resources/assets/forest/models/item/red_planks.json",
           "src/main/resources/assets/forest/blockstates/red_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RedPlanksBlock.java",
-          "src/main/java/ru/power_umc/forestxreborn/block/entity/RedPlanksBlockEntity.java"
+          "src/main/java/ru/power_umc/forestxreborn/block/entity/RedPlanksBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/red_planks.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedPlanks"
@@ -4505,9 +4505,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/blockstates/white_planks.json",
+          "src/main/resources/data/forest/loot_table/blocks/white_planks.json",
           "src/main/resources/assets/forest/models/block/white_planks.json",
           "src/main/resources/assets/forest/models/item/white_planks.json",
-          "src/main/resources/data/forest/loot_tables/blocks/white_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/WhitePlanksBlock.java",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/WhitePlanksBlockEntity.java"
         ]
@@ -4524,8 +4524,8 @@
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/YellowPlanksBlock.java",
           "src/main/resources/assets/forest/models/block/yellow_planks.json",
-          "src/main/resources/data/forest/loot_tables/blocks/yellow_planks.json",
           "src/main/resources/assets/forest/models/item/yellow_planks.json",
+          "src/main/resources/data/forest/loot_table/blocks/yellow_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/YellowPlanksBlockEntity.java",
           "src/main/resources/assets/forest/blockstates/yellow_planks.json"
         ]
@@ -4541,9 +4541,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/eucalyptus_wood.json",
+          "src/main/resources/data/forest/loot_table/blocks/eucalyptus_wood.json",
           "src/main/resources/assets/forest/models/item/eucalyptus_wood.json",
           "src/main/resources/assets/forest/blockstates/eucalyptus_wood.json",
-          "src/main/resources/data/forest/loot_tables/blocks/eucalyptus_wood.json",
           "src/main/java/ru/power_umc/forestxreborn/block/EucalyptusWoodBlock.java"
         ]
       },
@@ -4558,8 +4558,8 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/EucalyptusLogBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/eucalyptus_log.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_log.json",
+          "src/main/resources/data/forest/loot_table/blocks/eucalyptus_log.json",
           "src/main/resources/assets/forest/blockstates/eucalyptus_log.json",
           "src/main/resources/assets/forest/models/item/eucalyptus_log.json"
         ]
@@ -4577,7 +4577,7 @@
           "src/main/resources/assets/forest/models/item/eucalyptus_planks.json",
           "src/main/resources/assets/forest/blockstates/eucalyptus_planks.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_planks.json",
-          "src/main/resources/data/forest/loot_tables/blocks/eucalyptus_planks.json",
+          "src/main/resources/data/forest/loot_table/blocks/eucalyptus_planks.json",
           "src/main/java/ru/power_umc/forestxreborn/block/EucalyptusPlanksBlock.java"
         ]
       },
@@ -4611,9 +4611,9 @@
           "src/main/resources/assets/forest/models/block/eucalyptus_stairs_outer.json",
           "src/main/resources/assets/forest/blockstates/eucalyptus_stairs.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_stairs_inner.json",
-          "src/main/resources/data/forest/loot_tables/blocks/eucalyptus_stairs.json",
           "src/main/resources/assets/forest/models/item/eucalyptus_stairs.json",
-          "src/main/resources/assets/forest/models/block/eucalyptus_stairs.json"
+          "src/main/resources/assets/forest/models/block/eucalyptus_stairs.json",
+          "src/main/resources/data/forest/loot_table/blocks/eucalyptus_stairs.json"
         ]
       },
       "path": "~/WoodSets/Eucalyptus Wood Set"
@@ -4630,9 +4630,9 @@
           "src/main/resources/assets/forest/models/item/eucalyptus_slab.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_slab_full.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_slab.json",
+          "src/main/resources/data/forest/loot_table/blocks/eucalyptus_slab.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_slab_top.json",
-          "src/main/resources/assets/forest/blockstates/eucalyptus_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/eucalyptus_slab.json"
+          "src/main/resources/assets/forest/blockstates/eucalyptus_slab.json"
         ]
       },
       "path": "~/WoodSets/Eucalyptus Wood Set"
@@ -4650,8 +4650,8 @@
           "src/main/resources/assets/forest/models/block/eucalyptus_fence.json",
           "src/main/resources/assets/forest/models/item/eucalyptus_fence.json",
           "src/main/resources/assets/forest/blockstates/eucalyptus_fence.json",
-          "src/main/resources/data/forest/loot_tables/blocks/eucalyptus_fence.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/EucalyptusFenceBlock.java"
+          "src/main/java/ru/power_umc/forestxreborn/block/EucalyptusFenceBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/eucalyptus_fence.json"
         ]
       },
       "path": "~/WoodSets/Eucalyptus Wood Set"
@@ -4666,7 +4666,7 @@
         "files": [
           "src/main/resources/assets/forest/models/item/eucalyptus_fence_gate.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_fence_gate_open.json",
-          "src/main/resources/data/forest/loot_tables/blocks/eucalyptus_fence_gate.json",
+          "src/main/resources/data/forest/loot_table/blocks/eucalyptus_fence_gate.json",
           "src/main/resources/assets/forest/blockstates/eucalyptus_fence_gate.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_fence_gate.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_fence_gate_wall.json",
@@ -4688,8 +4688,8 @@
           "src/main/resources/assets/forest/models/block/eucalyptus_pressure_plate_down.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_pressure_plate.json",
           "src/main/resources/assets/forest/blockstates/eucalyptus_pressure_plate.json",
-          "src/main/resources/data/forest/loot_tables/blocks/eucalyptus_pressure_plate.json",
-          "src/main/resources/assets/forest/models/item/eucalyptus_pressure_plate.json"
+          "src/main/resources/assets/forest/models/item/eucalyptus_pressure_plate.json",
+          "src/main/resources/data/forest/loot_table/blocks/eucalyptus_pressure_plate.json"
         ]
       },
       "path": "~/WoodSets/Eucalyptus Wood Set"
@@ -4704,10 +4704,10 @@
         "files": [
           "src/main/resources/assets/forest/models/block/eucalyptus_button_pressed.json",
           "src/main/resources/assets/forest/blockstates/eucalyptus_button.json",
-          "src/main/resources/data/forest/loot_tables/blocks/eucalyptus_button.json",
           "src/main/resources/assets/forest/models/item/eucalyptus_button.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_button_inventory.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_button.json",
+          "src/main/resources/data/forest/loot_table/blocks/eucalyptus_button.json",
           "src/main/java/ru/power_umc/forestxreborn/block/EucalyptusButtonBlock.java"
         ]
       },
@@ -4838,11 +4838,11 @@
       "registry_name": "stripped_eucalyptus_wood",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/stripped_eucalyptus_wood.json",
           "src/main/resources/assets/forest/models/item/stripped_eucalyptus_wood.json",
           "src/main/resources/assets/forest/blockstates/stripped_eucalyptus_wood.json",
           "src/main/resources/assets/forest/models/block/stripped_eucalyptus_wood.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/StrippedEucalyptusWoodBlock.java"
+          "src/main/java/ru/power_umc/forestxreborn/block/StrippedEucalyptusWoodBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/stripped_eucalyptus_wood.json"
         ]
       },
       "path": "~/WoodSets/Eucalyptus Wood Set"
@@ -4856,7 +4856,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/stripped_eucalyptus_log.json",
-          "src/main/resources/data/forest/loot_tables/blocks/stripped_eucalyptus_log.json",
+          "src/main/resources/data/forest/loot_table/blocks/stripped_eucalyptus_log.json",
           "src/main/java/ru/power_umc/forestxreborn/block/StrippedEucalyptusLogBlock.java",
           "src/main/resources/assets/forest/models/item/stripped_eucalyptus_log.json",
           "src/main/resources/assets/forest/blockstates/stripped_eucalyptus_log.json"
@@ -4886,8 +4886,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/blockstates/eucalyptus_parquet.json",
+          "src/main/resources/data/forest/loot_table/blocks/eucalyptus_parquet.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_parquet.json",
-          "src/main/resources/data/forest/loot_tables/blocks/eucalyptus_parquet.json",
           "src/main/resources/assets/forest/models/item/eucalyptus_parquet.json",
           "src/main/java/ru/power_umc/forestxreborn/block/EucalyptusParquetBlock.java"
         ]
@@ -4915,10 +4915,10 @@
       "registry_name": "cherry_parquet",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/cherry_parquet.json",
           "src/main/resources/assets/forest/models/block/cherry_parquet.json",
           "src/main/resources/assets/forest/models/item/cherry_parquet.json",
           "src/main/java/ru/power_umc/forestxreborn/block/CherryParquetBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/cherry_parquet.json",
           "src/main/resources/assets/forest/blockstates/cherry_parquet.json"
         ]
       },
@@ -4946,6 +4946,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/eucalyptus_door_bottom_left.json",
+          "src/main/resources/data/forest/loot_table/blocks/eucalyptus_door.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_door_bottom_right_open.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_door_top_right.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_door_bottom_left_open.json",
@@ -4955,7 +4956,6 @@
           "src/main/resources/assets/forest/models/item/eucalyptus_door.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_door_top_right_open.json",
           "src/main/resources/assets/forest/blockstates/eucalyptus_door.json",
-          "src/main/resources/data/forest/loot_tables/blocks/eucalyptus_door.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_door_top_left.json"
         ]
       },
@@ -4972,10 +4972,10 @@
           "src/main/resources/assets/forest/blockstates/eucalyptus_trapdoor.json",
           "src/main/resources/assets/forest/models/item/eucalyptus_trapdoor.json",
           "src/main/java/ru/power_umc/forestxreborn/block/EucalyptusTrapdoorBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/eucalyptus_trapdoor.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_trapdoor_top.json",
           "src/main/resources/assets/forest/models/block/eucalyptus_trapdoor.json",
-          "src/main/resources/assets/forest/models/block/eucalyptus_trapdoor_open.json"
+          "src/main/resources/assets/forest/models/block/eucalyptus_trapdoor_open.json",
+          "src/main/resources/data/forest/loot_table/blocks/eucalyptus_trapdoor.json"
         ]
       },
       "path": "~/WoodSets/Eucalyptus Wood Set"
@@ -4993,8 +4993,8 @@
           "src/main/resources/assets/forest/models/block/black_fence_inventory.json",
           "src/main/resources/assets/forest/models/block/black_fence_post.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BlackFenceBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/black_fence.json",
           "src/main/resources/assets/forest/models/item/black_fence.json",
-          "src/main/resources/data/forest/loot_tables/blocks/black_fence.json",
           "src/main/resources/assets/forest/models/block/black_fence.json"
         ]
       },
@@ -5009,12 +5009,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/blockstates/blue_fence.json",
+          "src/main/resources/data/forest/loot_table/blocks/blue_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/BlueFenceBlockEntity.java",
           "src/main/resources/assets/forest/models/block/blue_fence_post.json",
           "src/main/resources/assets/forest/models/block/blue_fence.json",
           "src/main/resources/assets/forest/models/block/blue_fence_inventory.json",
           "src/main/resources/assets/forest/models/item/blue_fence.json",
-          "src/main/resources/data/forest/loot_tables/blocks/blue_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BlueFenceBlock.java"
         ]
       },
@@ -5035,7 +5035,7 @@
           "src/main/resources/assets/forest/blockstates/brown_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/BrownFenceBlockEntity.java",
           "src/main/resources/assets/forest/models/block/brown_fence.json",
-          "src/main/resources/data/forest/loot_tables/blocks/brown_fence.json"
+          "src/main/resources/data/forest/loot_table/blocks/brown_fence.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedFences"
@@ -5048,11 +5048,11 @@
       "registry_name": "cyan_fence",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/cyan_fence.json",
           "src/main/resources/assets/forest/models/block/cyan_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/CyanFenceBlock.java",
           "src/main/resources/assets/forest/blockstates/cyan_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/CyanFenceBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/cyan_fence.json",
           "src/main/resources/assets/forest/models/item/cyan_fence.json",
           "src/main/resources/assets/forest/models/block/cyan_fence_post.json",
           "src/main/resources/assets/forest/models/block/cyan_fence_inventory.json"
@@ -5070,12 +5070,12 @@
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/entity/GrayFenceBlockEntity.java",
           "src/main/resources/assets/forest/models/block/gray_fence.json",
-          "src/main/resources/data/forest/loot_tables/blocks/gray_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/GrayFenceBlock.java",
           "src/main/resources/assets/forest/models/block/gray_fence_inventory.json",
           "src/main/resources/assets/forest/models/block/gray_fence_post.json",
           "src/main/resources/assets/forest/models/item/gray_fence.json",
-          "src/main/resources/assets/forest/blockstates/gray_fence.json"
+          "src/main/resources/assets/forest/blockstates/gray_fence.json",
+          "src/main/resources/data/forest/loot_table/blocks/gray_fence.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedFences"
@@ -5088,7 +5088,7 @@
       "registry_name": "green_fence",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/green_fence.json",
+          "src/main/resources/data/forest/loot_table/blocks/green_fence.json",
           "src/main/resources/assets/forest/models/block/green_fence.json",
           "src/main/resources/assets/forest/blockstates/green_fence.json",
           "src/main/resources/assets/forest/models/block/green_fence_post.json",
@@ -5110,12 +5110,12 @@
         "files": [
           "src/main/resources/assets/forest/models/block/light_blue_fence_inventory.json",
           "src/main/java/ru/power_umc/forestxreborn/block/LightBlueFenceBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/light_blue_fence.json",
           "src/main/resources/assets/forest/models/item/light_blue_fence.json",
           "src/main/resources/assets/forest/blockstates/light_blue_fence.json",
           "src/main/resources/assets/forest/models/block/light_blue_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/LightBlueFenceBlockEntity.java",
-          "src/main/resources/assets/forest/models/block/light_blue_fence_post.json"
+          "src/main/resources/assets/forest/models/block/light_blue_fence_post.json",
+          "src/main/resources/data/forest/loot_table/blocks/light_blue_fence.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedFences"
@@ -5128,10 +5128,10 @@
       "registry_name": "light_gray_fence",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/light_gray_fence.json",
           "src/main/resources/assets/forest/models/item/light_gray_fence.json",
           "src/main/resources/assets/forest/blockstates/light_gray_fence.json",
           "src/main/resources/assets/forest/models/block/light_gray_fence.json",
+          "src/main/resources/data/forest/loot_table/blocks/light_gray_fence.json",
           "src/main/resources/assets/forest/models/block/light_gray_fence_inventory.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/LightGrayFenceBlockEntity.java",
           "src/main/resources/assets/forest/models/block/light_gray_fence_post.json",
@@ -5149,13 +5149,13 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/lime_fence_post.json",
-          "src/main/resources/data/forest/loot_tables/blocks/lime_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/LimeFenceBlock.java",
           "src/main/resources/assets/forest/blockstates/lime_fence.json",
           "src/main/resources/assets/forest/models/block/lime_fence.json",
           "src/main/resources/assets/forest/models/block/lime_fence_inventory.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/LimeFenceBlockEntity.java",
-          "src/main/resources/assets/forest/models/item/lime_fence.json"
+          "src/main/resources/assets/forest/models/item/lime_fence.json",
+          "src/main/resources/data/forest/loot_table/blocks/lime_fence.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedFences"
@@ -5170,12 +5170,12 @@
         "files": [
           "src/main/resources/assets/forest/models/item/magenta_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MagentaFenceBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/magenta_fence.json",
           "src/main/resources/assets/forest/models/block/magenta_fence_inventory.json",
           "src/main/resources/assets/forest/blockstates/magenta_fence.json",
           "src/main/resources/assets/forest/models/block/magenta_fence_post.json",
           "src/main/resources/assets/forest/models/block/magenta_fence.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/entity/MagentaFenceBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/magenta_fence.json"
+          "src/main/java/ru/power_umc/forestxreborn/block/entity/MagentaFenceBlockEntity.java"
         ]
       },
       "path": "~/PaintedBlocks/PaintedFences"
@@ -5190,10 +5190,10 @@
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/OrangeFenceBlock.java",
           "src/main/resources/assets/forest/blockstates/orange_fence.json",
+          "src/main/resources/data/forest/loot_table/blocks/orange_fence.json",
           "src/main/resources/assets/forest/models/item/orange_fence.json",
           "src/main/resources/assets/forest/models/block/orange_fence_post.json",
           "src/main/resources/assets/forest/models/block/orange_fence_inventory.json",
-          "src/main/resources/data/forest/loot_tables/blocks/orange_fence.json",
           "src/main/resources/assets/forest/models/block/orange_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/OrangeFenceBlockEntity.java"
         ]
@@ -5210,12 +5210,12 @@
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/PinkFenceBlock.java",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/PinkFenceBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/pink_fence.json",
           "src/main/resources/assets/forest/models/block/pink_fence_inventory.json",
           "src/main/resources/assets/forest/blockstates/pink_fence.json",
           "src/main/resources/assets/forest/models/block/pink_fence.json",
           "src/main/resources/assets/forest/models/block/pink_fence_post.json",
-          "src/main/resources/assets/forest/models/item/pink_fence.json",
-          "src/main/resources/data/forest/loot_tables/blocks/pink_fence.json"
+          "src/main/resources/assets/forest/models/item/pink_fence.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedFences"
@@ -5228,10 +5228,10 @@
       "registry_name": "purple_fence",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/purple_fence.json",
           "src/main/resources/assets/forest/models/block/purple_fence_inventory.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PurpleFenceBlock.java",
           "src/main/resources/assets/forest/models/block/purple_fence.json",
+          "src/main/resources/data/forest/loot_table/blocks/purple_fence.json",
           "src/main/resources/assets/forest/models/item/purple_fence.json",
           "src/main/resources/assets/forest/blockstates/purple_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/PurpleFenceBlockEntity.java",
@@ -5252,10 +5252,10 @@
           "src/main/resources/assets/forest/models/block/red_fence_inventory.json",
           "src/main/resources/assets/forest/models/block/red_fence.json",
           "src/main/resources/assets/forest/models/block/red_fence_post.json",
-          "src/main/resources/data/forest/loot_tables/blocks/red_fence.json",
           "src/main/resources/assets/forest/blockstates/red_fence.json",
           "src/main/resources/assets/forest/models/item/red_fence.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/entity/RedFenceBlockEntity.java"
+          "src/main/java/ru/power_umc/forestxreborn/block/entity/RedFenceBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/red_fence.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedFences"
@@ -5270,10 +5270,10 @@
         "files": [
           "src/main/resources/assets/forest/models/item/white_fence.json",
           "src/main/resources/assets/forest/models/block/white_fence_inventory.json",
+          "src/main/resources/data/forest/loot_table/blocks/white_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/WhiteFenceBlock.java",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/WhiteFenceBlockEntity.java",
           "src/main/resources/assets/forest/models/block/white_fence_post.json",
-          "src/main/resources/data/forest/loot_tables/blocks/white_fence.json",
           "src/main/resources/assets/forest/models/block/white_fence.json",
           "src/main/resources/assets/forest/blockstates/white_fence.json"
         ]
@@ -5289,8 +5289,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/yellow_fence_inventory.json",
-          "src/main/resources/data/forest/loot_tables/blocks/yellow_fence.json",
           "src/main/resources/assets/forest/models/block/yellow_fence.json",
+          "src/main/resources/data/forest/loot_table/blocks/yellow_fence.json",
           "src/main/resources/assets/forest/blockstates/yellow_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/YellowFenceBlockEntity.java",
           "src/main/resources/assets/forest/models/block/yellow_fence_post.json",
@@ -5310,8 +5310,8 @@
         "files": [
           "src/main/resources/assets/forest/models/block/black_fence_gate_open.json",
           "src/main/resources/assets/forest/models/block/black_fence_gate.json",
+          "src/main/resources/data/forest/loot_table/blocks/black_fence_gate.json",
           "src/main/resources/assets/forest/models/block/black_fence_gate_wall_open.json",
-          "src/main/resources/data/forest/loot_tables/blocks/black_fence_gate.json",
           "src/main/resources/assets/forest/blockstates/black_fence_gate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BlackFenceGateBlock.java",
           "src/main/resources/assets/forest/models/item/black_fence_gate.json",
@@ -5329,7 +5329,6 @@
       "registry_name": "blue_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/blue_fence_gate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BlueFenceGateBlock.java",
           "src/main/resources/assets/forest/models/item/blue_fence_gate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/BlueFenceGateBlockEntity.java",
@@ -5337,6 +5336,7 @@
           "src/main/resources/assets/forest/models/block/blue_fence_gate_wall.json",
           "src/main/resources/assets/forest/models/block/blue_fence_gate_wall_open.json",
           "src/main/resources/assets/forest/models/block/blue_fence_gate.json",
+          "src/main/resources/data/forest/loot_table/blocks/blue_fence_gate.json",
           "src/main/resources/assets/forest/models/block/blue_fence_gate_open.json"
         ]
       },
@@ -5350,12 +5350,12 @@
       "registry_name": "brown_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/brown_fence_gate.json",
           "src/main/resources/assets/forest/models/item/brown_fence_gate.json",
           "src/main/resources/assets/forest/blockstates/brown_fence_gate.json",
           "src/main/resources/assets/forest/models/block/brown_fence_gate_open.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/BrownFenceGateBlockEntity.java",
           "src/main/resources/assets/forest/models/block/brown_fence_gate_wall_open.json",
+          "src/main/resources/data/forest/loot_table/blocks/brown_fence_gate.json",
           "src/main/resources/assets/forest/models/block/brown_fence_gate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BrownFenceGateBlock.java",
           "src/main/resources/assets/forest/models/block/brown_fence_gate_wall.json"
@@ -5374,10 +5374,10 @@
           "src/main/java/ru/power_umc/forestxreborn/block/CyanFenceGateBlock.java",
           "src/main/resources/assets/forest/models/block/cyan_fence_gate_wall_open.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/CyanFenceGateBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/cyan_fence_gate.json",
           "src/main/resources/assets/forest/models/block/cyan_fence_gate.json",
           "src/main/resources/assets/forest/models/item/cyan_fence_gate.json",
           "src/main/resources/assets/forest/models/block/cyan_fence_gate_wall.json",
-          "src/main/resources/data/forest/loot_tables/blocks/cyan_fence_gate.json",
           "src/main/resources/assets/forest/models/block/cyan_fence_gate_open.json",
           "src/main/resources/assets/forest/blockstates/cyan_fence_gate.json"
         ]
@@ -5393,11 +5393,11 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/GrayFenceGateBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/gray_fence_gate.json",
           "src/main/resources/assets/forest/models/block/gray_fence_gate_wall_open.json",
           "src/main/resources/assets/forest/models/item/gray_fence_gate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/GrayFenceGateBlockEntity.java",
           "src/main/resources/assets/forest/models/block/gray_fence_gate_wall.json",
+          "src/main/resources/data/forest/loot_table/blocks/gray_fence_gate.json",
           "src/main/resources/assets/forest/models/block/gray_fence_gate.json",
           "src/main/resources/assets/forest/models/block/gray_fence_gate_open.json",
           "src/main/resources/assets/forest/blockstates/gray_fence_gate.json"
@@ -5418,10 +5418,10 @@
           "src/main/resources/assets/forest/models/block/green_fence_gate_wall_open.json",
           "src/main/resources/assets/forest/models/item/green_fence_gate.json",
           "src/main/resources/assets/forest/blockstates/green_fence_gate.json",
-          "src/main/resources/data/forest/loot_tables/blocks/green_fence_gate.json",
           "src/main/resources/assets/forest/models/block/green_fence_gate.json",
           "src/main/resources/assets/forest/models/block/green_fence_gate_open.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/GreenFenceGateBlock.java"
+          "src/main/java/ru/power_umc/forestxreborn/block/GreenFenceGateBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/green_fence_gate.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedFenceGates"
@@ -5435,13 +5435,13 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/entity/LightBlueFenceGateBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/light_blue_fence_gate.json",
           "src/main/resources/assets/forest/models/block/light_blue_fence_gate.json",
           "src/main/resources/assets/forest/models/block/light_blue_fence_gate_wall.json",
           "src/main/resources/assets/forest/blockstates/light_blue_fence_gate.json",
           "src/main/resources/assets/forest/models/block/light_blue_fence_gate_open.json",
           "src/main/resources/assets/forest/models/item/light_blue_fence_gate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/LightBlueFenceGateBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/light_blue_fence_gate.json",
           "src/main/resources/assets/forest/models/block/light_blue_fence_gate_wall_open.json"
         ]
       },
@@ -5456,13 +5456,13 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/LightGrayFenceGateBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/light_gray_fence_gate.json",
           "src/main/resources/assets/forest/models/block/light_gray_fence_gate_open.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/LightGrayFenceGateBlockEntity.java",
           "src/main/resources/assets/forest/models/block/light_gray_fence_gate_wall.json",
           "src/main/resources/assets/forest/models/block/light_gray_fence_gate_wall_open.json",
           "src/main/resources/assets/forest/blockstates/light_gray_fence_gate.json",
           "src/main/resources/assets/forest/models/block/light_gray_fence_gate.json",
+          "src/main/resources/data/forest/loot_table/blocks/light_gray_fence_gate.json",
           "src/main/resources/assets/forest/models/item/light_gray_fence_gate.json"
         ]
       },
@@ -5482,9 +5482,9 @@
           "src/main/resources/assets/forest/models/block/lime_fence_gate_wall_open.json",
           "src/main/resources/assets/forest/blockstates/lime_fence_gate.json",
           "src/main/resources/assets/forest/models/item/lime_fence_gate.json",
-          "src/main/resources/data/forest/loot_tables/blocks/lime_fence_gate.json",
           "src/main/resources/assets/forest/models/block/lime_fence_gate_wall.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/entity/LimeFenceGateBlockEntity.java"
+          "src/main/java/ru/power_umc/forestxreborn/block/entity/LimeFenceGateBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/lime_fence_gate.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedFenceGates"
@@ -5501,9 +5501,9 @@
           "src/main/resources/assets/forest/models/block/magenta_fence_gate_wall_open.json",
           "src/main/resources/assets/forest/models/block/magenta_fence_gate_open.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/MagentaFenceGateBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/magenta_fence_gate.json",
           "src/main/resources/assets/forest/models/block/magenta_fence_gate_wall.json",
           "src/main/resources/assets/forest/models/item/magenta_fence_gate.json",
-          "src/main/resources/data/forest/loot_tables/blocks/magenta_fence_gate.json",
           "src/main/resources/assets/forest/blockstates/magenta_fence_gate.json",
           "src/main/resources/assets/forest/models/block/magenta_fence_gate.json"
         ]
@@ -5519,11 +5519,11 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/OrangeFenceGateBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/orange_fence_gate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/OrangeFenceGateBlockEntity.java",
           "src/main/resources/assets/forest/models/block/orange_fence_gate_open.json",
           "src/main/resources/assets/forest/blockstates/orange_fence_gate.json",
           "src/main/resources/assets/forest/models/block/orange_fence_gate_wall.json",
+          "src/main/resources/data/forest/loot_table/blocks/orange_fence_gate.json",
           "src/main/resources/assets/forest/models/block/orange_fence_gate_wall_open.json",
           "src/main/resources/assets/forest/models/item/orange_fence_gate.json",
           "src/main/resources/assets/forest/models/block/orange_fence_gate.json"
@@ -5542,11 +5542,11 @@
           "src/main/resources/assets/forest/models/item/pink_fence_gate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/PinkFenceGateBlockEntity.java",
           "src/main/resources/assets/forest/models/block/pink_fence_gate_wall_open.json",
-          "src/main/resources/data/forest/loot_tables/blocks/pink_fence_gate.json",
           "src/main/resources/assets/forest/models/block/pink_fence_gate_open.json",
           "src/main/resources/assets/forest/models/block/pink_fence_gate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PinkFenceGateBlock.java",
           "src/main/resources/assets/forest/models/block/pink_fence_gate_wall.json",
+          "src/main/resources/data/forest/loot_table/blocks/pink_fence_gate.json",
           "src/main/resources/assets/forest/blockstates/pink_fence_gate.json"
         ]
       },
@@ -5561,7 +5561,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/purple_fence_gate_wall_open.json",
-          "src/main/resources/data/forest/loot_tables/blocks/purple_fence_gate.json",
+          "src/main/resources/data/forest/loot_table/blocks/purple_fence_gate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PurpleFenceGateBlock.java",
           "src/main/resources/assets/forest/blockstates/purple_fence_gate.json",
           "src/main/resources/assets/forest/models/block/purple_fence_gate_open.json",
@@ -5581,13 +5581,13 @@
       "registry_name": "red_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/red_fence_gate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/RedFenceGateBlockEntity.java",
           "src/main/resources/assets/forest/models/block/red_fence_gate_open.json",
           "src/main/resources/assets/forest/models/item/red_fence_gate.json",
           "src/main/resources/assets/forest/blockstates/red_fence_gate.json",
           "src/main/resources/assets/forest/models/block/red_fence_gate_wall.json",
           "src/main/resources/assets/forest/models/block/red_fence_gate_wall_open.json",
+          "src/main/resources/data/forest/loot_table/blocks/red_fence_gate.json",
           "src/main/resources/assets/forest/models/block/red_fence_gate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RedFenceGateBlock.java"
         ]
@@ -5608,8 +5608,8 @@
           "src/main/resources/assets/forest/models/item/white_fence_gate.json",
           "src/main/resources/assets/forest/blockstates/white_fence_gate.json",
           "src/main/resources/assets/forest/models/block/white_fence_gate_wall.json",
+          "src/main/resources/data/forest/loot_table/blocks/white_fence_gate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/WhiteFenceGateBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/white_fence_gate.json",
           "src/main/resources/assets/forest/models/block/white_fence_gate.json"
         ]
       },
@@ -5623,7 +5623,7 @@
       "registry_name": "yellow_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/yellow_fence_gate.json",
+          "src/main/resources/data/forest/loot_table/blocks/yellow_fence_gate.json",
           "src/main/resources/assets/forest/models/item/yellow_fence_gate.json",
           "src/main/resources/assets/forest/models/block/yellow_fence_gate.json",
           "src/main/resources/assets/forest/models/block/yellow_fence_gate_open.json",
@@ -5645,12 +5645,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/black_stairs_outer.json",
+          "src/main/resources/data/forest/loot_table/blocks/black_stairs.json",
           "src/main/resources/assets/forest/models/item/black_stairs.json",
           "src/main/resources/assets/forest/models/block/black_stairs_inner.json",
           "src/main/resources/assets/forest/models/block/black_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BlackStairsBlock.java",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/BlackStairsBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/black_stairs.json",
           "src/main/resources/assets/forest/blockstates/black_stairs.json"
         ]
       },
@@ -5665,13 +5665,13 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/entity/BlueStairsBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/blue_stairs.json",
           "src/main/resources/assets/forest/models/item/blue_stairs.json",
           "src/main/resources/assets/forest/blockstates/blue_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BlueStairsBlock.java",
           "src/main/resources/assets/forest/models/block/blue_stairs.json",
           "src/main/resources/assets/forest/models/block/blue_stairs_inner.json",
-          "src/main/resources/assets/forest/models/block/blue_stairs_outer.json",
-          "src/main/resources/data/forest/loot_tables/blocks/blue_stairs.json"
+          "src/main/resources/assets/forest/models/block/blue_stairs_outer.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedStairs"
@@ -5684,8 +5684,8 @@
       "registry_name": "brown_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/brown_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/BrownStairsBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/brown_stairs.json",
           "src/main/resources/assets/forest/models/block/brown_stairs.json",
           "src/main/resources/assets/forest/models/item/brown_stairs.json",
           "src/main/resources/assets/forest/blockstates/brown_stairs.json",
@@ -5704,10 +5704,10 @@
       "registry_name": "cyan_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/cyan_stairs.json",
           "src/main/resources/assets/forest/models/block/cyan_stairs.json",
           "src/main/resources/assets/forest/models/block/cyan_stairs_outer.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/CyanStairsBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/cyan_stairs.json",
           "src/main/resources/assets/forest/blockstates/cyan_stairs.json",
           "src/main/resources/assets/forest/models/item/cyan_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/CyanStairsBlock.java",
@@ -5724,12 +5724,12 @@
       "registry_name": "gray_stairs",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/gray_stairs.json",
           "src/main/resources/assets/forest/models/item/gray_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/GrayStairsBlock.java",
           "src/main/resources/assets/forest/models/block/gray_stairs_outer.json",
           "src/main/resources/assets/forest/models/block/gray_stairs_inner.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/GrayStairsBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/gray_stairs.json",
           "src/main/resources/assets/forest/models/block/gray_stairs.json",
           "src/main/resources/assets/forest/blockstates/gray_stairs.json"
         ]
@@ -5744,13 +5744,13 @@
       "registry_name": "green_stairs",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/green_stairs.json",
           "src/main/resources/assets/forest/blockstates/green_stairs.json",
           "src/main/resources/assets/forest/models/block/green_stairs_outer.json",
           "src/main/resources/assets/forest/models/item/green_stairs.json",
           "src/main/resources/assets/forest/models/block/green_stairs_inner.json",
           "src/main/java/ru/power_umc/forestxreborn/block/GreenStairsBlock.java",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/GreenStairsBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/green_stairs.json",
           "src/main/resources/assets/forest/models/block/green_stairs.json"
         ]
       },
@@ -5766,8 +5766,8 @@
         "files": [
           "src/main/resources/assets/forest/models/block/light_blue_stairs_outer.json",
           "src/main/resources/assets/forest/models/block/light_blue_stairs_inner.json",
-          "src/main/resources/data/forest/loot_tables/blocks/light_blue_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/LightBlueStairsBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/light_blue_stairs.json",
           "src/main/resources/assets/forest/models/item/light_blue_stairs.json",
           "src/main/resources/assets/forest/blockstates/light_blue_stairs.json",
           "src/main/resources/assets/forest/models/block/light_blue_stairs.json",
@@ -5787,7 +5787,7 @@
           "src/main/resources/assets/forest/models/block/light_gray_stairs_inner.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/LightGrayStairsBlockEntity.java",
           "src/main/resources/assets/forest/models/block/light_gray_stairs_outer.json",
-          "src/main/resources/data/forest/loot_tables/blocks/light_gray_stairs.json",
+          "src/main/resources/data/forest/loot_table/blocks/light_gray_stairs.json",
           "src/main/resources/assets/forest/models/item/light_gray_stairs.json",
           "src/main/resources/assets/forest/models/block/light_gray_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/LightGrayStairsBlock.java",
@@ -5809,8 +5809,8 @@
           "src/main/java/ru/power_umc/forestxreborn/block/LimeStairsBlock.java",
           "src/main/resources/assets/forest/blockstates/lime_stairs.json",
           "src/main/resources/assets/forest/models/item/lime_stairs.json",
-          "src/main/resources/data/forest/loot_tables/blocks/lime_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/LimeStairsBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/lime_stairs.json",
           "src/main/resources/assets/forest/models/block/lime_stairs_inner.json"
         ]
       },
@@ -5825,11 +5825,11 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/MagentaStairsBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/magenta_stairs.json",
           "src/main/resources/assets/forest/models/block/magenta_stairs_inner.json",
           "src/main/resources/assets/forest/models/item/magenta_stairs.json",
           "src/main/resources/assets/forest/blockstates/magenta_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/MagentaStairsBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/magenta_stairs.json",
           "src/main/resources/assets/forest/models/block/magenta_stairs.json",
           "src/main/resources/assets/forest/models/block/magenta_stairs_outer.json"
         ]
@@ -5846,8 +5846,8 @@
         "files": [
           "src/main/resources/assets/forest/models/item/orange_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/OrangeStairsBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/orange_stairs.json",
           "src/main/resources/assets/forest/models/block/orange_stairs_outer.json",
-          "src/main/resources/data/forest/loot_tables/blocks/orange_stairs.json",
           "src/main/resources/assets/forest/blockstates/orange_stairs.json",
           "src/main/resources/assets/forest/models/block/orange_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/OrangeStairsBlock.java",
@@ -5866,8 +5866,8 @@
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/PinkStairsBlock.java",
           "src/main/resources/assets/forest/models/item/pink_stairs.json",
-          "src/main/resources/data/forest/loot_tables/blocks/pink_stairs.json",
           "src/main/resources/assets/forest/models/block/pink_stairs_inner.json",
+          "src/main/resources/data/forest/loot_table/blocks/pink_stairs.json",
           "src/main/resources/assets/forest/models/block/pink_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/PinkStairsBlockEntity.java",
           "src/main/resources/assets/forest/models/block/pink_stairs_outer.json",
@@ -5885,10 +5885,10 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/entity/PurpleStairsBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/purple_stairs.json",
           "src/main/resources/assets/forest/blockstates/purple_stairs.json",
           "src/main/resources/assets/forest/models/item/purple_stairs.json",
           "src/main/resources/assets/forest/models/block/purple_stairs_outer.json",
+          "src/main/resources/data/forest/loot_table/blocks/purple_stairs.json",
           "src/main/resources/assets/forest/models/block/purple_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PurpleStairsBlock.java",
           "src/main/resources/assets/forest/models/block/purple_stairs_inner.json"
@@ -5909,9 +5909,9 @@
           "src/main/resources/assets/forest/models/item/red_stairs.json",
           "src/main/resources/assets/forest/models/block/red_stairs_inner.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/RedStairsBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/red_stairs.json",
           "src/main/resources/assets/forest/models/block/red_stairs_outer.json",
-          "src/main/resources/assets/forest/models/block/red_stairs.json"
+          "src/main/resources/assets/forest/models/block/red_stairs.json",
+          "src/main/resources/data/forest/loot_table/blocks/red_stairs.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedStairs"
@@ -5925,10 +5925,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/item/white_stairs.json",
-          "src/main/resources/data/forest/loot_tables/blocks/white_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/WhiteStairsBlockEntity.java",
           "src/main/resources/assets/forest/models/block/white_stairs_inner.json",
           "src/main/resources/assets/forest/blockstates/white_stairs.json",
+          "src/main/resources/data/forest/loot_table/blocks/white_stairs.json",
           "src/main/resources/assets/forest/models/block/white_stairs_outer.json",
           "src/main/resources/assets/forest/models/block/white_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/WhiteStairsBlock.java"
@@ -5944,14 +5944,14 @@
       "registry_name": "yellow_stairs",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/yellow_stairs.json",
           "src/main/resources/assets/forest/models/item/yellow_stairs.json",
           "src/main/resources/assets/forest/models/block/yellow_stairs_inner.json",
           "src/main/resources/assets/forest/blockstates/yellow_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/YellowStairsBlockEntity.java",
           "src/main/java/ru/power_umc/forestxreborn/block/YellowStairsBlock.java",
           "src/main/resources/assets/forest/models/block/yellow_stairs.json",
-          "src/main/resources/assets/forest/models/block/yellow_stairs_outer.json",
-          "src/main/resources/data/forest/loot_tables/blocks/yellow_stairs.json"
+          "src/main/resources/assets/forest/models/block/yellow_stairs_outer.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedStairs"
@@ -5964,11 +5964,11 @@
       "registry_name": "black_slab",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/black_slab.json",
           "src/main/resources/assets/forest/models/block/black_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/BlackSlabBlockEntity.java",
           "src/main/resources/assets/forest/models/item/black_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BlackSlabBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/black_slab.json",
           "src/main/resources/assets/forest/models/block/black_slab_full.json",
           "src/main/resources/assets/forest/models/block/black_slab_top.json",
           "src/main/resources/assets/forest/blockstates/black_slab.json"
@@ -5984,10 +5984,10 @@
       "registry_name": "blue_slab",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/blue_slab.json",
           "src/main/resources/assets/forest/models/block/blue_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BlueSlabBlock.java",
           "src/main/resources/assets/forest/models/item/blue_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/blue_slab.json",
           "src/main/resources/assets/forest/blockstates/blue_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/BlueSlabBlockEntity.java",
           "src/main/resources/assets/forest/models/block/blue_slab_top.json",
@@ -6005,8 +6005,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/brown_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/brown_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/BrownSlabBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/brown_slab.json",
           "src/main/resources/assets/forest/models/block/brown_slab_full.json",
           "src/main/resources/assets/forest/models/item/brown_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BrownSlabBlock.java",
@@ -6026,11 +6026,11 @@
         "files": [
           "src/main/resources/assets/forest/models/block/cyan_slab_full.json",
           "src/main/resources/assets/forest/blockstates/cyan_slab.json",
+          "src/main/resources/data/forest/loot_table/blocks/cyan_slab.json",
           "src/main/resources/assets/forest/models/block/cyan_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/CyanSlabBlock.java",
           "src/main/resources/assets/forest/models/item/cyan_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/CyanSlabBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/cyan_slab.json",
           "src/main/resources/assets/forest/models/block/cyan_slab_top.json"
         ]
       },
@@ -6048,9 +6048,9 @@
           "src/main/resources/assets/forest/models/block/gray_slab.json",
           "src/main/resources/assets/forest/models/block/gray_slab_full.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/GraySlabBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/gray_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/GraySlabBlock.java",
           "src/main/resources/assets/forest/models/block/gray_slab_top.json",
+          "src/main/resources/data/forest/loot_table/blocks/gray_slab.json",
           "src/main/resources/assets/forest/blockstates/gray_slab.json"
         ]
       },
@@ -6064,11 +6064,11 @@
       "registry_name": "green_slab",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/green_slab.json",
           "src/main/resources/assets/forest/models/block/green_slab.json",
           "src/main/resources/assets/forest/models/item/green_slab.json",
           "src/main/resources/assets/forest/blockstates/green_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/GreenSlabBlockEntity.java",
+          "src/main/resources/data/forest/loot_table/blocks/green_slab.json",
           "src/main/resources/assets/forest/models/block/green_slab_top.json",
           "src/main/java/ru/power_umc/forestxreborn/block/GreenSlabBlock.java",
           "src/main/resources/assets/forest/models/block/green_slab_full.json"
@@ -6084,14 +6084,14 @@
       "registry_name": "light_blue_slab",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/light_blue_slab.json",
           "src/main/resources/assets/forest/models/block/light_blue_slab_full.json",
           "src/main/java/ru/power_umc/forestxreborn/block/LightBlueSlabBlock.java",
           "src/main/resources/assets/forest/models/item/light_blue_slab.json",
           "src/main/resources/assets/forest/models/block/light_blue_slab_top.json",
           "src/main/resources/assets/forest/blockstates/light_blue_slab.json",
           "src/main/resources/assets/forest/models/block/light_blue_slab.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/entity/LightBlueSlabBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/light_blue_slab.json"
+          "src/main/java/ru/power_umc/forestxreborn/block/entity/LightBlueSlabBlockEntity.java"
         ]
       },
       "path": "~/PaintedBlocks/PaintedSlabs"
@@ -6106,11 +6106,11 @@
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/entity/LightGraySlabBlockEntity.java",
           "src/main/resources/assets/forest/models/item/light_gray_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/light_gray_slab.json",
           "src/main/resources/assets/forest/models/block/light_gray_slab_top.json",
           "src/main/resources/assets/forest/models/block/light_gray_slab_full.json",
           "src/main/resources/assets/forest/blockstates/light_gray_slab.json",
           "src/main/resources/assets/forest/models/block/light_gray_slab.json",
+          "src/main/resources/data/forest/loot_table/blocks/light_gray_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/LightGraySlabBlock.java"
         ]
       },
@@ -6130,7 +6130,7 @@
           "src/main/resources/assets/forest/models/item/lime_slab.json",
           "src/main/resources/assets/forest/models/block/lime_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/LimeSlabBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/lime_slab.json",
+          "src/main/resources/data/forest/loot_table/blocks/lime_slab.json",
           "src/main/resources/assets/forest/blockstates/lime_slab.json"
         ]
       },
@@ -6147,11 +6147,11 @@
           "src/main/java/ru/power_umc/forestxreborn/block/entity/MagentaSlabBlockEntity.java",
           "src/main/resources/assets/forest/models/block/magenta_slab.json",
           "src/main/resources/assets/forest/models/block/magenta_slab_top.json",
-          "src/main/resources/data/forest/loot_tables/blocks/magenta_slab.json",
           "src/main/resources/assets/forest/blockstates/magenta_slab.json",
           "src/main/resources/assets/forest/models/block/magenta_slab_full.json",
           "src/main/resources/assets/forest/models/item/magenta_slab.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/MagentaSlabBlock.java"
+          "src/main/java/ru/power_umc/forestxreborn/block/MagentaSlabBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/magenta_slab.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedSlabs"
@@ -6164,10 +6164,10 @@
       "registry_name": "orange_slab",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/orange_slab.json",
           "src/main/resources/assets/forest/models/item/orange_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/OrangeSlabBlock.java",
           "src/main/resources/assets/forest/models/block/orange_slab_top.json",
-          "src/main/resources/data/forest/loot_tables/blocks/orange_slab.json",
           "src/main/resources/assets/forest/models/block/orange_slab.json",
           "src/main/resources/assets/forest/models/block/orange_slab_full.json",
           "src/main/resources/assets/forest/blockstates/orange_slab.json",
@@ -6185,9 +6185,9 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/entity/PinkSlabBlockEntity.java",
-          "src/main/resources/data/forest/loot_tables/blocks/pink_slab.json",
           "src/main/resources/assets/forest/blockstates/pink_slab.json",
           "src/main/resources/assets/forest/models/item/pink_slab.json",
+          "src/main/resources/data/forest/loot_table/blocks/pink_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PinkSlabBlock.java",
           "src/main/resources/assets/forest/models/block/pink_slab_full.json",
           "src/main/resources/assets/forest/models/block/pink_slab.json",
@@ -6208,8 +6208,8 @@
           "src/main/resources/assets/forest/models/block/purple_slab_top.json",
           "src/main/resources/assets/forest/models/block/purple_slab_full.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PurpleSlabBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/purple_slab.json",
           "src/main/resources/assets/forest/blockstates/purple_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/purple_slab.json",
           "src/main/resources/assets/forest/models/block/purple_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/PurpleSlabBlockEntity.java"
         ]
@@ -6225,11 +6225,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/red_slab_top.json",
+          "src/main/resources/data/forest/loot_table/blocks/red_slab.json",
           "src/main/resources/assets/forest/models/block/red_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/RedSlabBlockEntity.java",
           "src/main/resources/assets/forest/models/item/red_slab.json",
           "src/main/resources/assets/forest/models/block/red_slab_full.json",
-          "src/main/resources/data/forest/loot_tables/blocks/red_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RedSlabBlock.java",
           "src/main/resources/assets/forest/blockstates/red_slab.json"
         ]
@@ -6246,12 +6246,12 @@
         "files": [
           "src/main/resources/assets/forest/models/block/white_slab.json",
           "src/main/java/ru/power_umc/forestxreborn/block/WhiteSlabBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/white_slab.json",
           "src/main/resources/assets/forest/models/block/white_slab_top.json",
           "src/main/resources/assets/forest/blockstates/white_slab.json",
           "src/main/resources/assets/forest/models/block/white_slab_full.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/WhiteSlabBlockEntity.java",
-          "src/main/resources/assets/forest/models/item/white_slab.json"
+          "src/main/resources/assets/forest/models/item/white_slab.json",
+          "src/main/resources/data/forest/loot_table/blocks/white_slab.json"
         ]
       },
       "path": "~/PaintedBlocks/PaintedSlabs"
@@ -6269,8 +6269,8 @@
           "src/main/java/ru/power_umc/forestxreborn/block/entity/YellowSlabBlockEntity.java",
           "src/main/resources/assets/forest/models/block/yellow_slab_top.json",
           "src/main/resources/assets/forest/blockstates/yellow_slab.json",
+          "src/main/resources/data/forest/loot_table/blocks/yellow_slab.json",
           "src/main/resources/assets/forest/models/item/yellow_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/yellow_slab.json",
           "src/main/resources/assets/forest/models/block/yellow_slab.json"
         ]
       },
@@ -6485,7 +6485,7 @@
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/EucalyptusSaplingBlock.java",
           "src/main/resources/assets/forest/models/block/eucalyptus_sapling.json",
-          "src/main/resources/data/forest/loot_tables/blocks/eucalyptus_sapling.json",
+          "src/main/resources/data/forest/loot_table/blocks/eucalyptus_sapling.json",
           "src/main/resources/assets/forest/blockstates/eucalyptus_sapling.json",
           "src/main/resources/assets/forest/models/item/eucalyptus_sapling.json"
         ]
@@ -6562,9 +6562,9 @@
       "registry_name": "grape_vine_0",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/grape_vine_0.json",
           "src/main/resources/assets/forest/models/block/grape_vine_0.json",
           "src/main/java/ru/power_umc/forestxreborn/block/GrapeVine0Block.java",
+          "src/main/resources/data/forest/loot_table/blocks/grape_vine_0.json",
           "src/main/resources/assets/forest/blockstates/grape_vine_0.json",
           "src/main/resources/assets/forest/models/item/grape_vine_0.json"
         ]
@@ -6612,7 +6612,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/blockstates/grape_vine_1.json",
-          "src/main/resources/data/forest/loot_tables/blocks/grape_vine_1.json",
+          "src/main/resources/data/forest/loot_table/blocks/grape_vine_1.json",
           "src/main/resources/assets/forest/models/block/grape_vine_1.json",
           "src/main/resources/assets/forest/models/item/grape_vine_1.json",
           "src/main/java/ru/power_umc/forestxreborn/block/GrapeVine1Block.java"
@@ -6911,7 +6911,7 @@
     {
       "name": "AshBlock",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ash_block",
       "metadata": {
@@ -6920,7 +6920,7 @@
           "src/main/resources/assets/forest/blockstates/ash_block.json",
           "src/main/resources/assets/forest/models/block/ash_block.json",
           "src/main/resources/assets/forest/models/item/ash_block.json",
-          "src/main/resources/data/forest/loot_tables/blocks/ash_block.json"
+          "src/main/resources/data/forest/loot_table/blocks/ash_block.json"
         ]
       },
       "path": "~/Pumice"
@@ -7057,8 +7057,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/ash_cover.json",
-          "src/main/resources/data/forest/loot_tables/blocks/ash_cover.json",
           "src/main/java/ru/power_umc/forestxreborn/block/AshCoverBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/ash_cover.json",
           "src/main/resources/assets/forest/models/item/ash_cover.json",
           "src/main/resources/assets/forest/blockstates/ash_cover.json"
         ]
@@ -7107,10 +7107,10 @@
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/FermentationBarrelBlock.java",
           "src/main/resources/assets/forest/models/item/fermentation_barrel.json",
+          "src/main/resources/data/forest/loot_table/blocks/fermentation_barrel.json",
           "src/main/resources/assets/forest/blockstates/fermentation_barrel.json",
           "src/main/java/ru/power_umc/forestxreborn/block/entity/FermentationBarrelBlockEntity.java",
-          "src/main/resources/assets/forest/models/block/fermentation_barrel.json",
-          "src/main/resources/data/forest/loot_tables/blocks/fermentation_barrel.json"
+          "src/main/resources/assets/forest/models/block/fermentation_barrel.json"
         ]
       },
       "path": "~/AlcoholMechanics/FermentationBarrel"
@@ -7245,7 +7245,7 @@
     {
       "name": "Snail",
       "type": "animatedentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "snail",
       "metadata": {
@@ -7262,7 +7262,7 @@
     {
       "name": "FireSalamander",
       "type": "animatedentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "fire_salamander",
       "metadata": {
@@ -7324,7 +7324,7 @@
     {
       "name": "Fennec",
       "type": "animatedentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "fennec",
       "metadata": {
@@ -7341,7 +7341,7 @@
     {
       "name": "BrownBear",
       "type": "animatedentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "brown_bear",
       "metadata": {
@@ -7413,8 +7413,8 @@
       "registry_name": "brown_bear_carpet",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/brown_bear_carpet.json",
           "src/main/resources/assets/forest/models/block/brown_bear_carpet.json",
-          "src/main/resources/data/forest/loot_tables/blocks/brown_bear_carpet.json",
           "src/main/resources/assets/forest/models/item/brown_bear_carpet.json",
           "src/main/resources/assets/forest/blockstates/brown_bear_carpet.json",
           "src/main/java/ru/power_umc/forestxreborn/block/BrownBearCarpetBlock.java"
@@ -7431,8 +7431,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/item/polar_bear_carpet.json",
-          "src/main/resources/data/forest/loot_tables/blocks/polar_bear_carpet.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PolarBearCarpetBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/polar_bear_carpet.json",
           "src/main/resources/assets/forest/blockstates/polar_bear_carpet.json",
           "src/main/resources/assets/forest/models/block/polar_bear_carpet.json"
         ]
@@ -7483,14 +7483,14 @@
     {
       "name": "WhiteRoseBush",
       "type": "plant",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "white_rose_bush",
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/white_rose_bush_bottom.json",
           "src/main/resources/data/forest/neoforge/biome_modifier/white_rose_bush_biome_modifier.json",
-          "src/main/resources/data/forest/loot_tables/blocks/white_rose_bush.json",
+          "src/main/resources/data/forest/loot_table/blocks/white_rose_bush.json",
           "src/main/resources/data/forest/worldgen/configured_feature/white_rose_bush.json",
           "src/main/resources/data/forest/worldgen/placed_feature/white_rose_bush.json",
           "src/main/resources/assets/forest/blockstates/white_rose_bush.json",
@@ -7504,18 +7504,18 @@
     {
       "name": "PinkRoseBush",
       "type": "plant",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "pink_rose_bush",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/pink_rose_bush.json",
           "src/main/resources/data/forest/worldgen/configured_feature/pink_rose_bush.json",
           "src/main/java/ru/power_umc/forestxreborn/block/PinkRoseBushBlock.java",
           "src/main/resources/data/forest/worldgen/placed_feature/pink_rose_bush.json",
           "src/main/resources/data/forest/neoforge/biome_modifier/pink_rose_bush_biome_modifier.json",
           "src/main/resources/assets/forest/models/item/pink_rose_bush.json",
           "src/main/resources/assets/forest/models/block/pink_rose_bush_bottom.json",
+          "src/main/resources/data/forest/loot_table/blocks/pink_rose_bush.json",
           "src/main/resources/assets/forest/models/block/pink_rose_bush.json",
           "src/main/resources/assets/forest/blockstates/pink_rose_bush.json"
         ]
@@ -7530,9 +7530,9 @@
       "registry_name": "mulberry_wood",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_wood.json",
           "src/main/resources/assets/forest/blockstates/mulberry_wood.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MulberryWoodBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_wood.json",
           "src/main/resources/assets/forest/models/item/mulberry_wood.json",
           "src/main/resources/assets/forest/models/block/mulberry_wood.json"
         ]
@@ -7550,7 +7550,7 @@
           "src/main/resources/assets/forest/models/item/mulberry_log.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MulberryLogBlock.java",
           "src/main/resources/assets/forest/blockstates/mulberry_log.json",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_log.json",
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_log.json",
           "src/main/resources/assets/forest/models/block/mulberry_log.json"
         ]
       },
@@ -7565,9 +7565,9 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/MulberryPlanksBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_planks.json",
           "src/main/resources/assets/forest/models/block/mulberry_planks.json",
           "src/main/resources/assets/forest/models/item/mulberry_planks.json",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_planks.json",
           "src/main/resources/assets/forest/blockstates/mulberry_planks.json"
         ]
       },
@@ -7582,10 +7582,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/item/mulberry_stairs.json",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_stairs.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MulberryStairsBlock.java",
           "src/main/resources/assets/forest/models/block/mulberry_stairs_outer.json",
           "src/main/resources/assets/forest/blockstates/mulberry_stairs.json",
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_stairs.json",
           "src/main/resources/assets/forest/models/block/mulberry_stairs.json",
           "src/main/resources/assets/forest/models/block/mulberry_stairs_inner.json"
         ]
@@ -7602,9 +7602,9 @@
         "files": [
           "src/main/resources/assets/forest/models/block/mulberry_slab_full.json",
           "src/main/resources/assets/forest/blockstates/mulberry_slab.json",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_slab.json",
           "src/main/resources/assets/forest/models/block/mulberry_slab_top.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MulberrySlabBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_slab.json",
           "src/main/resources/assets/forest/models/block/mulberry_slab.json",
           "src/main/resources/assets/forest/models/item/mulberry_slab.json"
         ]
@@ -7620,9 +7620,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/block/mulberry_fence.json",
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_fence.json",
           "src/main/resources/assets/forest/models/item/mulberry_fence.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MulberryFenceBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_fence.json",
           "src/main/resources/assets/forest/models/block/mulberry_fence_post.json",
           "src/main/resources/assets/forest/blockstates/mulberry_fence.json",
           "src/main/resources/assets/forest/models/block/mulberry_fence_inventory.json"
@@ -7638,12 +7638,12 @@
       "registry_name": "mulberry_fence_gate",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_fence_gate.json",
           "src/main/resources/assets/forest/models/block/mulberry_fence_gate_wall_open.json",
           "src/main/resources/assets/forest/blockstates/mulberry_fence_gate.json",
           "src/main/resources/assets/forest/models/block/mulberry_fence_gate.json",
           "src/main/resources/assets/forest/models/block/mulberry_fence_gate_wall.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MulberryFenceGateBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_fence_gate.json",
           "src/main/resources/assets/forest/models/block/mulberry_fence_gate_open.json",
           "src/main/resources/assets/forest/models/item/mulberry_fence_gate.json"
         ]
@@ -7660,9 +7660,9 @@
         "files": [
           "src/main/resources/assets/forest/models/block/mulberry_pressure_plate_down.json",
           "src/main/resources/assets/forest/models/block/mulberry_pressure_plate.json",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_pressure_plate.json",
           "src/main/resources/assets/forest/models/item/mulberry_pressure_plate.json",
           "src/main/resources/assets/forest/blockstates/mulberry_pressure_plate.json",
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_pressure_plate.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MulberryPressurePlateBlock.java"
         ]
       },
@@ -7678,11 +7678,11 @@
         "files": [
           "src/main/resources/assets/forest/blockstates/mulberry_button.json",
           "src/main/resources/assets/forest/models/block/mulberry_button_pressed.json",
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_button.json",
           "src/main/resources/assets/forest/models/block/mulberry_button.json",
           "src/main/resources/assets/forest/models/item/mulberry_button.json",
           "src/main/resources/assets/forest/models/block/mulberry_button_inventory.json",
-          "src/main/java/ru/power_umc/forestxreborn/block/MulberryButtonBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_button.json"
+          "src/main/java/ru/power_umc/forestxreborn/block/MulberryButtonBlock.java"
         ]
       },
       "path": "~/WoodSets/Mulberry Wood Set"
@@ -7816,7 +7816,7 @@
           "src/main/resources/assets/forest/models/block/mulberry_sapling.json",
           "src/main/resources/assets/forest/blockstates/mulberry_sapling.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MulberrySaplingBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_sapling.json"
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_sapling.json"
         ]
       },
       "path": "~/WoodSets/Mulberry Wood Set"
@@ -7862,10 +7862,10 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/MulberryLeavesWithWhiteBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_leaves_with_white.json",
           "src/main/resources/assets/forest/models/item/mulberry_leaves_with_white.json",
           "src/main/resources/assets/forest/models/block/mulberry_leaves_with_white.json",
-          "src/main/resources/assets/forest/blockstates/mulberry_leaves_with_white.json",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_leaves_with_white.json"
+          "src/main/resources/assets/forest/blockstates/mulberry_leaves_with_white.json"
         ]
       },
       "path": "~/WoodSets/Mulberry Wood Set"
@@ -7880,8 +7880,8 @@
         "files": [
           "src/main/resources/assets/forest/models/block/mulberry_leaves_with_black.json",
           "src/main/resources/assets/forest/blockstates/mulberry_leaves_with_black.json",
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_leaves_with_black.json",
           "src/main/resources/assets/forest/models/item/mulberry_leaves_with_black.json",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_leaves_with_black.json",
           "src/main/java/ru/power_umc/forestxreborn/block/MulberryLeavesWithBlackBlock.java"
         ]
       },
@@ -7896,10 +7896,10 @@
       "metadata": {
         "files": [
           "src/main/java/ru/power_umc/forestxreborn/block/MulberryParquetBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_parquet.json",
           "src/main/resources/assets/forest/models/item/mulberry_parquet.json",
           "src/main/resources/assets/forest/blockstates/mulberry_parquet.json",
-          "src/main/resources/assets/forest/models/block/mulberry_parquet.json"
+          "src/main/resources/assets/forest/models/block/mulberry_parquet.json",
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_parquet.json"
         ]
       },
       "path": "~/Parquet"
@@ -7931,9 +7931,9 @@
           "src/main/resources/assets/forest/models/block/mulberry_door_top_right_open.json",
           "src/main/resources/assets/forest/models/block/mulberry_door_top_left_open.json",
           "src/main/resources/assets/forest/models/block/mulberry_door_bottom_left.json",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_door.json",
           "src/main/resources/assets/forest/blockstates/mulberry_door.json",
           "src/main/resources/assets/forest/models/block/mulberry_door_bottom_left_open.json",
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_door.json",
           "src/main/resources/assets/forest/models/block/mulberry_door_bottom_right_open.json",
           "src/main/resources/assets/forest/models/item/mulberry_door.json",
           "src/main/resources/assets/forest/models/block/mulberry_door_top_right.json"
@@ -7953,7 +7953,7 @@
           "src/main/resources/assets/forest/blockstates/mulberry_trapdoor.json",
           "src/main/resources/assets/forest/models/block/mulberry_trapdoor.json",
           "src/main/resources/assets/forest/models/block/mulberry_trapdoor_open.json",
-          "src/main/resources/data/forest/loot_tables/blocks/mulberry_trapdoor.json",
+          "src/main/resources/data/forest/loot_table/blocks/mulberry_trapdoor.json",
           "src/main/resources/assets/forest/models/item/mulberry_trapdoor.json",
           "src/main/resources/assets/forest/models/block/mulberry_trapdoor_top.json"
         ]
@@ -7963,7 +7963,7 @@
     {
       "name": "WoodStrip",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "wood_strip",
       "metadata": {
@@ -8004,8 +8004,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/blockstates/stripped_mulberry_wood.json",
-          "src/main/resources/data/forest/loot_tables/blocks/stripped_mulberry_wood.json",
           "src/main/resources/assets/forest/models/item/stripped_mulberry_wood.json",
+          "src/main/resources/data/forest/loot_table/blocks/stripped_mulberry_wood.json",
           "src/main/java/ru/power_umc/forestxreborn/block/StrippedMulberryWoodBlock.java",
           "src/main/resources/assets/forest/models/block/stripped_mulberry_wood.json"
         ]
@@ -8023,7 +8023,7 @@
           "src/main/resources/assets/forest/blockstates/stripped_mulberry_log.json",
           "src/main/resources/assets/forest/models/block/stripped_mulberry_log.json",
           "src/main/java/ru/power_umc/forestxreborn/block/StrippedMulberryLogBlock.java",
-          "src/main/resources/data/forest/loot_tables/blocks/stripped_mulberry_log.json",
+          "src/main/resources/data/forest/loot_table/blocks/stripped_mulberry_log.json",
           "src/main/resources/assets/forest/models/item/stripped_mulberry_log.json"
         ]
       },
@@ -8254,7 +8254,7 @@
     {
       "name": "OrangeButterfly",
       "type": "animatedentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "orange_butterfly",
       "metadata": {
@@ -8271,7 +8271,7 @@
     {
       "name": "PinkButterfly",
       "type": "animatedentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "pink_butterfly",
       "metadata": {
@@ -8288,7 +8288,7 @@
     {
       "name": "BlueButterfly",
       "type": "animatedentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "blue_butterfly",
       "metadata": {
@@ -8305,7 +8305,7 @@
     {
       "name": "GreenButterfly",
       "type": "animatedentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "green_butterfly",
       "metadata": {
@@ -8322,7 +8322,7 @@
     {
       "name": "PurpleButterfly",
       "type": "animatedentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "purple_butterfly",
       "metadata": {
@@ -8352,7 +8352,7 @@
     {
       "name": "Calibri",
       "type": "animatedentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "calibri",
       "metadata": {
@@ -8369,7 +8369,7 @@
     {
       "name": "Vulture",
       "type": "animatedentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "vulture",
       "metadata": {
@@ -8405,10 +8405,10 @@
       "registry_name": "raspberry_bush_0",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/raspberry_bush_0.json",
           "src/main/resources/assets/forest/models/item/raspberry_bush_0.json",
           "src/main/resources/assets/forest/blockstates/raspberry_bush_0.json",
           "src/main/resources/assets/forest/models/block/raspberry_bush_0.json",
+          "src/main/resources/data/forest/loot_table/blocks/raspberry_bush_0.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RaspberryBush0Block.java"
         ]
       },
@@ -8488,8 +8488,8 @@
       "registry_name": "raspberry_bush_1",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/raspberry_bush_1.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RaspberryBush1Block.java",
-          "src/main/resources/data/forest/loot_tables/blocks/raspberry_bush_1.json",
           "src/main/resources/assets/forest/models/item/raspberry_bush_1.json",
           "src/main/resources/assets/forest/blockstates/raspberry_bush_1.json",
           "src/main/resources/assets/forest/models/block/raspberry_bush_1.json"
@@ -8508,7 +8508,7 @@
           "src/main/java/ru/power_umc/forestxreborn/block/RaspberryBush2Block.java",
           "src/main/resources/assets/forest/blockstates/raspberry_bush_2.json",
           "src/main/resources/assets/forest/models/item/raspberry_bush_2.json",
-          "src/main/resources/data/forest/loot_tables/blocks/raspberry_bush_2.json",
+          "src/main/resources/data/forest/loot_table/blocks/raspberry_bush_2.json",
           "src/main/resources/assets/forest/models/block/raspberry_bush_2.json"
         ]
       },
@@ -8522,9 +8522,9 @@
       "registry_name": "raspberry_bush_3",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/raspberry_bush_3.json",
           "src/main/resources/assets/forest/blockstates/raspberry_bush_3.json",
           "src/main/resources/assets/forest/models/item/raspberry_bush_3.json",
-          "src/main/resources/data/forest/loot_tables/blocks/raspberry_bush_3.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RaspberryBush3Block.java",
           "src/main/resources/assets/forest/models/block/raspberry_bush_3.json"
         ]
@@ -8682,7 +8682,7 @@
     {
       "name": "Rat",
       "type": "animatedentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "rat",
       "metadata": {
@@ -8699,18 +8699,18 @@
     {
       "name": "Cattail",
       "type": "plant",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "cattail",
       "metadata": {
         "files": [
           "src/main/resources/data/forest/neoforge/biome_modifier/cattail_biome_modifier.json",
-          "src/main/resources/data/forest/loot_tables/blocks/cattail.json",
           "src/main/resources/assets/forest/models/block/cattail.json",
           "src/main/resources/assets/forest/models/block/cattail_bottom.json",
           "src/main/resources/data/forest/worldgen/configured_feature/cattail.json",
           "src/main/resources/assets/forest/blockstates/cattail.json",
           "src/main/java/ru/power_umc/forestxreborn/block/CattailBlock.java",
+          "src/main/resources/data/forest/loot_table/blocks/cattail.json",
           "src/main/resources/assets/forest/models/item/cattail.json",
           "src/main/resources/data/forest/worldgen/placed_feature/cattail.json"
         ]
@@ -8720,7 +8720,7 @@
     {
       "name": "Crocodile",
       "type": "animatedentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crocodile",
       "metadata": {
@@ -9409,9 +9409,9 @@
       "registry_name": "rye_stage_0",
       "metadata": {
         "files": [
+          "src/main/resources/data/forest/loot_table/blocks/rye_stage_0.json",
           "src/main/resources/assets/forest/models/item/rye_stage_0.json",
           "src/main/resources/assets/forest/models/block/rye_stage_0.json",
-          "src/main/resources/data/forest/loot_tables/blocks/rye_stage_0.json",
           "src/main/resources/assets/forest/blockstates/rye_stage_0.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RyeStage0Block.java"
         ]
@@ -9428,7 +9428,7 @@
         "files": [
           "src/main/resources/assets/forest/models/block/rye_stage_1.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RyeStage1Block.java",
-          "src/main/resources/data/forest/loot_tables/blocks/rye_stage_1.json",
+          "src/main/resources/data/forest/loot_table/blocks/rye_stage_1.json",
           "src/main/resources/assets/forest/models/item/rye_stage_1.json",
           "src/main/resources/assets/forest/blockstates/rye_stage_1.json"
         ]
@@ -9444,7 +9444,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/blockstates/rye_stage_2.json",
-          "src/main/resources/data/forest/loot_tables/blocks/rye_stage_2.json",
+          "src/main/resources/data/forest/loot_table/blocks/rye_stage_2.json",
           "src/main/resources/assets/forest/models/block/rye_stage_2.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RyeStage2Block.java",
           "src/main/resources/assets/forest/models/item/rye_stage_2.json"
@@ -9462,8 +9462,8 @@
         "files": [
           "src/main/resources/assets/forest/models/block/rye_stage_3.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RyeStage3Block.java",
+          "src/main/resources/data/forest/loot_table/blocks/rye_stage_3.json",
           "src/main/resources/assets/forest/blockstates/rye_stage_3.json",
-          "src/main/resources/data/forest/loot_tables/blocks/rye_stage_3.json",
           "src/main/resources/assets/forest/models/item/rye_stage_3.json"
         ]
       },
@@ -9477,9 +9477,9 @@
       "registry_name": "rye_stage_4",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/rye_stage_4.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RyeStage4Block.java",
           "src/main/resources/assets/forest/models/block/rye_stage_4.json",
+          "src/main/resources/data/forest/loot_table/blocks/rye_stage_4.json",
           "src/main/resources/assets/forest/models/item/rye_stage_4.json",
           "src/main/resources/assets/forest/blockstates/rye_stage_4.json"
         ]
@@ -9495,7 +9495,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/forest/models/item/rye_stage_5.json",
-          "src/main/resources/data/forest/loot_tables/blocks/rye_stage_5.json",
+          "src/main/resources/data/forest/loot_table/blocks/rye_stage_5.json",
           "src/main/resources/assets/forest/models/block/rye_stage_5.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RyeStage5Block.java",
           "src/main/resources/assets/forest/blockstates/rye_stage_5.json"
@@ -9511,7 +9511,7 @@
       "registry_name": "rye_stage_6",
       "metadata": {
         "files": [
-          "src/main/resources/data/forest/loot_tables/blocks/rye_stage_6.json",
+          "src/main/resources/data/forest/loot_table/blocks/rye_stage_6.json",
           "src/main/resources/assets/forest/blockstates/rye_stage_6.json",
           "src/main/java/ru/power_umc/forestxreborn/block/RyeStage6Block.java",
           "src/main/resources/assets/forest/models/block/rye_stage_6.json",
@@ -9650,7 +9650,7 @@
     {
       "name": "ScrapingPaint",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "scraping_paint",
       "metadata": {
@@ -10628,12 +10628,12 @@
       "item_group.forest.tools_and_armor": "Инструменты и броня",
       "entity.forest.vulture": "Стервятник",
       "block.forest.charred_parquet": "Charred Parquet",
-      "item.forest.barbecue": "Шашлык",
       "item.forest.gingerbread_form_man": "Форма для пряника",
+      "item.forest.barbecue": "Шашлык",
       "block.forest.light_gray_stairs": "Светло-серые ступени",
-      "block.forest.sandslate_faceted_bricks": "Ограненные песчаносланцевые кирпичи",
-      "block.forest.waxed_exposed_copper_ladder": "Вощёная потемневшая медная лестница",
       "entity.forest.scorpion": "Скорпион",
+      "block.forest.waxed_exposed_copper_ladder": "Вощёная потемневшая медная лестница",
+      "block.forest.sandslate_faceted_bricks": "Ограненные песчаносланцевые кирпичи",
       "entity.forest.big_wither_skeleton": "Большой визер скелет",
       "block.forest.charred_button": "Charred Button",
       "subtitles.calibri.ambient": "",
@@ -10642,18 +10642,18 @@
       "block.forest.eucalyptus_wood": "Эвкалипт",
       "subtitles.lizard.hurt": "",
       "block.forest.polished_rhyolite_wall": "Ограда из полированного риолита",
-      "item_group.forest.interaction_blocks": "Блоки взаимодействия",
       "block.forest.pumice_bricks": "Пемзовые кирпичи",
+      "item_group.forest.interaction_blocks": "Блоки взаимодействия",
       "item.forest.quiver": "Колчан",
       "block.forest.white_slab": "Белая плита",
-      "block.forest.ash_cover": "Пепельный покров",
       "block.forest.wildflower": "Дикий цветок",
+      "block.forest.ash_cover": "Пепельный покров",
       "item.forest.iron_sickle": "Железный серп",
       "item.forest.silver_armor_boots": "Серебряные ботинки",
       "item.forest.scorpion_spawn_egg": "Яйцо призыва скорпиона",
       "block.forest.lime_fence": "Лаймовый забор",
-      "block.forest.mulberry_button": "Кнопка из шелковицы",
       "item.forest.brown_bear_pelt": "Шкура бурого медведя",
+      "block.forest.mulberry_button": "Кнопка из шелковицы",
       "item.forest.silver_shovel": "Серебряная лопата",
       "block.forest.light_blue_fence": "Голубой забор",
       "block.forest.polished_pumice_stairs": "Ступени из полированной пемзы",
@@ -10662,25 +10662,25 @@
       "block.forest.white_stairs": "Белые ступени",
       "biome.forest.dry_thorn_forest": "Сухой терновый лес",
       "item.forest.gingerbread_pine": "Пряник",
-      "item.forest.blueberry": "Черника",
       "block.forest.red_fence": "Красный забор",
-      "subtitles.lizard.ambient": "",
-      "block.forest.mulberry_fence": "Забор из шелковицы",
+      "item.forest.blueberry": "Черника",
       "item.forest.pink_butterfly_spawn_egg": "Яйцо призыва розовой бабочки",
-      "advancements.out_of_the_fire_and_into_the_flames.title": "Из огня да в полымя",
+      "block.forest.mulberry_fence": "Забор из шелковицы",
+      "subtitles.lizard.ambient": "",
       "desc.gingerbread_heart": "Сердце",
+      "advancements.out_of_the_fire_and_into_the_flames.title": "Из огня да в полымя",
       "item.forest.raspberry": "Малина",
       "entity.forest.snail": "Улитка",
       "item.forest.big_wither_skeleton_spawn_egg": "Big Wither Skeleton Spawn Egg",
       "subtitles.calibri.hurt": "",
       "item_group.forest.mobs": "Мобы",
-      "special_info.quiver.arrows_count": "Количество стрел: ",
       "item.forest.gingerbread_man": "Пряник",
+      "special_info.quiver.arrows_count": "Количество стрел: ",
       "item.forest.raw_gingerbread_heart": "Тесто для пряника",
       "block.forest.grape_vine_0": "Виноградная лоза",
       "item.forest.baby_skeleton_spawn_egg": "Baby Skeleton Spawn Egg",
-      "block.forest.mulberry_door": "Дверь из шелковицы",
       "item.forest.polar_bear_pelt": "Шкура белого медведя",
+      "block.forest.mulberry_door": "Дверь из шелковицы",
       "item.forest.lettuce_seed": "Семена салата",
       "block.forest.blue_fence": "Синий забор",
       "block.forest.grape_vine_1": "Grape Vine",
@@ -10701,8 +10701,8 @@
       "item.forest.rye": "Рожь",
       "advancements.paint_the_fence.descr": "Покрасьте забор любым красителем",
       "block.forest.burning_blossom": "Пылающий цветок",
-      "block.forest.light_gray_slab": "Светло-серая плита",
       "block.forest.sandslate_bricks_slab": "Плита из песчаносланцевых кирпичей",
+      "block.forest.light_gray_slab": "Светло-серая плита",
       "block.forest.light_gray_fence": "Светло-серый забор",
       "block.forest.rhyolite_bricks_wall": "Ограда из риолитовых кирпичей",
       "block.forest.truncated_pumice_slab": "Плита из усеченной пемзы",
@@ -10721,8 +10721,8 @@
       "entity.forest.rat": "Крыса",
       "block.forest.truncated_pumice": "Усеченная пемза",
       "entity.forest.fire_salamander": "Огненная саламандра",
-      "item.forest.wine": "Вино",
       "subtitles.rat.hurt": "",
+      "item.forest.wine": "Вино",
       "block.forest.eucalyptus_fence": "Забор из эвкалиптовых досок",
       "block.forest.light_blue_slab": "Голубая плита",
       "block.forest.yellow_fence_gate": "Жёлтая калитка",
@@ -10744,9 +10744,9 @@
       "block.forest.mulberry_leaves_with_black": "Листья шелковицы",
       "block.forest.red_fence_gate": "Красная калитка",
       "item.forest.lettuce": "Салат",
-      "item.forest.black_mulberry": "Чёрная шелковица",
-      "block.forest.moonshroom": "Луногриб",
       "block.forest.lettuce_stage_0": " ",
+      "block.forest.moonshroom": "Луногриб",
+      "item.forest.black_mulberry": "Чёрная шелковица",
       "block.forest.lettuce_stage_1": " ",
       "block.forest.orange_slab": "Оранжевая плита",
       "block.forest.oxidized_copper_ladder": "Окисленная медная лестница",
@@ -10775,8 +10775,8 @@
       "item.forest.green_butterfly_spawn_egg": "Яйцо призыва зеленой бабочки",
       "block.forest.lettuce_stage_2": " ",
       "block.forest.lettuce_stage_3": " ",
-      "block.forest.orange_fence_gate": "Оранжевая калитка",
       "block.forest.dense_web_with_spider": "Плотная паутина с пауком",
+      "block.forest.orange_fence_gate": "Оранжевая калитка",
       "block.forest.brown_planks": "Коричневые доски",
       "block.forest.rhyolite": "Риолит",
       "block.forest.light_blue_fence_gate": "Голубая калитка",
@@ -11046,12 +11046,12 @@
       "item_group.forest.tools_and_armor": "Tools \u0026 Armor",
       "entity.forest.vulture": "Vulture",
       "block.forest.charred_parquet": "Charred Parquet",
-      "item.forest.gingerbread_form_man": "Gingerbread Form",
       "item.forest.barbecue": "Barbecue",
+      "item.forest.gingerbread_form_man": "Gingerbread Form",
       "block.forest.light_gray_stairs": "Light Gray Stairs",
-      "block.forest.sandslate_faceted_bricks": "Faceted Sandslate Bricks",
-      "block.forest.waxed_exposed_copper_ladder": "Waxed Exposed Copper Ladder",
       "entity.forest.scorpion": "Scorpion",
+      "block.forest.waxed_exposed_copper_ladder": "Waxed Exposed Copper Ladder",
+      "block.forest.sandslate_faceted_bricks": "Faceted Sandslate Bricks",
       "entity.forest.big_wither_skeleton": "Big Wither Skeleton",
       "block.forest.charred_button": "Charred Button",
       "subtitles.calibri.ambient": "",
@@ -11060,18 +11060,18 @@
       "block.forest.eucalyptus_wood": "Eucalyptus Wood",
       "subtitles.lizard.hurt": "",
       "block.forest.polished_rhyolite_wall": "Polished Rhyolite Wall",
-      "item_group.forest.interaction_blocks": "Interaction Blocks",
       "block.forest.pumice_bricks": "Pumice Bricks",
+      "item_group.forest.interaction_blocks": "Interaction Blocks",
       "block.forest.white_slab": "White Slab",
       "item.forest.quiver": "Quiver",
-      "block.forest.wildflower": "Wildflower",
       "block.forest.ash_cover": "Ash Сover",
+      "block.forest.wildflower": "Wildflower",
       "item.forest.iron_sickle": "Iron Sickle",
       "item.forest.silver_armor_boots": "Silver Boots",
       "item.forest.scorpion_spawn_egg": "Scorpion Spawn Egg",
       "block.forest.lime_fence": "Lime Fence",
-      "item.forest.brown_bear_pelt": "Brown Bear Pelt",
       "block.forest.mulberry_button": "Mulberry Button",
+      "item.forest.brown_bear_pelt": "Brown Bear Pelt",
       "item.forest.silver_shovel": "Silver Shovel",
       "block.forest.light_blue_fence": "Light Blue Fence",
       "block.forest.polished_pumice_stairs": "Polished Pumice Stairs",
@@ -11080,25 +11080,25 @@
       "block.forest.white_stairs": "White Stairs",
       "biome.forest.dry_thorn_forest": "Dry Thorn Forest",
       "item.forest.gingerbread_pine": "Gingerbread",
-      "block.forest.red_fence": "Red Fence",
       "item.forest.blueberry": "Blueberry",
-      "item.forest.pink_butterfly_spawn_egg": "Pink Butterfly Spawn Egg",
-      "block.forest.mulberry_fence": "Mulberry Fence",
+      "block.forest.red_fence": "Red Fence",
       "subtitles.lizard.ambient": "",
-      "desc.gingerbread_heart": "Heart",
+      "block.forest.mulberry_fence": "Mulberry Fence",
+      "item.forest.pink_butterfly_spawn_egg": "Pink Butterfly Spawn Egg",
       "advancements.out_of_the_fire_and_into_the_flames.title": "Out of the fire and into the flames",
+      "desc.gingerbread_heart": "Heart",
       "item.forest.raspberry": "Raspberry",
       "entity.forest.snail": "Snail",
       "item.forest.big_wither_skeleton_spawn_egg": "Big Wither Skeleton Spawn Egg",
       "subtitles.calibri.hurt": "",
       "item_group.forest.mobs": "Mobs",
-      "item.forest.gingerbread_man": "Gingerbread",
       "special_info.quiver.arrows_count": "Amount of arrows:",
+      "item.forest.gingerbread_man": "Gingerbread",
       "item.forest.raw_gingerbread_heart": "Raw Gingerbread",
       "block.forest.grape_vine_0": "Grape Vine",
       "item.forest.baby_skeleton_spawn_egg": "Baby Skeleton Spawn Egg",
-      "item.forest.polar_bear_pelt": "Polar Bear Pelt",
       "block.forest.mulberry_door": "Mulberry Door",
+      "item.forest.polar_bear_pelt": "Polar Bear Pelt",
       "item.forest.lettuce_seed": "Lettuce Seed",
       "block.forest.blue_fence": "Blue Fence",
       "block.forest.grape_vine_1": "Grape Vine",
@@ -11119,8 +11119,8 @@
       "item.forest.rye": "Rye",
       "advancements.paint_the_fence.descr": "Paint the fence with any dye",
       "block.forest.burning_blossom": "Burning Blossom",
-      "block.forest.sandslate_bricks_slab": "Sandslate Bricks Slab",
       "block.forest.light_gray_slab": "Light Blue Slab",
+      "block.forest.sandslate_bricks_slab": "Sandslate Bricks Slab",
       "block.forest.light_gray_fence": "Light Gray Fence",
       "block.forest.rhyolite_bricks_wall": "Rhyolite Bricks Wall",
       "block.forest.truncated_pumice_slab": "Truncated Pumice Slab",
@@ -11139,8 +11139,8 @@
       "entity.forest.rat": "Rat",
       "block.forest.truncated_pumice": "Truncated Pumice",
       "entity.forest.fire_salamander": "Fire Salamander",
-      "subtitles.rat.hurt": "",
       "item.forest.wine": "Wine",
+      "subtitles.rat.hurt": "",
       "block.forest.eucalyptus_fence": "Eucalyptus Fence",
       "block.forest.light_blue_slab": "Light Blue Slab",
       "block.forest.yellow_fence_gate": "Yellow Fence Gate",
@@ -11162,9 +11162,9 @@
       "block.forest.mulberry_leaves_with_black": "Mulberry Leaves",
       "block.forest.red_fence_gate": "Red Fence Gate",
       "item.forest.lettuce": "Lettuce",
-      "block.forest.lettuce_stage_0": "Lettuce Stage 0",
-      "block.forest.moonshroom": "Moonshroom",
       "item.forest.black_mulberry": "BlackMulberry",
+      "block.forest.moonshroom": "Moonshroom",
+      "block.forest.lettuce_stage_0": "Lettuce Stage 0",
       "block.forest.lettuce_stage_1": "Lettuce Stage 1",
       "block.forest.orange_slab": "Orange Slab",
       "block.forest.oxidized_copper_ladder": "Oxidized Copper Ladder",
@@ -11193,8 +11193,8 @@
       "item.forest.green_butterfly_spawn_egg": "Green Butterfly Spawn Egg",
       "block.forest.lettuce_stage_2": "Lettuce Stage 2",
       "block.forest.lettuce_stage_3": "Lettuce Stage 3",
-      "block.forest.dense_web_with_spider": "Dense Web With Spider",
       "block.forest.orange_fence_gate": "Orange Fence Gate",
+      "block.forest.dense_web_with_spider": "Dense Web With Spider",
       "block.forest.brown_planks": "Brown Planks",
       "block.forest.rhyolite": "Rhyolite",
       "block.forest.light_blue_fence_gate": "Light Blue Fence Gate",
@@ -11699,9 +11699,9 @@
     "mcreatorDependencies": [
       "geckolib"
     ],
-    "currentGenerator": "neoforge-1.21",
+    "currentGenerator": "neoforge-1.21.1",
     "credits": "Created by Environment Studios",
     "modElementsPackage": "ru.power_umc.forestxreborn"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400233422
 }

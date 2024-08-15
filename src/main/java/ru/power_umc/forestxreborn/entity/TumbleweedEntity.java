@@ -29,6 +29,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -73,8 +74,8 @@ public class TumbleweedEntity extends PathfinderMob implements GeoEntity {
 		this.goalSelector.addGoal(2, new WaterAvoidingRandomStrollGoal(this, 1));
 	}
 
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+	protected void dropCustomDeathLoot(ServerLevel serverLevel, DamageSource source, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(serverLevel, source, recentlyHitIn);
 		this.spawnAtLocation(new ItemStack(Blocks.DEAD_BUSH));
 	}
 
