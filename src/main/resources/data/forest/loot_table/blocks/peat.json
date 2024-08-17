@@ -10,7 +10,7 @@
           "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 2
@@ -34,7 +34,7 @@
           "weight": 1,
           "functions": [
             {
-              "function": "set_count",
+              "function": "minecraft:set_count",
               "count": {
                 "min": 0,
                 "max": 1

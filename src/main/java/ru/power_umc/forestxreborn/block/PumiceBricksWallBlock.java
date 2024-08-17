@@ -8,6 +8,6 @@ import net.minecraft.world.level.block.SoundType;
 
 public class PumiceBricksWallBlock extends WallBlock {
 	public PumiceBricksWallBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.BASALT).strength(2f, 6f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.BASALT).strength(2f, 6f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 }

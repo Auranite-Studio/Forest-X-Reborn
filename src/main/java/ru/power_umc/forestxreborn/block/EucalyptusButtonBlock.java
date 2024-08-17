@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class EucalyptusButtonBlock extends ButtonBlock {
 	public EucalyptusButtonBlock() {
-		super(BlockSetType.OAK, 30, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape());
+		super(BlockSetType.OAK, 30, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
 	}
 
 	@Override

@@ -8,6 +8,6 @@ import net.minecraft.world.level.block.SlabBlock;
 
 public class SandslateBricksSlabBlock extends SlabBlock {
 	public SandslateBricksSlabBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(2f, 10f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(2f, 10f).requiresCorrectToolForDrops());
 	}
 }

@@ -8,6 +8,6 @@ import net.minecraft.world.level.block.SoundType;
 
 public class RhyoliteBricksWallBlock extends WallBlock {
 	public RhyoliteBricksWallBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 100f).dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 100f).forceSolidOn());
 	}
 }

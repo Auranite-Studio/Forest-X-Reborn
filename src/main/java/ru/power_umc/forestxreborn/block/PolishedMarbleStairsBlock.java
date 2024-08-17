@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.Blocks;
 
 public class PolishedMarbleStairsBlock extends StairBlock {
 	public PolishedMarbleStairsBlock() {
-		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.TUFF).strength(1.35f, 10f).dynamicShape());
+		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.TUFF).strength(1.35f, 10f));
 	}
 
 	@Override

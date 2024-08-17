@@ -40,9 +40,4 @@ public class DesertRoseBlock extends FlowerBlock {
 		BlockState groundState = worldIn.getBlockState(blockpos);
 		return this.mayPlaceOn(groundState, worldIn, blockpos);
 	}
-
-	@Override
-	public PlantType getPlantType(BlockGetter world, BlockPos pos) {
-		return PlantType.DESERT;
-	}
 }

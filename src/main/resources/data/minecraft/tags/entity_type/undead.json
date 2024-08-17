@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "forest:baby_wither_skeleton",
+    "forest:baby_skeleton",
+    "forest:big_wither_skeleton",
+    "forest:big_skeleton"
+  ]
+}

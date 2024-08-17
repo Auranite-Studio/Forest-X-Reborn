@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.Blocks;
 
 public class RhyoliteBricksStairsBlock extends StairBlock {
 	public RhyoliteBricksStairsBlock() {
-		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 100f).dynamicShape());
+		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 100f));
 	}
 
 	@Override

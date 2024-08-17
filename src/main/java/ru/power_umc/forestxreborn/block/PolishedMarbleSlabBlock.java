@@ -8,6 +8,6 @@ import net.minecraft.world.level.block.SlabBlock;
 
 public class PolishedMarbleSlabBlock extends SlabBlock {
 	public PolishedMarbleSlabBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.TUFF).strength(1.35f, 10f).dynamicShape());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.TUFF).strength(1.35f, 10f));
 	}
 }

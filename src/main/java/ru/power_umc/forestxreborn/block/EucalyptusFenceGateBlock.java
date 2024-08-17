@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class EucalyptusFenceGateBlock extends FenceGateBlock {
 	public EucalyptusFenceGateBlock() {
-		super(WoodType.OAK, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape().forceSolidOn());
+		super(WoodType.OAK, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn());
 	}
 
 	@Override

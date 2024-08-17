@@ -8,6 +8,6 @@ import net.minecraft.world.level.block.SoundType;
 
 public class PolishedSandslateWallBlock extends WallBlock {
 	public PolishedSandslateWallBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(2f, 10f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(2f, 10f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 }

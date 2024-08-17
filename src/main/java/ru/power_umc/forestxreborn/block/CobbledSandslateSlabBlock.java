@@ -8,6 +8,6 @@ import net.minecraft.world.level.block.SlabBlock;
 
 public class CobbledSandslateSlabBlock extends SlabBlock {
 	public CobbledSandslateSlabBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(2f, 10f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(2f, 10f).requiresCorrectToolForDrops());
 	}
 }

@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.Blocks;
 
 public class RedCrushedSandstoneStairsBlock extends StairBlock {
 	public RedCrushedSandstoneStairsBlock() {
-		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2.5f, 50f).requiresCorrectToolForDrops().dynamicShape());
+		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2.5f, 50f).requiresCorrectToolForDrops());
 	}
 
 	@Override

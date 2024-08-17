@@ -8,6 +8,6 @@ import net.minecraft.world.level.block.SoundType;
 
 public class CobbledSandslateWallBlock extends WallBlock {
 	public CobbledSandslateWallBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(2f, 10f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(2f, 10f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 }

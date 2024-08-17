@@ -16,9 +16,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.util.RandomSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -46,11 +46,8 @@ public class ScrapingPaintProcedure {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem
 					&& (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:painted_blocks")))) {
 				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
-					{
-						ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-						_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
-							_ist.shrink(1);
-							_ist.setDamageValue(0);
+					if (world instanceof ServerLevel _level) {
+						(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
 						});
 					}
 				}

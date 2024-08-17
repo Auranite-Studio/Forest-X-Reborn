@@ -8,6 +8,6 @@ import net.minecraft.world.level.block.SlabBlock;
 
 public class RhyoliteSlabBlock extends SlabBlock {
 	public RhyoliteSlabBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 100f).dynamicShape());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 100f));
 	}
 }

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "forest:raw_silver_block",
+    "forest:deepslate_silver_ore",
+    "forest:silver_block",
+    "forest:silver_ore"
+  ]
+}

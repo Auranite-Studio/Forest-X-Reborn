@@ -20,7 +20,7 @@ import net.minecraft.core.BlockPos;
 
 public class MagentaSlabBlock extends SlabBlock implements EntityBlock {
 	public MagentaSlabBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape());
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
 	}
 
 	@Override

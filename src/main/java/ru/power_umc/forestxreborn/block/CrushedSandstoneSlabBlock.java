@@ -8,6 +8,6 @@ import net.minecraft.world.level.block.SlabBlock;
 
 public class CrushedSandstoneSlabBlock extends SlabBlock {
 	public CrushedSandstoneSlabBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2.5f, 50f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2.5f, 50f).requiresCorrectToolForDrops());
 	}
 }

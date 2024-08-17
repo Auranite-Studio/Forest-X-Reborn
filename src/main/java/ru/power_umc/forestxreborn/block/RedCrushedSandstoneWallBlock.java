@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class RedCrushedSandstoneWallBlock extends WallBlock {
 	public RedCrushedSandstoneWallBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2.5f, 50f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2.5f, 50f).requiresCorrectToolForDrops().forceSolidOn());
 	}
 
 	@Override

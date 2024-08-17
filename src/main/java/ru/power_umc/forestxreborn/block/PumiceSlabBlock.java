@@ -8,6 +8,6 @@ import net.minecraft.world.level.block.SlabBlock;
 
 public class PumiceSlabBlock extends SlabBlock {
 	public PumiceSlabBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.BASALT).strength(2f, 6f).requiresCorrectToolForDrops().dynamicShape());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.BASALT).strength(2f, 6f).requiresCorrectToolForDrops());
 	}
 }

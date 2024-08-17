@@ -20,7 +20,7 @@ import net.minecraft.core.BlockPos;
 
 public class OrangeFenceBlock extends FenceBlock implements EntityBlock {
 	public OrangeFenceBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn());
 	}
 
 	@Override
