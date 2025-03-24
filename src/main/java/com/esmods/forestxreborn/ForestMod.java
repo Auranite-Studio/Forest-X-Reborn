@@ -1,6 +1,4 @@
-package ru.power_umc.forestxreborn;
-
-import ru.power_umc.forestxreborn.init.ForestModSounds;
+package com.esmods.forestxreborn;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -27,6 +25,8 @@ import java.util.List;
 import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
+
+import com.esmods.forestxreborn.init.ForestModSounds;
 
 @Mod("forest")
 public class ForestMod {
