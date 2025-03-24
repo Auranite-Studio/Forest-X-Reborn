@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "forest:block/eucalyptus_sapling",
-    "particle": "forest:block/eucalyptus_sapling"
-  },
-  "render_type": "cutout"
-}

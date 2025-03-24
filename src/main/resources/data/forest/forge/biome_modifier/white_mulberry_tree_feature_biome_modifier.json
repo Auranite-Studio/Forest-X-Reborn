@@ -1,9 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": [
-    "forest:old_growth_forest",
-    "forest:old_growth_oak_forest"
-  ],
-  "features": "forest:white_mulberry_tree_feature",
-  "step": "vegetal_decoration"
-}

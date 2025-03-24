@@ -1,9 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "forest:block/lime_planks",
-    "top": "forest:block/lime_planks",
-    "side": "forest:block/lime_planks"
-  },
-  "render_type": "solid"
-}

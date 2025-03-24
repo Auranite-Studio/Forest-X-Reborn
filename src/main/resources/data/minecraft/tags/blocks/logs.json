@@ -1,9 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "forest:eucalyptus_log",
-    "forest:stripped_eucalyptus_log",
-    "forest:mulberry_log",
-    "forest:stripped_mulberry_log"
-  ]
+  "values": []
 }

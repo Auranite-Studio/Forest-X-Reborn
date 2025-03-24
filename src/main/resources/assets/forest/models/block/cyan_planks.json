@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "forest:block/cyan_planks",
-    "particle": "forest:block/cyan_planks"
-  },
-  "render_type": "solid"
-}

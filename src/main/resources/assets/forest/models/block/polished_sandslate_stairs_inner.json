@@ -1,9 +1,0 @@
-{
-  "parent": "block/inner_stairs",
-  "textures": {
-    "bottom": "forest:block/polished_sandslate",
-    "top": "forest:block/polished_sandslate",
-    "side": "forest:block/polished_sandslate"
-  },
-  "render_type": "solid"
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/fence_side",
-  "textures": {
-    "texture": "forest:block/red_planks",
-    "particle": "forest:block/red_planks"
-  },
-  "render_type": "solid"
-}

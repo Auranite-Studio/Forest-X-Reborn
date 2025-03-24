@@ -1,9 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "forest:block/polished_sandslate",
-    "top": "forest:block/polished_sandslate",
-    "side": "forest:block/polished_sandslate"
-  },
-  "render_type": "solid"
-}

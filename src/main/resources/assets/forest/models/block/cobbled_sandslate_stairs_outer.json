@@ -1,9 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "forest:block/cobbled_sandslate",
-    "top": "forest:block/cobbled_sandslate",
-    "side": "forest:block/cobbled_sandslate"
-  },
-  "render_type": "solid"
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/template_wall_post",
-  "textures": {
-    "wall": "forest:block/cobbled_sandslate",
-    "particle": "forest:block/cobbled_sandslate"
-  },
-  "render_type": "solid"
-}

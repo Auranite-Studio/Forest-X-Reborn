@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "forest:item/grape_vine1"
-  },
-  "render_type": "translucent"
-}

@@ -1,9 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "forest:block/sandslate_bricks",
-    "top": "forest:block/sandslate_bricks",
-    "side": "forest:block/sandslate_bricks"
-  },
-  "render_type": "solid"
-}

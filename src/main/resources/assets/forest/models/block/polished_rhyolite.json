@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "forest:block/polished_rhyolite",
-    "particle": "forest:block/polished_rhyolite"
-  },
-  "render_type": "solid"
-}

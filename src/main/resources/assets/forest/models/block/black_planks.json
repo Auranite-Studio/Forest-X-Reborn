@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "forest:block/black_planks",
-    "particle": "forest:block/black_planks"
-  },
-  "render_type": "solid"
-}

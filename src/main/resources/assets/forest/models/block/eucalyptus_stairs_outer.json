@@ -1,9 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "forest:block/eucalyptus_planks",
-    "top": "forest:block/eucalyptus_planks",
-    "side": "forest:block/eucalyptus_planks"
-  },
-  "render_type": "solid"
-}

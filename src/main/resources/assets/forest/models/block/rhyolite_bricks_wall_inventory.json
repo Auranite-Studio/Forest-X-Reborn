@@ -1,8 +1,0 @@
-{
-  "parent": "block/wall_inventory",
-  "textures": {
-    "wall": "forest:block/rhyolite_bricks",
-    "particle": "forest:block/rhyolite_bricks"
-  },
-  "render_type": "solid"
-}

@@ -1,23 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "forest:eucalyptus_stairs",
-    "forest:black_stairs",
-    "forest:blue_stairs",
-    "forest:brown_stairs",
-    "forest:cyan_stairs",
-    "forest:gray_stairs",
-    "forest:green_stairs",
-    "forest:light_blue_stairs",
-    "forest:light_gray_stairs",
-    "forest:lime_stairs",
-    "forest:magenta_stairs",
-    "forest:orange_stairs",
-    "forest:pink_stairs",
-    "forest:purple_stairs",
-    "forest:red_stairs",
-    "forest:white_stairs",
-    "forest:yellow_stairs",
-    "forest:mulberry_stairs"
-  ]
+  "values": []
 }

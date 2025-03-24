@@ -1,8 +1,0 @@
-{
-  "parent": "block/wall_inventory",
-  "textures": {
-    "wall": "forest:block/marble_polished",
-    "particle": "forest:block/marble_polished"
-  },
-  "render_type": "solid"
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "forest:red_crushed_sandstone"
-  },
-  "result": "forest:red_crushed_sandstone_slab"
-}

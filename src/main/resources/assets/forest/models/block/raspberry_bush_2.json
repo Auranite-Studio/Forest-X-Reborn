@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "forest:block/raspberry_bush_stage_2",
-    "particle": "forest:block/raspberry_bush_stage_2"
-  },
-  "render_type": "cutout"
-}

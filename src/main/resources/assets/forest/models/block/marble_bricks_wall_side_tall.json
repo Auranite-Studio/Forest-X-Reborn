@@ -1,8 +1,0 @@
-{
-  "parent": "block/template_wall_side_tall",
-  "textures": {
-    "wall": "forest:block/marble_bricks",
-    "particle": "forest:block/marble_bricks"
-  },
-  "render_type": "solid"
-}

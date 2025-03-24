@@ -1,8 +1,0 @@
-{
-  "parent": "block/template_wall_post",
-  "textures": {
-    "wall": "forest:block/rhyolite",
-    "particle": "forest:block/rhyolite"
-  },
-  "render_type": "solid"
-}

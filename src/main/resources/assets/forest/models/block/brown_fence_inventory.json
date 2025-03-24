@@ -1,8 +1,0 @@
-{
-  "parent": "block/fence_inventory",
-  "textures": {
-    "texture": "forest:block/brown_planks",
-    "particle": "forest:block/brown_planks"
-  },
-  "render_type": "solid"
-}

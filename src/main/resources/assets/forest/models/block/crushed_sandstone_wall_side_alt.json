@@ -1,7 +1,0 @@
-{
-  "parent": "block/template_glass_pane_side_alt",
-  "textures": {
-    "edge": "forest:blocks/crushed_sandstone",
-    "pane": "forest:blocks/crushed_sandstone"
-  }
-}

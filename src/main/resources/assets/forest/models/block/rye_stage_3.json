@@ -1,8 +1,0 @@
-{
-  "parent": "block/crop",
-  "textures": {
-    "crop": "forest:block/rye_stage3",
-    "particle": "forest:block/rye_stage3"
-  },
-  "render_type": "cutout"
-}

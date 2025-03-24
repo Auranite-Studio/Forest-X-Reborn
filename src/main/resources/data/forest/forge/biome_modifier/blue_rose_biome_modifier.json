@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "forest:dry_thorn_forest",
-  "features": "forest:blue_rose",
-  "step": "vegetal_decoration"
-}

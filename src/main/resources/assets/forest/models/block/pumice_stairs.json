@@ -1,9 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "forest:block/pumice",
-    "top": "forest:block/pumice",
-    "side": "forest:block/pumice"
-  },
-  "render_type": "solid"
-}

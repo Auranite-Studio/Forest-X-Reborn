@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "forest:block/blueberry_bush0",
-    "particle": "forest:block/blueberry_bush0"
-  },
-  "render_type": "cutout"
-}

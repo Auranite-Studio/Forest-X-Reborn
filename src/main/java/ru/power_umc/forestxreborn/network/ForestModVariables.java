@@ -119,8 +119,8 @@ public class ForestModVariables {
 			return nbt;
 		}
 
-		public void readNBT(Tag Tag) {
-			CompoundTag nbt = (CompoundTag) Tag;
+		public void readNBT(Tag tag) {
+			CompoundTag nbt = (CompoundTag) tag;
 			alcohol = nbt.getDouble("alcohol");
 			alcoholTimer = nbt.getDouble("alcoholTimer");
 		}

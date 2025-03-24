@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "forest:block/lettuce_stage2",
-    "particle": "forest:block/lettuce_stage2"
-  },
-  "render_type": "cutout"
-}

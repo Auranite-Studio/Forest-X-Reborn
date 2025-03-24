@@ -1,24 +1,6 @@
 {
   "replace": false,
   "values": [
-    "forest:eucalyptus_fence",
-    "forest:black_fence",
-    "forest:blue_fence",
-    "forest:brown_fence",
-    "forest:cyan_fence",
-    "forest:gray_fence",
-    "forest:green_fence",
-    "forest:light_blue_fence",
-    "forest:light_gray_fence",
-    "forest:lime_fence",
-    "forest:magenta_fence",
-    "forest:orange_fence",
-    "forest:pink_fence",
-    "forest:purple_fence",
-    "forest:red_fence",
-    "forest:white_fence",
-    "forest:yellow_fence",
-    "forest:mulberry_fence",
     "minecraft:cherry_fence"
   ]
 }

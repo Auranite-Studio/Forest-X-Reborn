@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "forest:block/burning_blossom",
-    "particle": "forest:block/burning_blossom"
-  },
-  "render_type": "cutout"
-}

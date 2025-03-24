@@ -16,7 +16,7 @@
     "hidden": true
   },
   "criteria": {
-    "forest_x_starting": {
+    "forest_x_starting_0": {
       "trigger": "minecraft:impossible"
     }
   },
@@ -26,8 +26,8 @@
       "forest:silver_ore_block_recipe",
       "forest:silver_block_ore_recipe",
       "forest:silver_ore_smelting",
-      "forest:sapphire_ore_block_recipe",
-      "forest:sapphire_block_ore_recipe",
+      "forest:deleted_mod_element",
+      "forest:deleted_mod_element",
       "forest:silver_raw_smeting",
       "forest:peat_craft",
       "forest:polished_marble_craft",

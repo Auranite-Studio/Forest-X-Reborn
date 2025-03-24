@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "forest:block/eucalyptus_log_side",
-    "particle": "forest:block/eucalyptus_log_side"
-  },
-  "render_type": "solid"
-}

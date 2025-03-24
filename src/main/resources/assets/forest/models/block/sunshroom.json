@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "forest:block/sunshroom",
-    "particle": "forest:block/sunshroom"
-  },
-  "render_type": "cutout"
-}

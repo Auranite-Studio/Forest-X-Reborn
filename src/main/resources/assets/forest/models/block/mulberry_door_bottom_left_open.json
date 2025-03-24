@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_bottom_left_open",
-  "textures": {
-    "bottom": "forest:block/mulberry_door_lower",
-    "top": "forest:block/mulberry_door_upper"
-  },
-  "render_type": "cutout"
-}

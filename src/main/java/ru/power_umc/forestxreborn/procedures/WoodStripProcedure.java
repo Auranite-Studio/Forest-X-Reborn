@@ -1,7 +1,5 @@
 package ru.power_umc.forestxreborn.procedures;
 
-import ru.power_umc.forestxreborn.init.ForestModBlocks;
-
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -45,7 +43,7 @@ public class WoodStripProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem && ForestModBlocks.EUCALYPTUS_LOG.get() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem && ForestModItems.EUCALYPTUS_LOG.get() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
@@ -64,7 +62,7 @@ public class WoodStripProcedure {
 			}
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = ForestModBlocks.STRIPPED_EUCALYPTUS_LOG.get().defaultBlockState();
+				BlockState _bs = ForestModItems.STRIPPED_EUCALYPTUS_LOG.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -97,7 +95,7 @@ public class WoodStripProcedure {
 			if (world instanceof Level _level)
 				_level.updateNeighborsAt(BlockPos.containing(x, y, z), _level.getBlockState(BlockPos.containing(x, y, z)).getBlock());
 		}
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem && ForestModBlocks.EUCALYPTUS_WOOD.get() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem && ForestModItems.EUCALYPTUS_WOOD.get() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
@@ -116,7 +114,7 @@ public class WoodStripProcedure {
 			}
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = ForestModBlocks.STRIPPED_EUCALYPTUS_WOOD.get().defaultBlockState();
+				BlockState _bs = ForestModItems.STRIPPED_EUCALYPTUS_WOOD.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -149,7 +147,7 @@ public class WoodStripProcedure {
 			if (world instanceof Level _level)
 				_level.updateNeighborsAt(BlockPos.containing(x, y, z), _level.getBlockState(BlockPos.containing(x, y, z)).getBlock());
 		}
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem && ForestModBlocks.MULBERRY_WOOD.get() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem && ForestModItems.MULBERRY_WOOD.get() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
@@ -168,7 +166,7 @@ public class WoodStripProcedure {
 			}
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = ForestModBlocks.STRIPPED_MULBERRY_WOOD.get().defaultBlockState();
+				BlockState _bs = ForestModItems.STRIPPED_MULBERRY_WOOD.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -201,7 +199,7 @@ public class WoodStripProcedure {
 			if (world instanceof Level _level)
 				_level.updateNeighborsAt(BlockPos.containing(x, y, z), _level.getBlockState(BlockPos.containing(x, y, z)).getBlock());
 		}
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem && ForestModBlocks.MULBERRY_LOG.get() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem && ForestModItems.MULBERRY_LOG.get() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock()) {
 			if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
@@ -220,7 +218,7 @@ public class WoodStripProcedure {
 			}
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = ForestModBlocks.STRIPPED_MULBERRY_LOG.get().defaultBlockState();
+				BlockState _bs = ForestModItems.STRIPPED_MULBERRY_LOG.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());

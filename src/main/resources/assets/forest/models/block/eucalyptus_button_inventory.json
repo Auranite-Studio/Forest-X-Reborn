@@ -1,7 +1,0 @@
-{
-  "parent": "block/button_inventory",
-  "textures": {
-    "texture": "forest:block/eucalyptus_planks"
-  },
-  "render_type": "solid"
-}

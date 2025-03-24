@@ -1,9 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "forest:block/marble_bricks",
-    "top": "forest:block/marble_bricks",
-    "side": "forest:block/marble_bricks"
-  },
-  "render_type": "solid"
-}

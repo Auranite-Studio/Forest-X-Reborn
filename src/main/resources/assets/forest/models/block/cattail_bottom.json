@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "forest:block/cattail_lower",
-    "particle": "forest:block/cattail_lower"
-  },
-  "render_type": "cutout"
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/fence_post",
-  "textures": {
-    "texture": "forest:block/lime_planks",
-    "particle": "forest:block/lime_planks"
-  },
-  "render_type": "solid"
-}
