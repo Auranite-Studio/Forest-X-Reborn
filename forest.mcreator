@@ -1,19 +1,6 @@
 {
   "mod_elements": [],
-  "variable_elements": [
-    {
-      "name": "alcohol",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "alcoholTimer",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "2400.0"
-    }
-  ],
+  "variable_elements": [],
   "sound_elements": [
     {
       "name": "lizard.ambient",
@@ -105,26 +92,6 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:minecraft:planks": [
-      "CUSTOM:BlackPlanks",
-      "CUSTOM:BluePlanks",
-      "CUSTOM:BrownPlanks",
-      "CUSTOM:CyanPlanks",
-      "CUSTOM:GrayPlanks",
-      "CUSTOM:GreenPlanks",
-      "CUSTOM:LightBluePlanks",
-      "CUSTOM:LightGrayPlanks",
-      "CUSTOM:LimePlanks",
-      "CUSTOM:MagentaPlanks",
-      "CUSTOM:OrangePlanks",
-      "CUSTOM:PinkPlanks",
-      "CUSTOM:PurplePlanks",
-      "CUSTOM:RedPlanks",
-      "CUSTOM:WhitePlanks",
-      "CUSTOM:YellowPlanks",
-      "CUSTOM:EucalyptusPlanks",
-      "CUSTOM:MulberryPlanks"
-    ],
     "BLOCKS:minecraft:wooden_stairs": [
       "CUSTOM:EucalyptusStairs",
       "CUSTOM:BlackStairs",
@@ -151,25 +118,6 @@
       "CUSTOM:MulberryLog",
       "CUSTOM:StrippedMulberryLog"
     ],
-    "BLOCKS:minecraft:wooden_slabs": [
-      "CUSTOM:EucalyptusSlab",
-      "CUSTOM:BlackSlab",
-      "CUSTOM:BlueSlab",
-      "CUSTOM:BrownSlab",
-      "CUSTOM:CyanSlab",
-      "CUSTOM:GraySlab",
-      "CUSTOM:GreenSlab",
-      "CUSTOM:LightBlueSlab",
-      "CUSTOM:LightGraySlab",
-      "CUSTOM:LimeSlab",
-      "CUSTOM:MagentaSlab",
-      "CUSTOM:OrangeSlab",
-      "CUSTOM:PinkSlab",
-      "CUSTOM:PurpleSlab",
-      "CUSTOM:RedSlab",
-      "CUSTOM:WhiteSlab",
-      "CUSTOM:YellowSlab"
-    ],
     "BLOCKS:minecraft:wooden_fences": [
       "CUSTOM:EucalyptusFence",
       "CUSTOM:BlackFence",
@@ -189,27 +137,6 @@
       "CUSTOM:WhiteFence",
       "CUSTOM:YellowFence",
       "CUSTOM:MulberryFence"
-    ],
-    "BLOCKS:minecraft:fences": [
-      "CUSTOM:EucalyptusFence",
-      "CUSTOM:BlackFence",
-      "CUSTOM:BlueFence",
-      "CUSTOM:BrownFence",
-      "CUSTOM:CyanFence",
-      "CUSTOM:GrayFence",
-      "CUSTOM:GreenFence",
-      "CUSTOM:LightBlueFence",
-      "CUSTOM:LightGrayFence",
-      "CUSTOM:LimeFence",
-      "CUSTOM:MagentaFence",
-      "CUSTOM:OrangeFence",
-      "CUSTOM:PinkFence",
-      "CUSTOM:PurpleFence",
-      "CUSTOM:RedFence",
-      "CUSTOM:WhiteFence",
-      "CUSTOM:YellowFence",
-      "CUSTOM:MulberryFence",
-      "Blocks.CHERRY_FENCE"
     ],
     "BLOCKS:minecraft:planks": [
       "CUSTOM:BlackPlanks",
