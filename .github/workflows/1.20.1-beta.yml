@@ -1,0 +1,61 @@
+# Automatically builds and publishes the mod when a new release is created on GitHub.
+# It uploads the mod to GitHub, CurseForge and Modrinth.
+
+name: Release
+
+on:
+  push:
+    branches:
+      - "1.20.1-beta"
+env:                                              
+  MINECRAFT_VERSION: 1.20.1                       
+  JAVA_VERSION: 17      
+  VERSION: 2.0.0.1
+  RELEASE_NAME: Forest X Reborn 2.0.0.1 Beta
+
+jobs:
+  build:
+    runs-on: ubuntu-latest                        
+    steps:                                        
+      - name: Check Environment Variables
+        run: env
+
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Setup Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: "temurin"
+          java-version: 17
+
+      - name: Make Gradle Wrapper Executable
+        if: ${{ runner.os != 'Windows' }}
+        run: chmod +x ./gradlew
+
+      - name: Build
+        run: ./gradlew build
+
+      - name: Publish mod to CurseForge and Modrinth
+        id: publish
+        uses: Kir-Antipov/mc-publish@v3.3.0
+        with:
+          curseforge-id: 689955
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          modrinth-id: 6SZBMNXj 
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          
+          name: "${{env.RELEASE_NAME}}"                             
+          version: "${{env.VERSION}}"
+          version-type: beta
+          changelog-file: CHANGELOG.md                                      
+
+          loaders: |
+            forge
+          game-versions: "${{env.MINECRAFT_VERSION}}"
+          java: "${{env.JAVA_VERSION}}"
+
+          modrinth-featured: false
+          fail-mode: warn	

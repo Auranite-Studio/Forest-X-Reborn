@@ -6,12 +6,12 @@ name: Release
 on:
   push:
     branches:
-      - "master"
+      - "1.20.1-release"
 env:                                              
   MINECRAFT_VERSION: 1.20.1                       
   JAVA_VERSION: 17      
-  VERSION: 1.4.5
-  RELEASE_NAME: Forest X Reborn 1.4.5
+  VERSION: 2.0.0
+  RELEASE_NAME: Forest X Reborn 2.0.0
 
 jobs:
   build:
@@ -59,30 +59,3 @@ jobs:
 
           modrinth-featured: false
           fail-mode: warn	
-          
-      - name: Send Discord webhook
-        uses: Ilshidur/action-discord@0.3.2
-        with:
-          args: "@everyone"
-        env:
-          DISCORD_WEBHOOK: "${{secrets.DISCORD_WEBHOOK}}"
-          DISCORD_EMBEDS: |
-            [{
-              "title": "${{env.RELEASE_NAME}} for Minecraft ${{env.MINECRAFT_VERSION}} Released",
-              "color": 14177041,
-              "thumbnail": {
-                "url": "https://sun9-38.userapi.com/impg/DT-sAuz6HXjQyDc-JUcNohnWvlFpPedLd7e5lw/vtp7gmTrGXQ.jpg?size=1920x1080&quality=95&sign=46ddcdaa7f11b953d45ce88907da7355&type=album"
-              },
-              "url": "https://www.curseforge.com/minecraft/mc-mods/forest-x-reborn",
-              "fields": [
-                  {
-                    "name": "Download now:",
-                    "value": "[<:curseforge:805066577871110196> CurseForge](https://www.curseforge.com/minecraft/mc-mods/forest-x-reborn)\n[<:modrinth:805066578215043092> Modrinth](https://modrinth.com/mod/forest-x-reborn)\n[<:github:805066578164580392> GitHub](https://github.com/Environment-Studios-Official/Forest-X-Reborn)",
-                    "inline": true
-                  }
-              ],
-              "footer": {
-                "text": "Created by the Environment Studios team!",
-                "icon_url": "https://sun9-78.userapi.com/impg/kD0AwY7Xis8STJ07eud_fyqAW2-XFMaMsbnmAw/Ew3PdOe0y7Q.jpg?size=2000x2000&quality=95&sign=f990104d07c8be4a20dfa2ed1e4739d2&type=album"
-              }
-            }]
