@@ -3,7 +3,7 @@
 - *N/A*
 
 **Improvemnts** 
-- *N/A*
+- Outdated features have been removed
 
 **API changes**
 - *N/A*
