@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "forest:eucalyptus_log",
+    "forest:stripped_eucalyptus_log",
+    "forest:mulberry_log",
+    "forest:stripped_mulberry_log",
+    "forest:eucalyptus_wood",
+    "forest:stripped_eucalyptus_wood",
+    "forest:mulberry_wood",
+    "forest:stripped_mulberry_wood"
+  ]
+}
