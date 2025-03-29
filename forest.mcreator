@@ -10059,6 +10059,54 @@
         ]
       },
       "path": "~/Records"
+    },
+    {
+      "name": "SwampOakTree",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swamp_oak_tree",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forest/neoforge/biome_modifier/swamp_oak_tree_biome_modifier.json",
+          "src/main/java/ru/power_umc/forestxreborn/world/features/SwampOakTreeFeature.java",
+          "src/main/resources/data/forest/worldgen/placed_feature/swamp_oak_tree.json",
+          "src/main/resources/data/forest/worldgen/configured_feature/swamp_oak_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "SwampOakTreeDopolnitielnoieUsloviieGienieratsii",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swamp_oak_tree_dopolnitielnoie_usloviie_gienieratsii",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/ru/power_umc/forestxreborn/procedures/SwampOakTreeDopolnitielnoieUsloviieGienieratsiiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Biomes"
     }
   ],
   "variable_elements": [
@@ -10233,6 +10281,7 @@
       "~CUSTOM:SilverBlock",
       "~CUSTOM:SilverOre"
     ],
+    "BIOMES:minecraft:is_overworld": [],
     "BIOMES:minecraft:has_structure/ruined_portal_desert": [
       "~CUSTOM:IceDesert"
     ],
@@ -10447,6 +10496,10 @@
       "~CUSTOM:PolishedMarbleSlab",
       "~CUSTOM:RedCrushedSandstoneSlab",
       "~CUSTOM:CrushedSandstoneSlab"
+    ],
+    "BLOCKS:minecraft:dirt": [
+      "CUSTOM:Peat",
+      "CUSTOM:AshBlock"
     ],
     "ITEMS:forest:silver_pickaxe_repair_items": [
       "~CUSTOM:SilverIngot"

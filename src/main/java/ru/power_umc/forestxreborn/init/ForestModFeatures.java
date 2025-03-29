@@ -4,6 +4,7 @@
  */
 package ru.power_umc.forestxreborn.init;
 
+import ru.power_umc.forestxreborn.world.features.SwampOakTreeFeature;
 import ru.power_umc.forestxreborn.world.features.RaspberriesBushFeatureFeature;
 import ru.power_umc.forestxreborn.world.features.OldOakTreeFeature;
 import ru.power_umc.forestxreborn.world.features.BlueberriesBushFeatureFeature;
@@ -20,4 +21,5 @@ public class ForestModFeatures {
 	public static final DeferredHolder<Feature<?>, Feature<?>> BLUEBERRIES_BUSH_FEATURE = REGISTRY.register("blueberries_bush_feature", BlueberriesBushFeatureFeature::new);
 	public static final DeferredHolder<Feature<?>, Feature<?>> RASPBERRIES_BUSH_FEATURE = REGISTRY.register("raspberries_bush_feature", RaspberriesBushFeatureFeature::new);
 	public static final DeferredHolder<Feature<?>, Feature<?>> OLD_OAK_TREE = REGISTRY.register("old_oak_tree", OldOakTreeFeature::new);
+	public static final DeferredHolder<Feature<?>, Feature<?>> SWAMP_OAK_TREE = REGISTRY.register("swamp_oak_tree", SwampOakTreeFeature::new);
 }
