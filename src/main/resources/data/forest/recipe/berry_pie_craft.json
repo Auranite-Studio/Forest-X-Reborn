@@ -7,15 +7,9 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:sweet_berries"
-    },
-    "b": {
-      "item": "minecraft:sugar"
-    },
-    "c": {
-      "item": "minecraft:egg"
-    }
+    "a": "minecraft:sweet_berries",
+    "b": "minecraft:sugar",
+    "c": "minecraft:egg"
   },
   "result": {
     "id": "forest:berry_strudel",

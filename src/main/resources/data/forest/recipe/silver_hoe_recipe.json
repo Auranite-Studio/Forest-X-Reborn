@@ -7,12 +7,8 @@
     " b"
   ],
   "key": {
-    "a": {
-      "item": "forest:silver_ingot"
-    },
-    "b": {
-      "item": "minecraft:stick"
-    }
+    "a": "forest:silver_ingot",
+    "b": "minecraft:stick"
   },
   "result": {
     "id": "forest:silver_hoe",

@@ -8,8 +8,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 
 public class GingerbreadDoughItem extends Item {
-	public GingerbreadDoughItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.1f).build()));
+	public GingerbreadDoughItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.1f).build()));
 	}
 
 	@Override

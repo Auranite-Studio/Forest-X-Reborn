@@ -51,31 +51,17 @@ public class ScrapingPaintProcedure {
 						});
 					}
 				}
-				if (!(new Object() {
-					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getPersistentData().getString(tag);
-						return "";
-					}
-				}.getValue(world, BlockPos.containing(x, y, z), "defaultMaterial")).isEmpty()) {
+				if (!(getBlockNBTString(world, BlockPos.containing(x, y, z), "defaultMaterial")).isEmpty()) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.axe.strip")), SoundSource.NEUTRAL, 1, 1);
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("item.axe.strip")), SoundSource.NEUTRAL, 1, 1);
 						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.axe.strip")), SoundSource.NEUTRAL, 1, 1, false);
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("item.axe.strip")), SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
 					{
 						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockState _bs = BuiltInRegistries.BLOCK.get(ResourceLocation.parse(((new Object() {
-							public String getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getString(tag);
-								return "";
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "defaultMaterial"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState();
+						BlockState _bs = BuiltInRegistries.BLOCK.getValue(ResourceLocation.parse(((getBlockNBTString(world, BlockPos.containing(x, y, z), "defaultMaterial"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState();
 						BlockState _bso = world.getBlockState(_bp);
 						for (Property<?> _propertyOld : _bso.getProperties()) {
 							Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
@@ -110,5 +96,12 @@ public class ScrapingPaintProcedure {
 					_level.updateNeighborsAt(BlockPos.containing(x, y, z), _level.getBlockState(BlockPos.containing(x, y, z)).getBlock());
 			}
 		}
+	}
+
+	private static String getBlockNBTString(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getStringOr(tag, "");
+		return "";
 	}
 }

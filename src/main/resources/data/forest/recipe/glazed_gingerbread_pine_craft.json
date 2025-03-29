@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:milk_bucket"
-    },
-    {
-      "item": "forest:gingerbread_pine"
-    }
+    "minecraft:milk_bucket",
+    "forest:gingerbread_pine"
   ],
   "result": {
     "id": "forest:glazed_gingerbread_pine",

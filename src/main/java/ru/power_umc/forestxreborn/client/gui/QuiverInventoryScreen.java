@@ -7,6 +7,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
@@ -33,7 +34,6 @@ public class QuiverInventoryScreen extends AbstractContainerScreen<QuiverInvento
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -41,14 +41,11 @@ public class QuiverInventoryScreen extends AbstractContainerScreen<QuiverInvento
 	@Override
 	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
-		RenderSystem.enableBlend();
-		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(ResourceLocation.parse("forest:textures/screens/quiver_inv.png"), this.leftPos + -1, this.topPos + 0, 0, 0, -1, -1, -1, -1);
+		guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("forest:textures/screens/quiver_inv.png"), this.leftPos + -1, this.topPos + 0, 0, 0, -1, -1, -1, -1);
 
-		guiGraphics.blit(ResourceLocation.parse("forest:textures/screens/quiver_inventory.png"), this.leftPos + -1, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+		guiGraphics.blit(RenderType::guiTextured, ResourceLocation.parse("forest:textures/screens/quiver_inventory.png"), this.leftPos + -1, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 
-		RenderSystem.disableBlend();
 	}
 
 	@Override

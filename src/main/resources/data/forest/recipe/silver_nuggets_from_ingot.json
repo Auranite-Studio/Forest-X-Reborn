@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "forest:silver_ingot"
-    }
+    "forest:silver_ingot"
   ],
   "result": {
     "id": "forest:silver_nugget",

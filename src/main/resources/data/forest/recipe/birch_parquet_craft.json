@@ -7,9 +7,7 @@
     " a "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:birch_planks"
-    }
+    "a": "minecraft:birch_planks"
   },
   "result": {
     "id": "forest:birch_parquet",

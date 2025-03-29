@@ -86,18 +86,30 @@ public class FermentationBarrelScreenMenu extends AbstractContainerMenu implemen
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 33, 35) {
+			private final int slot = 0;
+			private int x = FermentationBarrelScreenMenu.this.x;
+			private int y = FermentationBarrelScreenMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("forge:fermentation")));
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 159, 35) {
+			private final int slot = 2;
+			private int x = FermentationBarrelScreenMenu.this.x;
+			private int y = FermentationBarrelScreenMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 69, 35) {
+			private final int slot = 1;
+			private int x = FermentationBarrelScreenMenu.this.x;
+			private int y = FermentationBarrelScreenMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return Items.GLASS_BOTTLE == stack.getItem();

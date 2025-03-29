@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "forest:polished_pumice"
-  },
+  "ingredient": "forest:polished_pumice",
   "result": {
-    "id": "forest:polished_pumice_slab"
+    "id": "forest:polished_pumice_slab",
+    "count": 1
   }
 }

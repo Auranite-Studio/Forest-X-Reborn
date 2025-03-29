@@ -8,8 +8,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 
 public class BerryStrudelItem extends Item {
-	public BerryStrudelItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(6).saturationModifier(1f).build()));
+	public BerryStrudelItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(6).saturationModifier(1f).build()));
 	}
 
 	@Override

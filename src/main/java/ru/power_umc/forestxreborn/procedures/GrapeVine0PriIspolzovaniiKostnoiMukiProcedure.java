@@ -5,7 +5,6 @@ import ru.power_umc.forestxreborn.ForestMod;
 
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
@@ -23,48 +22,12 @@ public class GrapeVine0PriIspolzovaniiKostnoiMukiProcedure {
 							|| (world.getBlockState(BlockPos.containing(x, y - 1, z - 1))).is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))
 							|| (world.getBlockState(BlockPos.containing(x - 1, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))
 							|| (world.getBlockState(BlockPos.containing(x, y - 1, z + 1))).is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))) && (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.AIR) {
-						world.setBlock(BlockPos.containing(x, y - 1, z), (new Object() {
-							public BlockState with(BlockState _bs, Direction newValue) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
-									return _bs.setValue(_dp, newValue);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
-							}
-						}.with(ForestModBlocks.GRAPE_VINE_0.get().defaultBlockState(), (new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection((world.getBlockState(BlockPos.containing(x, y, z))))))), 3);
+						world.setBlock(BlockPos.containing(x, y - 1, z), (blockStateWithDirection(ForestModBlocks.GRAPE_VINE_0.get().defaultBlockState(), (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z))))))), 3);
 					} else if (((world.getBlockState(BlockPos.containing(x + 1, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))
 							|| (world.getBlockState(BlockPos.containing(x, y + 1, z - 1))).is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))
 							|| (world.getBlockState(BlockPos.containing(x - 1, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))
 							|| (world.getBlockState(BlockPos.containing(x, y + 1, z + 1))).is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))) && (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.AIR) {
-						world.setBlock(BlockPos.containing(x, y + 1, z), (new Object() {
-							public BlockState with(BlockState _bs, Direction newValue) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
-									return _bs.setValue(_dp, newValue);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
-							}
-						}.with(ForestModBlocks.GRAPE_VINE_0.get().defaultBlockState(), (new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection((world.getBlockState(BlockPos.containing(x, y, z))))))), 3);
+						world.setBlock(BlockPos.containing(x, y + 1, z), (blockStateWithDirection(ForestModBlocks.GRAPE_VINE_0.get().defaultBlockState(), (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z))))))), 3);
 					}
 				} else {
 					{
@@ -84,5 +47,21 @@ public class GrapeVine0PriIspolzovaniiKostnoiMukiProcedure {
 				}
 			}
 		});
+	}
+
+	private static Direction getDirectionFromBlockState(BlockState blockState) {
+		if (blockState.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty ep && ep.getValueClass() == Direction.class)
+			return (Direction) blockState.getValue(ep);
+		if (blockState.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty ep && ep.getValueClass() == Direction.Axis.class)
+			return Direction.fromAxisAndDirection((Direction.Axis) blockState.getValue(ep), Direction.AxisDirection.POSITIVE);
+		return Direction.NORTH;
+	}
+
+	private static BlockState blockStateWithDirection(BlockState blockState, Direction newValue) {
+		if (blockState.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty enumProperty && enumProperty.getPossibleValues().contains(newValue))
+			return blockState.setValue(enumProperty, newValue);
+		if (blockState.getBlock().getStateDefinition().getProperty("axis") instanceof EnumProperty enumProperty && enumProperty.getPossibleValues().contains(newValue.getAxis()))
+			return blockState.setValue(enumProperty, newValue.getAxis());
+		return blockState;
 	}
 }

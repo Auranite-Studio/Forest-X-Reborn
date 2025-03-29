@@ -12,12 +12,12 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class MulberryFenceGateBlock extends FenceGateBlock {
-	public MulberryFenceGateBlock() {
-		super(WoodType.OAK, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn());
+	public MulberryFenceGateBlock(BlockBehaviour.Properties properties) {
+		super(WoodType.OAK, properties.ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn());
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 

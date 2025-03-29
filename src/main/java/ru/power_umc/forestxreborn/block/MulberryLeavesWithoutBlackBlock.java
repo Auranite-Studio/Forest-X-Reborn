@@ -14,13 +14,24 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import com.mojang.serialization.MapCodec;
+
 public class MulberryLeavesWithoutBlackBlock extends LeavesBlock {
-	public MulberryLeavesWithoutBlackBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
+	@Override
+	public MapCodec<? extends LeavesBlock> codec() {
+		return null;
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	protected void spawnFallingLeavesParticle(Level level, BlockPos blockPos, RandomSource randomSource) {
+	}
+
+	public MulberryLeavesWithoutBlackBlock(BlockBehaviour.Properties properties) {
+		super(1f, properties.ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
+	}
+
+	@Override
+	public int getLightBlock(BlockState state) {
 		return 1;
 	}
 

@@ -7,6 +7,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -15,20 +16,15 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 public class GingerbreadFormManItem extends Item {
-	public GingerbreadFormManItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+	public GingerbreadFormManItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(1));
 	}
 
 	@Override
-	public boolean hasCraftingRemainingItem(ItemStack stack) {
-		return true;
-	}
-
-	@Override
-	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
+	public ItemStack getCraftingRemainder(ItemStack itemstack) {
 		return new ItemStack(this);
 	}
 
@@ -39,9 +35,14 @@ public class GingerbreadFormManItem extends Item {
 
 	@Override
 	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, context, list, flag);
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay display, Consumer<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, display, list, flag);
 		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
-		list.add(Component.literal(GingerbreadMenLCProcedure.execute()));
+		String hoverText = GingerbreadMenLCProcedure.execute();
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.accept(Component.literal(line));
+			}
+		}
 	}
 }

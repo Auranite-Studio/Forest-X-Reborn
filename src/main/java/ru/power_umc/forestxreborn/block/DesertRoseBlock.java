@@ -15,8 +15,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class DesertRoseBlock extends FlowerBlock {
-	public DesertRoseBlock() {
-		super(MobEffects.CONFUSION, 100, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().replaceable().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+	public DesertRoseBlock(BlockBehaviour.Properties properties) {
+		super(MobEffects.NAUSEA, 100, properties.mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().replaceable().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

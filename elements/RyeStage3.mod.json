@@ -1,5 +1,5 @@
 {
-  "_fv": 68,
+  "_fv": 77,
   "_type": "block",
   "definition": {
     "texture": "rye_stage3",
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Rye Stage 3",
     "specialInformation": {
       "fixedValue": []
@@ -104,7 +105,6 @@
       "name": "RyeStage0ObnovlieniieTika"
     },
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

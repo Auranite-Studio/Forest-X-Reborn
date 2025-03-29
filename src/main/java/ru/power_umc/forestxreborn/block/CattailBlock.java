@@ -16,8 +16,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class CattailBlock extends DoublePlantBlock {
-	public CattailBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+	public CattailBlock(BlockBehaviour.Properties properties) {
+		super(properties.mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

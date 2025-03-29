@@ -3,9 +3,7 @@
   "category": "misc",
   "experience": 1,
   "cookingtime": 800,
-  "ingredient": {
-    "item": "forest:raw_gingerbread_block"
-  },
+  "ingredient": "forest:raw_gingerbread_block",
   "result": {
     "id": "forest:gingerbread_block"
   }

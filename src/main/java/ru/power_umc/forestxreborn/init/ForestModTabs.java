@@ -16,44 +16,6 @@ import net.minecraft.core.registries.Registries;
 
 public class ForestModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ForestMod.MODID);
-	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TREES = REGISTRY.register("trees",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.trees")).icon(() -> new ItemStack(ForestModBlocks.MULBERRY_SAPLING.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(ForestModBlocks.EUCALYPTUS_WOOD.get().asItem());
-				tabData.accept(ForestModBlocks.EUCALYPTUS_LOG.get().asItem());
-				tabData.accept(ForestModBlocks.EUCALYPTUS_PLANKS.get().asItem());
-				tabData.accept(ForestModBlocks.EUCALYPTUS_LEAVES.get().asItem());
-				tabData.accept(ForestModBlocks.EUCALYPTUS_STAIRS.get().asItem());
-				tabData.accept(ForestModBlocks.EUCALYPTUS_SLAB.get().asItem());
-				tabData.accept(ForestModBlocks.EUCALYPTUS_FENCE.get().asItem());
-				tabData.accept(ForestModBlocks.EUCALYPTUS_FENCE_GATE.get().asItem());
-				tabData.accept(ForestModBlocks.EUCALYPTUS_PRESSURE_PLATE.get().asItem());
-				tabData.accept(ForestModBlocks.EUCALYPTUS_BUTTON.get().asItem());
-				tabData.accept(ForestModBlocks.STRIPPED_EUCALYPTUS_WOOD.get().asItem());
-				tabData.accept(ForestModBlocks.STRIPPED_EUCALYPTUS_LOG.get().asItem());
-				tabData.accept(ForestModBlocks.EUCALYPTUS_DOOR.get().asItem());
-				tabData.accept(ForestModBlocks.EUCALYPTUS_TRAPDOOR.get().asItem());
-				tabData.accept(ForestModBlocks.EUCALYPTUS_SAPLING.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_WOOD.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_LOG.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_PLANKS.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_STAIRS.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_SLAB.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_FENCE.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_FENCE_GATE.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_PRESSURE_PLATE.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_BUTTON.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_SAPLING.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_LEAVES_WITHOUT_WHITE.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_LEAVES_WITHOUT_BLACK.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_LEAVES_WITH_WHITE.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_LEAVES_WITH_BLACK.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_DOOR.get().asItem());
-				tabData.accept(ForestModBlocks.MULBERRY_TRAPDOOR.get().asItem());
-				tabData.accept(ForestModBlocks.STRIPPED_MULBERRY_WOOD.get().asItem());
-				tabData.accept(ForestModBlocks.STRIPPED_MULBERRY_LOG.get().asItem());
-			})
-
-					.build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ORES = REGISTRY.register("ores",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.ores")).icon(() -> new ItemStack(ForestModBlocks.DEEPSLATE_SILVER_ORE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(ForestModItems.SILVER_INGOT.get());
@@ -63,43 +25,23 @@ public class ForestModTabs {
 				tabData.accept(ForestModItems.RAW_SILVER.get());
 				tabData.accept(ForestModBlocks.RAW_SILVER_BLOCK.get().asItem());
 				tabData.accept(ForestModItems.SILVER_NUGGET.get());
-			})
-
-					.build());
-	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MISC = REGISTRY.register("misc",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.misc")).icon(() -> new ItemStack(ForestModItems.PEAT_PIECE.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(ForestModItems.PEAT_PIECE.get());
-				tabData.accept(ForestModItems.GINGERBREAD_FORM_MAN.get());
-				tabData.accept(ForestModItems.GINGERBREAD_FORM_HEART.get());
-				tabData.accept(ForestModItems.GINGERBREAD_FORM_BRICK.get());
-				tabData.accept(ForestModItems.GINGERBREAD_FORM_PINE.get());
-				tabData.accept(ForestModItems.MUSIC_DISC_STROFA.get());
-				tabData.accept(ForestModItems.BROWN_BEAR_PELT.get());
-				tabData.accept(ForestModItems.POLAR_BEAR_PELT.get());
-				tabData.accept(ForestModItems.RYE.get());
-			})
-
-					.build());
-	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TOOLS_AND_ARMOR = REGISTRY.register("tools_and_armor",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.tools_and_armor")).icon(() -> new ItemStack(ForestModItems.SILVER_AXE.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(ForestModItems.SILVER_PICKAXE.get());
-				tabData.accept(ForestModItems.SILVER_AXE.get());
-				tabData.accept(ForestModItems.SILVER_SWORD.get());
-				tabData.accept(ForestModItems.SILVER_SHOVEL.get());
-				tabData.accept(ForestModItems.SILVER_HOE.get());
-				tabData.accept(ForestModItems.QUIVER.get());
-				tabData.accept(ForestModItems.SILVER_ARMOR_HELMET.get());
-				tabData.accept(ForestModItems.SILVER_ARMOR_CHESTPLATE.get());
-				tabData.accept(ForestModItems.SILVER_ARMOR_LEGGINGS.get());
-				tabData.accept(ForestModItems.SILVER_ARMOR_BOOTS.get());
-				tabData.accept(ForestModItems.IRON_SICKLE.get());
-				tabData.accept(ForestModItems.GOLDEN_SICKLE.get());
-				tabData.accept(ForestModItems.DIAMOND_SICKLE.get());
-				tabData.accept(ForestModItems.NETHERITE_SICKLE.get());
-				tabData.accept(ForestModItems.SILVER_SICKLE.get());
-			})
-
-					.build());
+			}).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PLANTS = REGISTRY.register("plants",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.plants")).icon(() -> new ItemStack(ForestModBlocks.LAVANDER.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(ForestModBlocks.WILDFLOWER.get().asItem());
+				tabData.accept(ForestModBlocks.LAVANDER.get().asItem());
+				tabData.accept(ForestModBlocks.BURNING_BLOSSOM.get().asItem());
+				tabData.accept(ForestModBlocks.DESERT_ROSE.get().asItem());
+				tabData.accept(ForestModBlocks.BLUE_ROSE.get().asItem());
+				tabData.accept(ForestModBlocks.SUNSHROOM.get().asItem());
+				tabData.accept(ForestModBlocks.MOONSHROOM.get().asItem());
+				tabData.accept(ForestModBlocks.GRAPE_VINE_0.get().asItem());
+				tabData.accept(ForestModBlocks.WHITE_ROSE_BUSH.get().asItem());
+				tabData.accept(ForestModBlocks.PINK_ROSE_BUSH.get().asItem());
+				tabData.accept(ForestModBlocks.CATTAIL.get().asItem());
+				tabData.accept(ForestModItems.RYE_SEEDS.get());
+				tabData.accept(ForestModItems.LETTUCE_SEEDS.get());
+			}).withTabsBefore(ORES.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> DECORATIVE_BLOCKS = REGISTRY.register("decorative_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.decorative_blocks")).icon(() -> new ItemStack(ForestModBlocks.SANDSLATE_FACETED_BRICKS.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(ForestModBlocks.CRUSHED_SANDSTONE.get().asItem());
@@ -264,9 +206,19 @@ public class ForestModTabs {
 				tabData.accept(ForestModBlocks.BROWN_BEAR_CARPET.get().asItem());
 				tabData.accept(ForestModBlocks.POLAR_BEAR_CARPET.get().asItem());
 				tabData.accept(ForestModBlocks.MULBERRY_PARQUET.get().asItem());
-			})
-
-					.build());
+			}).withTabsBefore(PLANTS.getId()).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MISC = REGISTRY.register("misc",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.misc")).icon(() -> new ItemStack(ForestModItems.PEAT_PIECE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(ForestModItems.PEAT_PIECE.get());
+				tabData.accept(ForestModItems.GINGERBREAD_FORM_MAN.get());
+				tabData.accept(ForestModItems.GINGERBREAD_FORM_HEART.get());
+				tabData.accept(ForestModItems.GINGERBREAD_FORM_BRICK.get());
+				tabData.accept(ForestModItems.GINGERBREAD_FORM_PINE.get());
+				tabData.accept(ForestModItems.BROWN_BEAR_PELT.get());
+				tabData.accept(ForestModItems.POLAR_BEAR_PELT.get());
+				tabData.accept(ForestModItems.RYE.get());
+				tabData.accept(ForestModItems.MUSIC_DISC_STROFA.get());
+			}).withTabsBefore(DECORATIVE_BLOCKS.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> FOOD = REGISTRY.register("food",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.food")).icon(() -> new ItemStack(ForestModItems.MEAT_LOAF.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(ForestModItems.RAW_BARBECUE.get());
@@ -294,51 +246,67 @@ public class ForestModTabs {
 				tabData.accept(ForestModItems.WHITE_MULBERRY.get());
 				tabData.accept(ForestModItems.RASPBERRY.get());
 				tabData.accept(ForestModItems.BREAD_WITH_LARD.get());
-			})
-
-					.build());
+			}).withTabsBefore(MISC.getId()).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TOOLS_AND_ARMOR = REGISTRY.register("tools_and_armor",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.tools_and_armor")).icon(() -> new ItemStack(ForestModItems.SILVER_AXE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(ForestModItems.SILVER_PICKAXE.get());
+				tabData.accept(ForestModItems.SILVER_AXE.get());
+				tabData.accept(ForestModItems.SILVER_SWORD.get());
+				tabData.accept(ForestModItems.SILVER_SHOVEL.get());
+				tabData.accept(ForestModItems.SILVER_HOE.get());
+				tabData.accept(ForestModItems.QUIVER.get());
+				tabData.accept(ForestModItems.SILVER_ARMOR_HELMET.get());
+				tabData.accept(ForestModItems.SILVER_ARMOR_CHESTPLATE.get());
+				tabData.accept(ForestModItems.SILVER_ARMOR_LEGGINGS.get());
+				tabData.accept(ForestModItems.SILVER_ARMOR_BOOTS.get());
+				tabData.accept(ForestModItems.IRON_SICKLE.get());
+				tabData.accept(ForestModItems.GOLDEN_SICKLE.get());
+				tabData.accept(ForestModItems.DIAMOND_SICKLE.get());
+				tabData.accept(ForestModItems.NETHERITE_SICKLE.get());
+				tabData.accept(ForestModItems.SILVER_SICKLE.get());
+			}).withTabsBefore(FOOD.getId()).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TREES = REGISTRY.register("trees",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.trees")).icon(() -> new ItemStack(ForestModBlocks.MULBERRY_SAPLING.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(ForestModBlocks.EUCALYPTUS_WOOD.get().asItem());
+				tabData.accept(ForestModBlocks.EUCALYPTUS_LOG.get().asItem());
+				tabData.accept(ForestModBlocks.EUCALYPTUS_PLANKS.get().asItem());
+				tabData.accept(ForestModBlocks.EUCALYPTUS_LEAVES.get().asItem());
+				tabData.accept(ForestModBlocks.EUCALYPTUS_STAIRS.get().asItem());
+				tabData.accept(ForestModBlocks.EUCALYPTUS_SLAB.get().asItem());
+				tabData.accept(ForestModBlocks.EUCALYPTUS_FENCE.get().asItem());
+				tabData.accept(ForestModBlocks.EUCALYPTUS_FENCE_GATE.get().asItem());
+				tabData.accept(ForestModBlocks.EUCALYPTUS_PRESSURE_PLATE.get().asItem());
+				tabData.accept(ForestModBlocks.EUCALYPTUS_BUTTON.get().asItem());
+				tabData.accept(ForestModBlocks.STRIPPED_EUCALYPTUS_WOOD.get().asItem());
+				tabData.accept(ForestModBlocks.STRIPPED_EUCALYPTUS_LOG.get().asItem());
+				tabData.accept(ForestModBlocks.EUCALYPTUS_DOOR.get().asItem());
+				tabData.accept(ForestModBlocks.EUCALYPTUS_TRAPDOOR.get().asItem());
+				tabData.accept(ForestModBlocks.EUCALYPTUS_SAPLING.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_WOOD.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_LOG.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_PLANKS.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_STAIRS.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_SLAB.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_FENCE.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_FENCE_GATE.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_PRESSURE_PLATE.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_BUTTON.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_SAPLING.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_LEAVES_WITHOUT_WHITE.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_LEAVES_WITHOUT_BLACK.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_LEAVES_WITH_WHITE.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_LEAVES_WITH_BLACK.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_DOOR.get().asItem());
+				tabData.accept(ForestModBlocks.MULBERRY_TRAPDOOR.get().asItem());
+				tabData.accept(ForestModBlocks.STRIPPED_MULBERRY_WOOD.get().asItem());
+				tabData.accept(ForestModBlocks.STRIPPED_MULBERRY_LOG.get().asItem());
+			}).withTabsBefore(TOOLS_AND_ARMOR.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> INTERACTION_BLOCKS = REGISTRY.register("interaction_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.interaction_blocks")).icon(() -> new ItemStack(ForestModBlocks.FERMENTATION_BARREL.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(ForestModBlocks.FERMENTATION_BARREL.get().asItem());
-			})
-
-					.build());
-	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PLANTS = REGISTRY.register("plants",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.plants")).icon(() -> new ItemStack(ForestModBlocks.LAVANDER.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(ForestModBlocks.WILDFLOWER.get().asItem());
-				tabData.accept(ForestModBlocks.LAVANDER.get().asItem());
-				tabData.accept(ForestModBlocks.BURNING_BLOSSOM.get().asItem());
-				tabData.accept(ForestModBlocks.DESERT_ROSE.get().asItem());
-				tabData.accept(ForestModBlocks.BLUE_ROSE.get().asItem());
-				tabData.accept(ForestModBlocks.SUNSHROOM.get().asItem());
-				tabData.accept(ForestModBlocks.MOONSHROOM.get().asItem());
-				tabData.accept(ForestModBlocks.GRAPE_VINE_0.get().asItem());
-				tabData.accept(ForestModBlocks.WHITE_ROSE_BUSH.get().asItem());
-				tabData.accept(ForestModBlocks.PINK_ROSE_BUSH.get().asItem());
-				tabData.accept(ForestModBlocks.CATTAIL.get().asItem());
-				tabData.accept(ForestModItems.RYE_SEEDS.get());
-				tabData.accept(ForestModItems.LETTUCE_SEEDS.get());
-			})
-
-					.build());
+			}).withTabsBefore(TREES.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MOBS = REGISTRY.register("mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.mobs")).icon(() -> new ItemStack(ForestModItems.RACCON_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(ForestModItems.SNAIL_SPAWN_EGG.get());
-				tabData.accept(ForestModItems.FIRE_SALAMANDER_SPAWN_EGG.get());
-				tabData.accept(ForestModItems.FENNEC_SPAWN_EGG.get());
-				tabData.accept(ForestModItems.BROWN_BEAR_SPAWN_EGG.get());
-				tabData.accept(ForestModItems.ORANGE_BUTTERFLY_SPAWN_EGG.get());
-				tabData.accept(ForestModItems.PINK_BUTTERFLY_SPAWN_EGG.get());
-				tabData.accept(ForestModItems.BLUE_BUTTERFLY_SPAWN_EGG.get());
-				tabData.accept(ForestModItems.GREEN_BUTTERFLY_SPAWN_EGG.get());
-				tabData.accept(ForestModItems.PURPLE_BUTTERFLY_SPAWN_EGG.get());
-				tabData.accept(ForestModItems.CALIBRI_SPAWN_EGG.get());
-				tabData.accept(ForestModItems.VULTURE_SPAWN_EGG.get());
-				tabData.accept(ForestModItems.RAT_SPAWN_EGG.get());
-				tabData.accept(ForestModItems.CROCODILE_SPAWN_EGG.get());
-				tabData.accept(ForestModItems.SCORPION_SPAWN_EGG.get());
 				tabData.accept(ForestModItems.RACCON_SPAWN_EGG.get());
-			})
-
-					.build());
+			}).withTabsBefore(INTERACTION_BLOCKS.getId()).build());
 }

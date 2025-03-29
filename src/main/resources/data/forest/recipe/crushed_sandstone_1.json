@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "forest:crushed_sandstone"
-  },
+  "ingredient": "forest:crushed_sandstone",
   "result": {
-    "id": "forest:crushed_sandstone_stairs"
+    "id": "forest:crushed_sandstone_stairs",
+    "count": 1
   }
 }

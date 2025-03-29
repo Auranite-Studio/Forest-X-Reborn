@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "forest:raw_silver_block"
-    }
+    "forest:raw_silver_block"
   ],
   "result": {
     "id": "forest:raw_silver",

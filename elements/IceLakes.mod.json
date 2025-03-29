@@ -1,5 +1,5 @@
 {
-  "_fv": 68,
+  "_fv": 77,
   "_type": "feature",
   "definition": {
     "skipPlacement": false,
@@ -9,6 +9,6 @@
         "value": "CUSTOM:FrozenSwamp"
       }
     ],
-    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_lake\"><value name=\"fluid\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">Blocks.ICE</field></block></value><value name=\"border\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">Blocks.GRASS</field></block></value></block></value><next><block type=\"placement_heightmap\"><field name=\"heightmap\">WORLD_SURFACE_WG</field><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_uniform\"><field name=\"min\">2</field><field name=\"max\">5</field></block></value><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></xml>"
+    "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_lake\"><value name=\"fluid\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">Blocks.ICE</field></block></value><value name=\"border\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">Blocks.GRASS</field></block></value></block></value><next><block type=\"placement_heightmap\"><field name=\"heightmap\">WORLD_SURFACE_WG</field><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_uniform\"><field name=\"min\">2</field><field name=\"max\">5</field></block></value><next><block type=\"placement_biome_filter\"/></next></block></next></block></next></block></xml>"
   }
 }

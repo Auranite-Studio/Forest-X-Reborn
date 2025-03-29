@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "forest:eucalyptus_planks"
-    }
+    "a": "forest:eucalyptus_planks"
   },
   "result": {
     "id": "forest:eucalyptus_pressure_plate",

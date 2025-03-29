@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "forest:desert_rose"
-    }
+    "forest:desert_rose"
   ],
   "result": {
     "id": "minecraft:brown_dye",

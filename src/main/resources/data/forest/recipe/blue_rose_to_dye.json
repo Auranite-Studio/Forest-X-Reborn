@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "forest:blue_rose"
-    }
+    "forest:blue_rose"
   ],
   "result": {
     "id": "minecraft:blue_dye",

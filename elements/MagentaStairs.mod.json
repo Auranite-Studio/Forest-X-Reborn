@@ -1,5 +1,5 @@
 {
-  "_fv": 68,
+  "_fv": 77,
   "_type": "block",
   "definition": {
     "texture": "magenta_planks",
@@ -34,6 +34,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Magenta Stairs",
     "specialInformation": {
       "fixedValue": []
@@ -106,7 +107,6 @@
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

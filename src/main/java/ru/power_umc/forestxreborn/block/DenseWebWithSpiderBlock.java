@@ -9,17 +9,16 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.BlockPos;
 
 public class DenseWebWithSpiderBlock extends Block {
-	public DenseWebWithSpiderBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.WOOL).strength(2f, 100f).speedFactor(0.1f).jumpFactor(0.1f));
+	public DenseWebWithSpiderBlock(BlockBehaviour.Properties properties) {
+		super(properties.ignitedByLava().sound(SoundType.WOOL).strength(2f, 100f).speedFactor(0.1f).jumpFactor(0.1f));
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 15;
 	}
 

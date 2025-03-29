@@ -7,8 +7,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
 public class PeatPieceItem extends Item {
-	public PeatPieceItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
+	public PeatPieceItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64));
 	}
 
 	@Override

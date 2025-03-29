@@ -13,17 +13,17 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
 public class PolarBearCarpetBlock extends Block {
-	public PolarBearCarpetBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.WOOL).strength(0.2f, 1f).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+	public PolarBearCarpetBlock(BlockBehaviour.Properties properties) {
+		super(properties.ignitedByLava().sound(SoundType.WOOL).strength(0.2f, 1f).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+	public boolean propagatesSkylightDown(BlockState state) {
 		return true;
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 

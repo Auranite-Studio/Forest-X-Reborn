@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "forest:silver_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "forest:silver_armor"
+      }
+    ]
+  }
+}

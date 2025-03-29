@@ -7,9 +7,7 @@
     " a "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:dark_oak_planks"
-    }
+    "a": "minecraft:dark_oak_planks"
   },
   "result": {
     "id": "forest:dark_oak_parquet",

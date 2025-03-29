@@ -15,23 +15,28 @@ import net.minecraft.core.BlockPos;
 import com.mojang.serialization.MapCodec;
 
 public class AshCoverBlock extends FallingBlock {
-	public static final MapCodec<AshCoverBlock> CODEC = simpleCodec(properties -> new AshCoverBlock());
+	public static final MapCodec<AshCoverBlock> CODEC = simpleCodec(AshCoverBlock::new);
 
 	public MapCodec<AshCoverBlock> codec() {
 		return CODEC;
 	}
 
-	public AshCoverBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.SAND).strength(0.2f, 5f).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+	@Override
+	public int getDustColor(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos) {
+		return 0;
+	}
+
+	public AshCoverBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.SAND).strength(0.2f, 5f).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+	public boolean propagatesSkylightDown(BlockState state) {
 		return true;
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "forest:dense_web"
-    }
+    "forest:dense_web"
   ],
   "result": {
     "id": "minecraft:string",

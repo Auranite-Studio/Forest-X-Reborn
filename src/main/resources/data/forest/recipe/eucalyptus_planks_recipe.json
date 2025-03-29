@@ -3,9 +3,7 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "tag": "forge:eucalyptus_log"
-    }
+    "#forge:eucalyptus_log"
   ],
   "result": {
     "id": "forest:eucalyptus_planks",

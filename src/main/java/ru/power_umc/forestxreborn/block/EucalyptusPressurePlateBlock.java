@@ -12,12 +12,12 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class EucalyptusPressurePlateBlock extends PressurePlateBlock {
-	public EucalyptusPressurePlateBlock() {
-		super(BlockSetType.OAK, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn());
+	public EucalyptusPressurePlateBlock(BlockBehaviour.Properties properties) {
+		super(BlockSetType.OAK, properties.ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn());
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 

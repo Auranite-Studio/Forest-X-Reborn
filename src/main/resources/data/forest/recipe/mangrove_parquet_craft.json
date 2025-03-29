@@ -7,9 +7,7 @@
     " a "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:mangrove_planks"
-    }
+    "a": "minecraft:mangrove_planks"
   },
   "result": {
     "id": "forest:mangrove_parquet",

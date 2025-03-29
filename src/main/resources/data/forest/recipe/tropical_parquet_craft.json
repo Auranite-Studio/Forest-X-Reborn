@@ -7,9 +7,7 @@
     " a "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:jungle_planks"
-    }
+    "a": "minecraft:jungle_planks"
   },
   "result": {
     "id": "forest:tropical_parquet",

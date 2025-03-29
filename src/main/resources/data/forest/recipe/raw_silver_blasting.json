@@ -3,9 +3,7 @@
   "category": "misc",
   "experience": 1,
   "cookingtime": 100,
-  "ingredient": {
-    "item": "forest:raw_silver"
-  },
+  "ingredient": "forest:raw_silver",
   "result": {
     "id": "forest:silver_ingot"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 68,
+  "_fv": 77,
   "_type": "block",
   "definition": {
     "texture": "lettuce_stage3",
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Lettuce Stage 3",
     "specialInformation": {
       "fixedValue": []
@@ -101,7 +102,6 @@
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

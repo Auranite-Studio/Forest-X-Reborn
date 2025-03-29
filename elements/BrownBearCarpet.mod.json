@@ -1,5 +1,5 @@
 {
-  "_fv": 68,
+  "_fv": 77,
   "_type": "block",
   "definition": {
     "texture": "brown_bear_carpet",
@@ -69,6 +69,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Brown Bear Carpet",
     "specialInformation": {
       "fixedValue": []
@@ -141,7 +142,6 @@
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

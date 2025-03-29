@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "forest:peat_piece"
-    }
+    "a": "forest:peat_piece"
   },
   "result": {
     "id": "forest:peat",

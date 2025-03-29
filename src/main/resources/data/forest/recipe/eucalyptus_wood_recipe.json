@@ -7,9 +7,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "forest:eucalyptus_log"
-    }
+    "a": "forest:eucalyptus_log"
   },
   "result": {
     "id": "forest:eucalyptus_wood",

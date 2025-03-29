@@ -5,15 +5,9 @@
     "abc"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:wheat"
-    },
-    "b": {
-      "item": "minecraft:egg"
-    },
-    "c": {
-      "item": "minecraft:honey_bottle"
-    }
+    "a": "minecraft:wheat",
+    "b": "minecraft:egg",
+    "c": "minecraft:honey_bottle"
   },
   "result": {
     "id": "forest:gingerbread_dough",

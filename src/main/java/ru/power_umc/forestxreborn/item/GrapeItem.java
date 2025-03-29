@@ -6,7 +6,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 
 public class GrapeItem extends Item {
-	public GrapeItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationModifier(0.3f).build()));
+	public GrapeItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(3).saturationModifier(0.3f).build()));
 	}
 }

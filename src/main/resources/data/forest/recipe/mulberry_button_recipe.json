@@ -3,9 +3,7 @@
   "group": "wooden_button",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "forest:mulberry_planks"
-    }
+    "forest:mulberry_planks"
   ],
   "result": {
     "id": "forest:mulberry_button",

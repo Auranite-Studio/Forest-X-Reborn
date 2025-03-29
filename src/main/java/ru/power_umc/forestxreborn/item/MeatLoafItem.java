@@ -8,8 +8,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 
 public class MeatLoafItem extends Item {
-	public MeatLoafItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(1f).build()));
+	public MeatLoafItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(1f).build()));
 	}
 
 	@Override

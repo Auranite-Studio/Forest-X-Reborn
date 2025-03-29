@@ -7,9 +7,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "forest:stripped_eucalyptus_log"
-    }
+    "a": "forest:stripped_eucalyptus_log"
   },
   "result": {
     "id": "forest:stripped_eucalyptus_wood",

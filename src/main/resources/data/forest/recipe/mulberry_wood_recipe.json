@@ -7,9 +7,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "forest:mulberry_log"
-    }
+    "a": "forest:mulberry_log"
   },
   "result": {
     "id": "forest:mulberry_wood",

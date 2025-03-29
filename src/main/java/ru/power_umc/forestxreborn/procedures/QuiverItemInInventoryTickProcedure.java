@@ -19,180 +19,57 @@ public class QuiverItemInInventoryTickProcedure {
 		double playerSlot = 0;
 		quiverSlot = 0;
 		for (int index0 = 0; index0 < 9; index0++) {
-			if ((new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack((int) quiverSlot, itemstack)).getItem() == Items.ARROW && !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains((new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack((int) quiverSlot, itemstack))) : false)) {
+			if ((getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).getItem() == Items.ARROW
+					&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains((getItemStackFromItemStackSlot((int) quiverSlot, itemstack))) : false)) {
 				playerSlot = 0;
 				for (int index1 = 0; index1 < 36; index1++) {
-					if ((new Object() {
-						public ItemStack getItemStack(int sltid, Entity entity) {
-							if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
-								return _modHandler.getStackInSlot(sltid).copy();
-							}
-							return ItemStack.EMPTY;
-						}
-					}.getItemStack((int) playerSlot, entity)).getCount() == 0) {
+					if ((entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler ? _modHandler.getStackInSlot((int) playerSlot).copy() : ItemStack.EMPTY).getCount() == 0) {
 						if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
-							ItemStack _setstack = (new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-									if (_itemHandler != null)
-										return _itemHandler.getStackInSlot(sltid).copy();
-									return ItemStack.EMPTY;
-								}
-							}.getItemStack((int) quiverSlot, itemstack)).copy();
+							ItemStack _setstack = (getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).copy();
 							_setstack.setCount(1);
 							_modHandler.setStackInSlot((int) playerSlot, _setstack);
 						}
 						if (itemstack.getCapability(Capabilities.ItemHandler.ITEM, null) instanceof IItemHandlerModifiable _modHandlerItemSetSlot) {
-							ItemStack _setstack = (new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-									if (_itemHandler != null)
-										return _itemHandler.getStackInSlot(sltid).copy();
-									return ItemStack.EMPTY;
-								}
-							}.getItemStack((int) quiverSlot, itemstack)).copy();
-							_setstack.setCount((int) ((new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-									if (_itemHandler != null)
-										return _itemHandler.getStackInSlot(sltid).copy();
-									return ItemStack.EMPTY;
-								}
-							}.getItemStack((int) quiverSlot, itemstack)).getCount() - 1));
+							ItemStack _setstack = (getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).copy();
+							_setstack.setCount((int) ((getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).getCount() - 1));
 							_modHandlerItemSetSlot.setStackInSlot((int) quiverSlot, _setstack);
 						}
 						break;
 					}
 					playerSlot = playerSlot + 1;
 				}
-			} else if ((new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack((int) quiverSlot, itemstack)).getItem() == Items.SPECTRAL_ARROW && !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains((new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack((int) quiverSlot, itemstack))) : false)) {
+			} else if ((getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).getItem() == Items.SPECTRAL_ARROW
+					&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains((getItemStackFromItemStackSlot((int) quiverSlot, itemstack))) : false)) {
 				playerSlot = 0;
 				for (int index2 = 0; index2 < 36; index2++) {
-					if ((new Object() {
-						public ItemStack getItemStack(int sltid, Entity entity) {
-							if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
-								return _modHandler.getStackInSlot(sltid).copy();
-							}
-							return ItemStack.EMPTY;
-						}
-					}.getItemStack((int) playerSlot, entity)).getCount() == 0) {
+					if ((entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler ? _modHandler.getStackInSlot((int) playerSlot).copy() : ItemStack.EMPTY).getCount() == 0) {
 						if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
-							ItemStack _setstack = (new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-									if (_itemHandler != null)
-										return _itemHandler.getStackInSlot(sltid).copy();
-									return ItemStack.EMPTY;
-								}
-							}.getItemStack((int) quiverSlot, itemstack)).copy();
+							ItemStack _setstack = (getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).copy();
 							_setstack.setCount(1);
 							_modHandler.setStackInSlot((int) playerSlot, _setstack);
 						}
 						if (itemstack.getCapability(Capabilities.ItemHandler.ITEM, null) instanceof IItemHandlerModifiable _modHandlerItemSetSlot) {
-							ItemStack _setstack = (new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-									if (_itemHandler != null)
-										return _itemHandler.getStackInSlot(sltid).copy();
-									return ItemStack.EMPTY;
-								}
-							}.getItemStack((int) quiverSlot, itemstack)).copy();
-							_setstack.setCount((int) ((new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-									if (_itemHandler != null)
-										return _itemHandler.getStackInSlot(sltid).copy();
-									return ItemStack.EMPTY;
-								}
-							}.getItemStack((int) quiverSlot, itemstack)).getCount() - 1));
+							ItemStack _setstack = (getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).copy();
+							_setstack.setCount((int) ((getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).getCount() - 1));
 							_modHandlerItemSetSlot.setStackInSlot((int) quiverSlot, _setstack);
 						}
 						break;
 					}
 					playerSlot = playerSlot + 1;
 				}
-			} else if ((new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack((int) quiverSlot, itemstack)).getItem() == Items.TIPPED_ARROW && !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains((new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack((int) quiverSlot, itemstack))) : false)) {
+			} else if ((getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).getItem() == Items.TIPPED_ARROW
+					&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains((getItemStackFromItemStackSlot((int) quiverSlot, itemstack))) : false)) {
 				playerSlot = 0;
 				for (int index3 = 0; index3 < 36; index3++) {
-					if ((new Object() {
-						public ItemStack getItemStack(int sltid, Entity entity) {
-							if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
-								return _modHandler.getStackInSlot(sltid).copy();
-							}
-							return ItemStack.EMPTY;
-						}
-					}.getItemStack((int) playerSlot, entity)).getCount() == 0) {
+					if ((entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler ? _modHandler.getStackInSlot((int) playerSlot).copy() : ItemStack.EMPTY).getCount() == 0) {
 						if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
-							ItemStack _setstack = (new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-									if (_itemHandler != null)
-										return _itemHandler.getStackInSlot(sltid).copy();
-									return ItemStack.EMPTY;
-								}
-							}.getItemStack((int) quiverSlot, itemstack)).copy();
+							ItemStack _setstack = (getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).copy();
 							_setstack.setCount(1);
 							_modHandler.setStackInSlot((int) playerSlot, _setstack);
 						}
 						if (itemstack.getCapability(Capabilities.ItemHandler.ITEM, null) instanceof IItemHandlerModifiable _modHandlerItemSetSlot) {
-							ItemStack _setstack = (new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-									if (_itemHandler != null)
-										return _itemHandler.getStackInSlot(sltid).copy();
-									return ItemStack.EMPTY;
-								}
-							}.getItemStack((int) quiverSlot, itemstack)).copy();
-							_setstack.setCount((int) ((new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-									if (_itemHandler != null)
-										return _itemHandler.getStackInSlot(sltid).copy();
-									return ItemStack.EMPTY;
-								}
-							}.getItemStack((int) quiverSlot, itemstack)).getCount() - 1));
+							ItemStack _setstack = (getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).copy();
+							_setstack.setCount((int) ((getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).getCount() - 1));
 							_modHandlerItemSetSlot.setStackInSlot((int) quiverSlot, _setstack);
 						}
 						break;
@@ -204,71 +81,17 @@ public class QuiverItemInInventoryTickProcedure {
 		}
 		{
 			final String _tagName = "arrowCount";
-			final double _tagValue = ((new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(0, itemstack)).getCount() + (new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(1, itemstack)).getCount() + (new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(2, itemstack)).getCount() + (new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(3, itemstack)).getCount() + (new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(4, itemstack)).getCount() + (new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(5, itemstack)).getCount() + (new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(6, itemstack)).getCount() + (new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(7, itemstack)).getCount() + (new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					IItemHandler _itemHandler = _isc.getCapability(Capabilities.ItemHandler.ITEM, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(sltid).copy();
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(8, itemstack)).getCount());
+			final double _tagValue = ((getItemStackFromItemStackSlot(0, itemstack)).getCount() + (getItemStackFromItemStackSlot(1, itemstack)).getCount() + (getItemStackFromItemStackSlot(2, itemstack)).getCount()
+					+ (getItemStackFromItemStackSlot(3, itemstack)).getCount() + (getItemStackFromItemStackSlot(4, itemstack)).getCount() + (getItemStackFromItemStackSlot(5, itemstack)).getCount()
+					+ (getItemStackFromItemStackSlot(6, itemstack)).getCount() + (getItemStackFromItemStackSlot(7, itemstack)).getCount() + (getItemStackFromItemStackSlot(8, itemstack)).getCount());
 			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 		}
+	}
+
+	private static ItemStack getItemStackFromItemStackSlot(int slotID, ItemStack itemStack) {
+		IItemHandler itemHandler = itemStack.getCapability(Capabilities.ItemHandler.ITEM, null);
+		if (itemHandler != null)
+			return itemHandler.getStackInSlot(slotID).copy();
+		return ItemStack.EMPTY;
 	}
 }

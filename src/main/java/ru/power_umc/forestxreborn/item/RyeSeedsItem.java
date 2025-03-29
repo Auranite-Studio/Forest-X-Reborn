@@ -9,8 +9,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.InteractionResult;
 
 public class RyeSeedsItem extends Item {
-	public RyeSeedsItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
+	public RyeSeedsItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64));
 	}
 
 	@Override

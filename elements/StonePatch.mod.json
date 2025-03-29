@@ -1,5 +1,5 @@
 {
-  "_fv": 68,
+  "_fv": 77,
   "_type": "feature",
   "definition": {
     "skipPlacement": false,
@@ -12,6 +12,6 @@
         "value": "CUSTOM:VolcanicPeaks"
       }
     ],
-    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_random_patch_simple\"><field name=\"tries\">1024</field><field name=\"xzSpread\">16</field><field name=\"ySpread\">1</field><value name=\"block\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">Blocks.STONE#0</field></block></value><value name=\"condition\"><block type=\"block_predicate_matching_blocks\"><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><value name=\"blockSet\"><block type=\"block_holderset_tag\"><field name=\"tag\">minecraft:dirt</field></block></value></block></value></block></value><next><block type=\"placement_heightmap\"><field name=\"heightmap\">WORLD_SURFACE_WG</field><next><block type=\"placement_rarity\"><field name=\"rarity\">1</field><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></xml>"
+    "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_random_patch_simple\"><field name=\"tries\">1024</field><field name=\"xzSpread\">16</field><field name=\"ySpread\">1</field><value name=\"block\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">Blocks.STONE#0</field></block></value><value name=\"condition\"><block type=\"block_predicate_matching_blocks\"><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><value name=\"blockSet\"><block type=\"block_holderset_tag\"><field name=\"tag\">minecraft:dirt</field></block></value></block></value></block></value><next><block type=\"placement_heightmap\"><field name=\"heightmap\">WORLD_SURFACE_WG</field><next><block type=\"placement_rarity\"><field name=\"rarity\">1</field><next><block type=\"placement_biome_filter\"/></next></block></next></block></next></block></xml>"
   }
 }

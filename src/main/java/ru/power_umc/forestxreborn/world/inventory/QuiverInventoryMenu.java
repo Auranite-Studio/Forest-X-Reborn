@@ -87,6 +87,10 @@ public class QuiverInventoryMenu extends AbstractContainerMenu implements Suppli
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 35) {
+			private final int slot = 0;
+			private int x = QuiverInventoryMenu.this.x;
+			private int y = QuiverInventoryMenu.this.y;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -99,6 +103,10 @@ public class QuiverInventoryMenu extends AbstractContainerMenu implements Suppli
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 35) {
+			private final int slot = 1;
+			private int x = QuiverInventoryMenu.this.x;
+			private int y = QuiverInventoryMenu.this.y;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -111,6 +119,10 @@ public class QuiverInventoryMenu extends AbstractContainerMenu implements Suppli
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 35) {
+			private final int slot = 2;
+			private int x = QuiverInventoryMenu.this.x;
+			private int y = QuiverInventoryMenu.this.y;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -123,6 +135,10 @@ public class QuiverInventoryMenu extends AbstractContainerMenu implements Suppli
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 61, 35) {
+			private final int slot = 3;
+			private int x = QuiverInventoryMenu.this.x;
+			private int y = QuiverInventoryMenu.this.y;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -135,6 +151,10 @@ public class QuiverInventoryMenu extends AbstractContainerMenu implements Suppli
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 79, 35) {
+			private final int slot = 4;
+			private int x = QuiverInventoryMenu.this.x;
+			private int y = QuiverInventoryMenu.this.y;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -147,6 +167,10 @@ public class QuiverInventoryMenu extends AbstractContainerMenu implements Suppli
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 97, 35) {
+			private final int slot = 5;
+			private int x = QuiverInventoryMenu.this.x;
+			private int y = QuiverInventoryMenu.this.y;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -159,6 +183,10 @@ public class QuiverInventoryMenu extends AbstractContainerMenu implements Suppli
 			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 115, 35) {
+			private final int slot = 6;
+			private int x = QuiverInventoryMenu.this.x;
+			private int y = QuiverInventoryMenu.this.y;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -171,6 +199,10 @@ public class QuiverInventoryMenu extends AbstractContainerMenu implements Suppli
 			}
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 133, 35) {
+			private final int slot = 7;
+			private int x = QuiverInventoryMenu.this.x;
+			private int y = QuiverInventoryMenu.this.y;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -183,6 +215,10 @@ public class QuiverInventoryMenu extends AbstractContainerMenu implements Suppli
 			}
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 151, 35) {
+			private final int slot = 8;
+			private int x = QuiverInventoryMenu.this.x;
+			private int y = QuiverInventoryMenu.this.y;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();

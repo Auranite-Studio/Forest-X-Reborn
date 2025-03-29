@@ -1,10 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "forest:polished_marble"
-  },
+  "ingredient": "forest:polished_marble",
   "result": {
-    "id": "forest:polished_marble_stairs"
+    "id": "forest:polished_marble_stairs",
+    "count": 1
   }
 }

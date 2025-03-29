@@ -7,12 +7,8 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "forest:gingerbread_brick"
-    },
-    "b": {
-      "item": "minecraft:milk_bucket"
-    }
+    "a": "forest:gingerbread_brick",
+    "b": "minecraft:milk_bucket"
   },
   "result": {
     "id": "forest:gingerbread_bricks",

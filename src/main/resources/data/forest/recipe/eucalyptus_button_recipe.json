@@ -3,9 +3,7 @@
   "group": "wooden_button",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "forest:eucalyptus_planks"
-    }
+    "forest:eucalyptus_planks"
   ],
   "result": {
     "id": "forest:eucalyptus_button",

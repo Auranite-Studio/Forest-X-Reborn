@@ -1,5 +1,5 @@
 {
-  "_fv": 68,
+  "_fv": 77,
   "_type": "achievement",
   "definition": {
     "achievementName": "Wine business",
@@ -14,7 +14,6 @@
     "hideIfNotCompleted": true,
     "rewardLoot": [],
     "rewardRecipes": [],
-    "rewardFunction": "No function",
     "rewardXP": 50,
     "achievementType": "task",
     "parent": {

@@ -10,6 +10,7 @@ import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.CocoaDecorator;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.CocoaBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.util.RandomSource;
 import net.minecraft.resources.ResourceLocation;
@@ -45,18 +46,20 @@ public class OldGrowthForestFruitDecorator extends CocoaDecorator {
 		RandomSource randomsource = context.random();
 		if (!(randomsource.nextFloat() >= 0.2F)) {
 			List<BlockPos> list = context.logs();
-			int i = list.get(0).getY();
-			list.stream().filter(p_69980_ -> p_69980_.getY() - i <= 2).forEach(p_226026_ -> {
-				for (Direction direction : Direction.Plane.HORIZONTAL) {
-					if (randomsource.nextFloat() <= 0.25F) {
-						Direction direction1 = direction.getOpposite();
-						BlockPos blockpos = p_226026_.offset(direction1.getStepX(), 0, direction1.getStepZ());
-						if (context.isAir(blockpos)) {
-							context.setBlock(blockpos, oriented(Blocks.AIR.defaultBlockState(), direction1));
+			if (!list.isEmpty()) {
+				int i = list.getFirst().getY();
+				list.stream().filter(p_69980_ -> p_69980_.getY() - i <= 2).forEach(p_226026_ -> {
+					for (Direction direction : Direction.Plane.HORIZONTAL) {
+						if (randomsource.nextFloat() <= 0.25F) {
+							Direction direction1 = direction.getOpposite();
+							BlockPos blockpos = p_226026_.offset(direction1.getStepX(), 0, direction1.getStepZ());
+							if (context.isAir(blockpos)) {
+								context.setBlock(blockpos, Blocks.COCOA.defaultBlockState().setValue(CocoaBlock.AGE, randomsource.nextInt(3)).setValue(CocoaBlock.FACING, direction));
+							}
 						}
 					}
-				}
-			});
+				});
+			}
 		}
 	}
 

@@ -14,14 +14,15 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class RyeStage7Block extends Block {
-	public RyeStage7Block() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.CROP).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	public RyeStage7Block(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.CROP).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -30,12 +31,12 @@ public class RyeStage7Block extends Block {
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+	public boolean propagatesSkylightDown(BlockState state) {
 		return true;
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 
@@ -55,7 +56,7 @@ public class RyeStage7Block extends Block {
 	}
 
 	@Override
-	public ItemStack getCloneItemStack(LevelReader level, BlockPos pos, BlockState state) {
+	public ItemStack getCloneItemStack(LevelReader world, BlockPos pos, BlockState state, boolean includeData, Player entity) {
 		return new ItemStack(ForestModItems.RYE_SEEDS.get());
 	}
 

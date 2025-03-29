@@ -7,9 +7,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "forest:silver_ingot"
-    }
+    "a": "forest:silver_ingot"
   },
   "result": {
     "id": "forest:silver_block",

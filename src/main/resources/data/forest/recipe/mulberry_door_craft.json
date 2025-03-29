@@ -8,9 +8,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "forest:mulberry_planks"
-    }
+    "a": "forest:mulberry_planks"
   },
   "result": {
     "id": "forest:mulberry_door",

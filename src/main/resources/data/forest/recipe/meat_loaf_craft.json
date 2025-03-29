@@ -7,12 +7,8 @@
     "a"
   ],
   "key": {
-    "a": {
-      "item": "forest:lettuce"
-    },
-    "b": {
-      "item": "minecraft:cooked_beef"
-    }
+    "a": "forest:lettuce",
+    "b": "minecraft:cooked_beef"
   },
   "result": {
     "id": "forest:meat_loaf",

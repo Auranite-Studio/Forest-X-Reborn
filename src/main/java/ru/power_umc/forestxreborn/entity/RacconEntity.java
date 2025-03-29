@@ -22,9 +22,9 @@ import net.minecraft.world.entity.ai.goal.BreedGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacementTypes;
-import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.tags.BlockTags;
@@ -54,24 +54,24 @@ public class RacconEntity extends Animal {
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.fox.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("entity.fox.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.fox.death"));
+		return BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("entity.fox.death"));
 	}
 
 	@Override
 	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
-		RacconEntity retval = ForestModEntities.RACCON.get().create(serverWorld);
-		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null);
+		RacconEntity retval = ForestModEntities.RACCON.get().create(serverWorld, EntitySpawnReason.BREEDING);
+		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), EntitySpawnReason.BREEDING, null);
 		return retval;
 	}
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return Ingredient.of(new ItemStack(ForestModItems.BLUEBERRY.get()), new ItemStack(Items.SWEET_BERRIES), new ItemStack(Items.GLOW_BERRIES), new ItemStack(Items.APPLE)).test(stack);
+		return Ingredient.of(ForestModItems.BLUEBERRY.get(), Items.SWEET_BERRIES, Items.GLOW_BERRIES, Items.APPLE).test(stack);
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
@@ -87,6 +87,7 @@ public class RacconEntity extends Animal {
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
+		builder = builder.add(Attributes.TEMPT_RANGE, 10);
 		return builder;
 	}
 }

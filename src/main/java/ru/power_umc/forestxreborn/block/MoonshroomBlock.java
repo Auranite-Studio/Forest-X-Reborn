@@ -19,8 +19,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class MoonshroomBlock extends FlowerBlock {
-	public MoonshroomBlock() {
-		super(MobEffects.INVISIBILITY, 200, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.FUNGUS).instabreak().lightLevel(s -> 5).noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+	public MoonshroomBlock(BlockBehaviour.Properties properties) {
+		super(MobEffects.INVISIBILITY, 200, properties.mapColor(MapColor.PLANT).sound(SoundType.FUNGUS).instabreak().lightLevel(s -> 5).noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

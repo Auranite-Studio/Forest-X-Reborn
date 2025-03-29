@@ -16,8 +16,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class PinkRoseBushBlock extends DoublePlantBlock {
-	public PinkRoseBushBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+	public PinkRoseBushBlock(BlockBehaviour.Properties properties) {
+		super(properties.mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

@@ -7,12 +7,8 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "forest:mulberry_planks"
-    },
-    "b": {
-      "item": "minecraft:stick"
-    }
+    "a": "forest:mulberry_planks",
+    "b": "minecraft:stick"
   },
   "result": {
     "id": "forest:mulberry_fence",

@@ -22,8 +22,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class BlueberryBush1Block extends Block {
-	public BlueberryBush1Block() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.SWEET_BERRY_BUSH).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	public BlueberryBush1Block(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.SWEET_BERRY_BUSH).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -32,12 +32,12 @@ public class BlueberryBush1Block extends Block {
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+	public boolean propagatesSkylightDown(BlockState state) {
 		return true;
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 
@@ -52,7 +52,7 @@ public class BlueberryBush1Block extends Block {
 	}
 
 	@Override
-	public ItemStack getCloneItemStack(LevelReader level, BlockPos pos, BlockState state) {
+	public ItemStack getCloneItemStack(LevelReader world, BlockPos pos, BlockState state, boolean includeData, Player entity) {
 		return new ItemStack(ForestModItems.BLUEBERRY.get());
 	}
 

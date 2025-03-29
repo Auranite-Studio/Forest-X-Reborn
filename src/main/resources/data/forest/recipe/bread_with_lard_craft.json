@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "forest:lard"
-    },
-    {
-      "item": "minecraft:bread"
-    }
+    "forest:lard",
+    "minecraft:bread"
   ],
   "result": {
     "id": "forest:bread_with_lard",

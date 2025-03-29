@@ -3,9 +3,7 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "tag": "forge:mulberry_log"
-    }
+    "#forge:mulberry_log"
   ],
   "result": {
     "id": "forest:mulberry_planks",

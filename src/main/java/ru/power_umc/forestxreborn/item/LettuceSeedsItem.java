@@ -11,8 +11,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.InteractionResult;
 
 public class LettuceSeedsItem extends Item {
-	public LettuceSeedsItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
+	public LettuceSeedsItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64));
 	}
 
 	@Override

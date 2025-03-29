@@ -10,12 +10,12 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class PeatBlock extends Block {
-	public PeatBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).strength(0.75f, 10f));
+	public PeatBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.MUD).strength(0.75f, 10f));
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 15;
 	}
 

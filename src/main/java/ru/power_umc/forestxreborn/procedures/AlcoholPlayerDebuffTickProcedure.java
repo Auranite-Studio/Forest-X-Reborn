@@ -36,7 +36,7 @@ public class AlcoholPlayerDebuffTickProcedure {
 		}
 		if (entity.getData(ForestModVariables.PLAYER_VARIABLES).alcohol >= 1.5) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 100, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 100, 0, false, false));
 		}
 		if (entity.getData(ForestModVariables.PLAYER_VARIABLES).alcohol >= 1.8) {
 			if (!(entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(MobEffects.HUNGER))) {
@@ -45,9 +45,9 @@ public class AlcoholPlayerDebuffTickProcedure {
 			}
 		}
 		if (entity.getData(ForestModVariables.PLAYER_VARIABLES).alcohol >= 2) {
-			if (!(entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(MobEffects.DIG_SLOWDOWN))) {
+			if (!(entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(MobEffects.MINING_FATIGUE))) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 600, 2, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.MINING_FATIGUE, 600, 2, false, false));
 			}
 		}
 		if (entity.getData(ForestModVariables.PLAYER_VARIABLES).alcohol >= 3) {

@@ -12,16 +12,28 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.util.RandomSource;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import com.mojang.serialization.MapCodec;
+
 public class MulberryLeavesWithWhiteBlock extends LeavesBlock {
-	public MulberryLeavesWithWhiteBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
+	@Override
+	public MapCodec<? extends LeavesBlock> codec() {
+		return null;
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	protected void spawnFallingLeavesParticle(Level level, BlockPos blockPos, RandomSource randomSource) {
+	}
+
+	public MulberryLeavesWithWhiteBlock(BlockBehaviour.Properties properties) {
+		super(1f, properties.ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
+	}
+
+	@Override
+	public int getLightBlock(BlockState state) {
 		return 1;
 	}
 

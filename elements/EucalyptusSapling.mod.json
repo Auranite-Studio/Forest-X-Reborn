@@ -1,5 +1,5 @@
 {
-  "_fv": 68,
+  "_fv": 77,
   "_type": "block",
   "definition": {
     "texture": "eucalyptus_sapling",
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Eucalyptus Sapling",
     "specialInformation": {
       "fixedValue": []
@@ -114,7 +115,6 @@
       "name": "EucalyptusSaplingPriNazhatii"
     },
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

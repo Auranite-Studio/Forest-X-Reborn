@@ -82,8 +82,8 @@ public class ForestModVariables {
 
 		@Override
 		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
-			alcohol = nbt.getDouble("alcohol");
-			alcoholTimer = nbt.getDouble("alcoholTimer");
+			alcohol = nbt.getDoubleOr("alcohol", 0);
+			alcoholTimer = nbt.getDoubleOr("alcoholTimer", 2400.0);
 		}
 
 		public void syncPlayerVariables(Entity entity) {

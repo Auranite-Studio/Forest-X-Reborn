@@ -12,12 +12,12 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class EucalyptusButtonBlock extends ButtonBlock {
-	public EucalyptusButtonBlock() {
-		super(BlockSetType.OAK, 30, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
+	public EucalyptusButtonBlock(BlockBehaviour.Properties properties) {
+		super(BlockSetType.OAK, 30, properties.ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 0;
 	}
 

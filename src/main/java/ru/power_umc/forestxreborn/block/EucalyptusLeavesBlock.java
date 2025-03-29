@@ -11,19 +11,32 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.util.RandomSource;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.BiomeColors;
 
+import com.mojang.serialization.MapCodec;
+
 public class EucalyptusLeavesBlock extends LeavesBlock {
-	public EucalyptusLeavesBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
+	@Override
+	public MapCodec<? extends LeavesBlock> codec() {
+		return null;
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	protected void spawnFallingLeavesParticle(Level level, BlockPos blockPos, RandomSource randomSource) {
+	}
+
+	public EucalyptusLeavesBlock(BlockBehaviour.Properties properties) {
+		super(1f, properties.ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
+	}
+
+	@Override
+	public int getLightBlock(BlockState state) {
 		return 1;
 	}
 
@@ -34,15 +47,8 @@ public class EucalyptusLeavesBlock extends LeavesBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
-		event.getBlockColors().register((bs, world, pos, index) -> {
-			return world != null && pos != null ? BiomeColors.getAverageFoliageColor(world, pos) : FoliageColor.getDefaultColor();
-		}, ForestModBlocks.EUCALYPTUS_LEAVES.get());
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
-		event.getItemColors().register((stack, index) -> {
-			return FoliageColor.getDefaultColor();
+		event.register((bs, world, pos, index) -> {
+			return world != null && pos != null ? BiomeColors.getAverageFoliageColor(world, pos) : FoliageColor.FOLIAGE_DEFAULT;
 		}, ForestModBlocks.EUCALYPTUS_LEAVES.get());
 	}
 }

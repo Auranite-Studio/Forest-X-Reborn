@@ -7,31 +7,17 @@ import net.minecraft.core.BlockPos;
 public class FBProgress6Procedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
 		double craftingTime = 0;
-		craftingTime = (new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "craftingTime")) / 10;
-		if (new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") > craftingTime * 6 && new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "craftingProgress") <= craftingTime * 7) {
+		craftingTime = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "craftingTime") / 10;
+		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "craftingProgress") > craftingTime * 6 && getBlockNBTNumber(world, BlockPos.containing(x, y, z), "craftingProgress") <= craftingTime * 7) {
 			return true;
 		}
 		return false;
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDoubleOr(tag, -1);
+		return -1;
 	}
 }

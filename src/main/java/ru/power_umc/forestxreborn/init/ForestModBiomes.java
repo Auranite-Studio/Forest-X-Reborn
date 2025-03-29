@@ -41,52 +41,52 @@ public class ForestModBiomes {
 	@SubscribeEvent
 	public static void onServerAboutToStart(ServerAboutToStartEvent event) {
 		MinecraftServer server = event.getServer();
-		Registry<DimensionType> dimensionTypeRegistry = server.registryAccess().registryOrThrow(Registries.DIMENSION_TYPE);
-		Registry<LevelStem> levelStemTypeRegistry = server.registryAccess().registryOrThrow(Registries.LEVEL_STEM);
-		Registry<Biome> biomeRegistry = server.registryAccess().registryOrThrow(Registries.BIOME);
+		Registry<DimensionType> dimensionTypeRegistry = server.registryAccess().lookupOrThrow(Registries.DIMENSION_TYPE);
+		Registry<LevelStem> levelStemTypeRegistry = server.registryAccess().lookupOrThrow(Registries.LEVEL_STEM);
+		Registry<Biome> biomeRegistry = server.registryAccess().lookupOrThrow(Registries.BIOME);
 		for (LevelStem levelStem : levelStemTypeRegistry.stream().toList()) {
 			DimensionType dimensionType = levelStem.type().value();
-			if (dimensionType == dimensionTypeRegistry.getOrThrow(BuiltinDimensionTypes.OVERWORLD)) {
+			if (dimensionType == dimensionTypeRegistry.getOrThrow(BuiltinDimensionTypes.OVERWORLD).getDelegate().value()) {
 				ChunkGenerator chunkGenerator = levelStem.generator();
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.45f, 0.2f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.55f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.05f, 0.2666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "peatbog")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.05f, 0.2666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "peatbog")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.45f, 0.2f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.55f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.05f, 0.2666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "peatbog")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.05f, 0.2666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "peatbog")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(-1f, -0.35f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.05f, 0.55f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "semidesert")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "semidesert")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(-1f, -0.35f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.05f, 0.55f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "semidesert")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "semidesert")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.2f, 0.55f), Climate.Parameter.span(-0.35f, -0.01f), Climate.Parameter.span(0.03f, 1f), Climate.Parameter.span(-0.375f, 0.05f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "dry_thorn_forest")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "dry_thorn_forest")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.2f, 0.55f), Climate.Parameter.span(-0.35f, -0.01f), Climate.Parameter.span(0.03f, 1f), Climate.Parameter.span(-0.375f, 0.05f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "dry_thorn_forest")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "dry_thorn_forest")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.2f, 0.55f), Climate.Parameter.span(0.1f, 0.3f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(-1f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.2666f, 0.4f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "eucalyptus_forest")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.2666f, 0.4f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "eucalyptus_forest")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.2f, 0.55f), Climate.Parameter.span(0.1f, 0.3f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(-1f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.2666f, 0.4f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "eucalyptus_forest")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.2666f, 0.4f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "eucalyptus_forest")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, -0.45f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.5499f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.05f, 0.2666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "frozen_swamp")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.05f, 0.2666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "frozen_swamp")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, -0.45f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.11f, 1f), Climate.Parameter.span(0.5499f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.05f, 0.2666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "frozen_swamp")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.05f, 0.2666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "frozen_swamp")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, -0.45f), Climate.Parameter.span(-1f, -0.35f), Climate.Parameter.span(0.03f, 1f), Climate.Parameter.span(-0.2225f, 0.55f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "ice_desert")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "ice_desert")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, -0.45f), Climate.Parameter.span(-1f, -0.35f), Climate.Parameter.span(0.03f, 1f), Climate.Parameter.span(-0.2225f, 0.55f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "ice_desert")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "ice_desert")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.15f, 0.2f), Climate.Parameter.span(-0.1f, 0.3f), Climate.Parameter.span(0.03f, 1f), Climate.Parameter.span(-0.375f, 0.55f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "old_growth_oak_forest")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "old_growth_oak_forest")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.15f, 0.2f), Climate.Parameter.span(-0.1f, 0.3f), Climate.Parameter.span(0.03f, 1f), Climate.Parameter.span(-0.375f, 0.55f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "old_growth_oak_forest")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(0.05f, 0.2666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "old_growth_oak_forest")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.19f, 1f), Climate.Parameter.span(-1f, -0.7799f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.7666f, -0.5666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "volcanic_peaks")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.7666f, -0.5666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "volcanic_peaks")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.19f, 1f), Climate.Parameter.span(-1f, -0.7799f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.7666f, -0.5666f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "volcanic_peaks")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.7666f, -0.5666f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "volcanic_peaks")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.33f, 0.5f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(0.45f, 1f),
-							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.1f, 0.1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "marble_caves")))));
+							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.1f, 0.1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "marble_caves")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(0.45f, 1f),
-							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.1f, 0.1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "mushrooms_caves")))));
+							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.1f, 0.1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("forest", "mushrooms_caves")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
@@ -150,7 +150,12 @@ public class ForestModBiomes {
 	}
 
 	private static void addSurfaceRule(List<SurfaceRules.RuleSource> surfaceRules, int index, SurfaceRules.RuleSource rule) {
-		if (!surfaceRules.contains(rule))
-			surfaceRules.add(index, rule);
+		if (!surfaceRules.contains(rule)) {
+			if (index >= surfaceRules.size()) {
+				surfaceRules.add(rule);
+			} else {
+				surfaceRules.add(index, rule);
+			}
+		}
 	}
 }
