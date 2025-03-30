@@ -107,6 +107,8 @@ public class ForestModTabs {
 				tabData.accept(ForestModBlocks.MARBLE_BRICKS_SLAB.get().asItem());
 				tabData.accept(ForestModBlocks.POLISHED_MARBLE_STAIRS.get().asItem());
 				tabData.accept(ForestModBlocks.MARBLE_BRICKS_STAIRS.get().asItem());
+				tabData.accept(ForestModBlocks.POLISHED_MARBLE_WALL.get().asItem());
+				tabData.accept(ForestModBlocks.MARBLE_BRICKS_WALL.get().asItem());
 				tabData.accept(ForestModBlocks.RHYOLITE.get().asItem());
 				tabData.accept(ForestModBlocks.POLISHED_RHYOLITE.get().asItem());
 				tabData.accept(ForestModBlocks.RHYOLITE_BRICKS.get().asItem());
@@ -120,9 +122,6 @@ public class ForestModTabs {
 				tabData.accept(ForestModBlocks.RHYOLITE_WALL.get().asItem());
 				tabData.accept(ForestModBlocks.POLISHED_RHYOLITE_WALL.get().asItem());
 				tabData.accept(ForestModBlocks.RHYOLITE_BRICKS_WALL.get().asItem());
-				tabData.accept(ForestModBlocks.SANDSLATE.get().asItem());
-				tabData.accept(ForestModBlocks.MARBLE_BRICKS_WALL.get().asItem());
-				tabData.accept(ForestModBlocks.POLISHED_MARBLE_WALL.get().asItem());
 				tabData.accept(ForestModBlocks.PUMICE.get().asItem());
 				tabData.accept(ForestModBlocks.POLISHED_PUMICE.get().asItem());
 				tabData.accept(ForestModBlocks.PUMICE_BRICKS.get().asItem());
@@ -140,10 +139,11 @@ public class ForestModTabs {
 				tabData.accept(ForestModBlocks.POLISHED_PUMICE_WALL.get().asItem());
 				tabData.accept(ForestModBlocks.PUMICE_BRICKS_WALL.get().asItem());
 				tabData.accept(ForestModBlocks.TRUNCATED_PUMICE_WALL.get().asItem());
-				tabData.accept(ForestModBlocks.SANDSLATE_FACETED_BRICKS.get().asItem());
+				tabData.accept(ForestModBlocks.SANDSLATE.get().asItem());
+				tabData.accept(ForestModBlocks.COBBLED_SANDSLATE.get().asItem());
 				tabData.accept(ForestModBlocks.POLISHED_SANDSLATE.get().asItem());
 				tabData.accept(ForestModBlocks.SANDSLATE_BRICKS.get().asItem());
-				tabData.accept(ForestModBlocks.COBBLED_SANDSLATE.get().asItem());
+				tabData.accept(ForestModBlocks.SANDSLATE_FACETED_BRICKS.get().asItem());
 				tabData.accept(ForestModBlocks.POLISHED_SANDSLATE_SLAB.get().asItem());
 				tabData.accept(ForestModBlocks.SANDSLATE_BRICKS_SLAB.get().asItem());
 				tabData.accept(ForestModBlocks.COBBLED_SANDSLATE_SLAB.get().asItem());
