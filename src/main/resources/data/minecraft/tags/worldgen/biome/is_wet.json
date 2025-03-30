@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "forest:peatbog",
+    "forest:eucalyptus_forest",
+    "forest:frozen_swamp"
+  ]
+}

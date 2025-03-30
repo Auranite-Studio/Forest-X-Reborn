@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "forest:semidesert",
+    "forest:dry_thorn_forest",
+    "forest:volcanic_peaks"
+  ]
+}
