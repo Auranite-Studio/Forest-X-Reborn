@@ -1,7 +1,6 @@
 {
   "type": "neoforge:add_spawns",
   "biomes": [
-    "forest:old_growth_forest",
     "flower_forest",
     "forest",
     "forest:old_growth_oak_forest"

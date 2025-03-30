@@ -1,9 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": [
-    "forest:volcano",
-    "forest:volcanic_peaks"
-  ],
+  "biomes": "forest:volcanic_peaks",
   "features": "forest:cobblestone_patch",
   "step": "surface_structures"
 }

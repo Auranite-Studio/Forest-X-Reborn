@@ -10218,6 +10218,12 @@
       "~CUSTOM:RedCrushedSandstoneStairs",
       "~CUSTOM:CrushedSandstoneStairs"
     ],
+    "BIOMES:minecraft:is_hot": [
+      "CUSTOM:Semidesert",
+      "CUSTOM:DryThornForest",
+      "CUSTOM:VolcanicPeaks",
+      "CUSTOM:EucalyptusForest"
+    ],
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:SilverSickle",
       "~CUSTOM:NetheriteSickle",
@@ -10225,12 +10231,6 @@
       "~CUSTOM:GoldenSickle",
       "~CUSTOM:IronSickle",
       "~CUSTOM:SilverPickaxe"
-    ],
-    "BIOMES:minecraft:is_hot": [
-      "CUSTOM:Semidesert",
-      "CUSTOM:DryThornForest",
-      "CUSTOM:VolcanicPeaks",
-      "CUSTOM:EucalyptusForest"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:SilverSword"
@@ -10261,13 +10261,13 @@
       "CUSTOM:MarbleCaves",
       "CUSTOM:MushroomsCaves"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
-      "~CUSTOM:VolcanicPeaks"
-    ],
     "BIOMES:minecraft:is_dry": [
       "CUSTOM:Semidesert",
       "CUSTOM:DryThornForest",
       "CUSTOM:VolcanicPeaks"
+    ],
+    "BIOMES:minecraft:has_structure/buried_treasure": [
+      "~CUSTOM:VolcanicPeaks"
     ],
     "ITEMS:minecraft:head_armor": [
       "~CUSTOM:SilverArmor.helmet"
@@ -10519,13 +10519,13 @@
       "~CUSTOM:AshBlock",
       "~CUSTOM:Peat"
     ],
-    "ITEMS:minecraft:foot_armor": [
-      "~CUSTOM:SilverArmor.boots"
-    ],
     "BIOMES:minecraft:is_wet": [
       "CUSTOM:Peatbog",
       "CUSTOM:EucalyptusForest",
       "CUSTOM:FrozenSwamp"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:SilverArmor.boots"
     ],
     "BIOMES:minecraft:has_structure/village_snowy": [
       "~CUSTOM:IceDesert"
@@ -10606,6 +10606,10 @@
     ],
     "BIOMES:minecraft:has_structure/swamp_hut": [
       "~CUSTOM:FrozenSwamp"
+    ],
+    "BIOMES:minecraft:is_cold": [
+      "CUSTOM:FrozenSwamp",
+      "CUSTOM:IceDesert"
     ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:StrippedMulberryLog",
@@ -10715,10 +10719,6 @@
       "~CUSTOM:SpruceParquet",
       "~CUSTOM:BirchParquet",
       "~CUSTOM:OakParquet"
-    ],
-    "BIOMES:minecraft:is_cold": [
-      "CUSTOM:FrozenSwamp",
-      "CUSTOM:IceDesert"
     ],
     "BIOMES:minecraft:has_structure/village_desert": [
       "~CUSTOM:Semidesert"
