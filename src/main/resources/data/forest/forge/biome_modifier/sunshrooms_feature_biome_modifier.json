@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "forest:mushrooms_caves",
-  "features": "forest:sunshrooms_feature",
-  "step": "surface_structures"
-}

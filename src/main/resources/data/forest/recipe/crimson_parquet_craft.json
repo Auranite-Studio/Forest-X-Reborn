@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aaa",
+    " a "
+  ],
+  "key": {
+    "a": "minecraft:crimson_planks"
+  },
+  "result": {
+    "id": "forest:crimson_parquet",
+    "count": 5
+  }
+}

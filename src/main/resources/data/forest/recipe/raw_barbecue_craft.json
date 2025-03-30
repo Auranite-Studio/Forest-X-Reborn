@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": "minecraft:stick",
+    "b": "minecraft:chicken"
+  },
+  "result": {
+    "id": "forest:raw_barbecue",
+    "count": 2
+  }
+}

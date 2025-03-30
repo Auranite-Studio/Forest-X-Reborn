@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "forest:eucalyptus_forest",
+  "features": "forest:eucalyptus_tree_feature",
+  "step": "vegetal_decoration"
+}

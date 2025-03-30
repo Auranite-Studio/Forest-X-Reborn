@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "forest:bread_with_lard",
+    "forest:meat_loaf",
+    "forest:lard",
+    "forest:barbecue",
+    "forest:raw_barbecue"
+  ]
+}

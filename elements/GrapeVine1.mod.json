@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 77,
   "_type": "block",
   "definition": {
     "texture": "grape_vine1",
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Grape Vine",
     "specialInformation": {
       "fixedValue": []
@@ -41,9 +42,7 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": true,
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": "CUSTOM:GrapeVine0"
@@ -100,13 +99,12 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "vanillaToolTier": "STONE",
     "placingCondition": {
       "name": "GrapeVine0UsloviieRazmieshchieniiaBloka"
     },
     "isBonemealable": true,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": "forest:silver_ingot"
+  },
+  "result": {
+    "id": "forest:silver_armor_helmet",
+    "count": 1
+  }
+}

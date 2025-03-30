@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "forest:blocks/spruce_parquet",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "forest:spruce_parquet"
+        }
+      ]
+    }
+  ]
+}

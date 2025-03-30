@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aaa",
+    " a "
+  ],
+  "key": {
+    "a": "minecraft:cherry_planks"
+  },
+  "result": {
+    "id": "forest:cherry_parquet",
+    "count": 5
+  }
+}

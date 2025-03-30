@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 77,
   "_type": "block",
   "definition": {
     "texture": "polar_bear_carpet",
@@ -69,6 +69,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Polar Bear Carpet",
     "specialInformation": {
       "fixedValue": []
@@ -77,9 +78,11 @@
     "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:DecorativeBlocks"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:DecorativeBlocks"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
@@ -136,10 +139,9 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "forest:block/pumice",
     "bottom": "forest:block/pumice",
     "top": "forest:block/pumice",
     "side": "forest:block/pumice"

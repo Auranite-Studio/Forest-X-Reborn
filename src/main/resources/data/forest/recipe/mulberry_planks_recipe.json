@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    "#forge:mulberry_log"
+  ],
+  "result": {
+    "id": "forest:mulberry_planks",
+    "count": 4
+  }
+}

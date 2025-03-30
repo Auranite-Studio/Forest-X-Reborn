@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 77,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -12,22 +12,24 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:ToolsAndArmor"
-    },
-    "harvestLevel": 2,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmor"
+      }
+    ],
     "efficiency": 12.0,
     "attackSpeed": 1.2000000000000002,
     "enchantability": 40,
     "damageVsEntity": 2.0,
     "usageCount": 72,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:SilverIngot"
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

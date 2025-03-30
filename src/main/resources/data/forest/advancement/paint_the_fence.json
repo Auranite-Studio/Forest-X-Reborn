@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "forest:white_fence"
+    },
+    "title": {
+      "translate": "advancements.paint_the_fence.title"
+    },
+    "description": {
+      "translate": "advancements.paint_the_fence.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "paint_the_fence_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "forest:forest_x_starting"
+}

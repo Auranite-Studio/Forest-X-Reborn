@@ -2,40 +2,38 @@
 package ru.power_umc.forestxreborn.block;
 
 import ru.power_umc.forestxreborn.procedures.MulberryLeavesWithBlackPriShchielchkiePKMPoBlokuProcedure;
-import ru.power_umc.forestxreborn.init.ForestModItems;
 
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.Component;
+import net.minecraft.util.RandomSource;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import java.util.List;
-import java.util.Collections;
+import com.mojang.serialization.MapCodec;
 
 public class MulberryLeavesWithBlackBlock extends LeavesBlock {
-	public MulberryLeavesWithBlackBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
+	@Override
+	public MapCodec<? extends LeavesBlock> codec() {
+		return null;
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	protected void spawnFallingLeavesParticle(Level level, BlockPos blockPos, RandomSource randomSource) {
+	}
+
+	public MulberryLeavesWithBlackBlock(BlockBehaviour.Properties properties) {
+		super(1f, properties.ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 1;
 	}
 
@@ -45,16 +43,8 @@ public class MulberryLeavesWithBlackBlock extends LeavesBlock {
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(ForestModItems.BLACK_MULBERRY.get()));
-	}
-
-	@Override
-	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
-		super.use(blockstate, world, pos, entity, hand, hit);
+	public InteractionResult useWithoutItem(BlockState blockstate, Level world, BlockPos pos, Player entity, BlockHitResult hit) {
+		super.useWithoutItem(blockstate, world, pos, entity, hit);
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();

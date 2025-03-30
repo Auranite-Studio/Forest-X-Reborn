@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "forest:old_growth_oak_forest",
+  "features": "forest:old_oak_tree",
+  "step": "vegetal_decoration"
+}

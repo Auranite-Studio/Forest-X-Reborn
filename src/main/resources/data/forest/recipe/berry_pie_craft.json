@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:sweet_berries",
+    "b": "minecraft:sugar",
+    "c": "minecraft:egg"
+  },
+  "result": {
+    "id": "forest:berry_strudel",
+    "count": 1
+  }
+}

@@ -9,10 +9,7 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "minecraft:grass_block",
-          "Properties": {
-            "snowy": "false"
-          }
+          "Name": "minecraft:grass_block"
         }
       }
     },

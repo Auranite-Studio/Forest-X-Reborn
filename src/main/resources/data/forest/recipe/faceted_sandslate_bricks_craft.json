@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "forest:cobbled_sandslate",
+  "result": {
+    "id": "forest:sandslate_faceted_bricks",
+    "count": 1
+  }
+}

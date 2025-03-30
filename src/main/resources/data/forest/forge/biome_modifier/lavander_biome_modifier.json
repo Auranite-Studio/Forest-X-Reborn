@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "flower_forest",
-  "features": "forest:lavander",
-  "step": "vegetal_decoration"
-}

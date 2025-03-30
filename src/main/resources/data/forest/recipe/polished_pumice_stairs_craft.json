@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "forest:polished_pumice",
+  "result": {
+    "id": "forest:polished_pumice_stairs",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "forest:blocks/brown_bear_carpet",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "forest:brown_bear_carpet"
+        }
+      ]
+    }
+  ]
+}

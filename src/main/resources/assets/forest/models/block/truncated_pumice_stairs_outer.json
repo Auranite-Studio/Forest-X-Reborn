@@ -1,6 +1,7 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
+    "particle": "forest:block/truncated_pumice",
     "bottom": "forest:block/truncated_pumice",
     "top": "forest:block/truncated_pumice",
     "side": "forest:block/truncated_pumice"

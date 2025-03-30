@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    "#forge:eucalyptus_log"
+  ],
+  "result": {
+    "id": "forest:eucalyptus_planks",
+    "count": 4
+  }
+}

@@ -1,9 +1,6 @@
 
 package ru.power_umc.forestxreborn.block;
 
-import net.minecraftforge.common.PlantType;
-
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
@@ -11,19 +8,16 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.DoublePlantBlock;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.network.chat.Component;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import java.util.List;
-import java.util.Collections;
-
 public class PinkRoseBushBlock extends DoublePlantBlock {
-	public PinkRoseBushBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+	public PinkRoseBushBlock(BlockBehaviour.Properties properties) {
+		super(properties.mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
@@ -32,27 +26,24 @@ public class PinkRoseBushBlock extends DoublePlantBlock {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-	}
-
-	@Override
 	public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 60;
 	}
 
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		if (state.getValue(HALF) != DoubleBlockHalf.LOWER)
-			return Collections.emptyList();
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this));
+	private boolean canPlantTypeSurvive(BlockState state, LevelReader world, BlockPos pos) {
+		return state.is(BlockTags.DIRT) || state.getBlock() == Blocks.FARMLAND;
 	}
 
 	@Override
-	public PlantType getPlantType(BlockGetter world, BlockPos pos) {
-		return PlantType.PLAINS;
+	public boolean canSurvive(BlockState blockstate, LevelReader world, BlockPos pos) {
+		BlockPos posbelow = pos.below();
+		BlockState statebelow = world.getBlockState(posbelow);
+		if (blockstate.getValue(HALF) != DoubleBlockHalf.UPPER) {
+			if (blockstate.getBlock() == this)
+				return this.canPlantTypeSurvive(statebelow, world, posbelow);
+			return this.mayPlaceOn(statebelow, world, posbelow);
+		} else {
+			return statebelow.is(this) && statebelow.getValue(HALF) == DoubleBlockHalf.LOWER;
+		}
 	}
 }

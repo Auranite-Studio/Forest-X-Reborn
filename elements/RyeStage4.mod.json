@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 77,
   "_type": "block",
   "definition": {
     "texture": "rye_stage4",
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Rye Stage 4",
     "specialInformation": {
       "fixedValue": []
@@ -41,9 +42,7 @@
     "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": "CUSTOM:RyeSeeds"
@@ -100,13 +99,12 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "NONE",
     "isBonemealable": true,
     "onBonemealSuccess": {
       "name": "RyeStage0ObnovlieniieTika"
     },
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

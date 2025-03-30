@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "door",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "forest:eucalyptus_planks"
+  },
+  "result": {
+    "id": "forest:eucalyptus_door",
+    "count": 3
+  }
+}

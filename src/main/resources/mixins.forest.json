@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "ru.power_umc.forestxreborn.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.forest.refmap.json",
+  "mixins": [],
+  "client": [],
+  "minVersion": "0.8"
+}

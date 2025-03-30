@@ -1,6 +1,7 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
+    "particle": "forest:block/red_crushed_sandstone",
     "bottom": "forest:block/red_crushed_sandstone",
     "top": "forest:block/red_crushed_sandstone",
     "side": "forest:block/red_crushed_sandstone"

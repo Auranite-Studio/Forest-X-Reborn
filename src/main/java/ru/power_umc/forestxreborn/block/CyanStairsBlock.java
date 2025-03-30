@@ -3,7 +3,6 @@ package ru.power_umc.forestxreborn.block;
 
 import ru.power_umc.forestxreborn.block.entity.CyanStairsBlockEntity;
 
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -14,21 +13,16 @@ import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
-import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import java.util.List;
-import java.util.Collections;
-
 public class CyanStairsBlock extends StairBlock implements EntityBlock {
-	public CyanStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape());
+	public CyanStairsBlock(BlockBehaviour.Properties properties) {
+		super(Blocks.AIR.defaultBlockState(), properties.ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
 	}
 
 	@Override
@@ -37,26 +31,8 @@ public class CyanStairsBlock extends StairBlock implements EntityBlock {
 	}
 
 	@Override
-	public boolean isRandomlyTicking(BlockState state) {
-		return false;
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-	}
-
-	@Override
 	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 5;
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
 	}
 
 	@Override
@@ -78,15 +54,13 @@ public class CyanStairsBlock extends StairBlock implements EntityBlock {
 	}
 
 	@Override
-	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
-		if (state.getBlock() != newState.getBlock()) {
-			BlockEntity blockEntity = world.getBlockEntity(pos);
-			if (blockEntity instanceof CyanStairsBlockEntity be) {
-				Containers.dropContents(world, pos, be);
-				world.updateNeighbourForOutputSignal(pos, this);
-			}
-			super.onRemove(state, world, pos, newState, isMoving);
+	public void affectNeighborsAfterRemoval(BlockState state, ServerLevel world, BlockPos pos, boolean isMoving) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity instanceof CyanStairsBlockEntity be) {
+			Containers.dropContents(world, pos, be);
+			world.updateNeighbourForOutputSignal(pos, this);
 		}
+		super.affectNeighborsAfterRemoval(state, world, pos, isMoving);
 	}
 
 	@Override

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "forest:blocks/cobbled_sandslate_wall",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "forest:cobbled_sandslate_wall"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "forest:blocks/pink_slab",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "forest:pink_slab",
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "forest:pink_slab",
+                  "properties": {
+                    "type": "double"
+                  }
+                }
+              ],
+              "count": 2.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

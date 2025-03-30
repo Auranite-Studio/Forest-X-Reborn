@@ -11,10 +11,7 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "minecraft:grass_block",
-              "Properties": {
-                "snowy": "false"
-              }
+              "Name": "minecraft:grass_block"
             }
           }
         }

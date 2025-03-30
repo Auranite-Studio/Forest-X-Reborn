@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 77,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "silver_leggings",
     "enableBoots": true,
     "textureBoots": "silver_boots",
-    "creativeTab": {
-      "value": "CUSTOM:ToolsAndArmor"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmor"
+      }
+    ],
     "armorTextureFile": "silver",
     "helmetName": "Silver Helmet",
     "bodyName": "Silver Chestplate",

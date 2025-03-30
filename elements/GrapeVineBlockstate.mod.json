@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "blockstates",
+  "definition": {
+    "block": "GrapeVine",
+    "blockstateList": [
+      {
+        "texture": "grape_vine1",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "grape_vine1",
+        "renderType": 2,
+        "customModelName": "vine:growed",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

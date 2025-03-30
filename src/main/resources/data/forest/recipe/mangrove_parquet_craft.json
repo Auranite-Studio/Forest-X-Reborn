@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aaa",
+    " a "
+  ],
+  "key": {
+    "a": "minecraft:mangrove_planks"
+  },
+  "result": {
+    "id": "forest:mangrove_parquet",
+    "count": 5
+  }
+}

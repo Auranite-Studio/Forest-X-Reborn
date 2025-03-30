@@ -1,6 +1,7 @@
 {
   "parent": "block/slab",
   "textures": {
+    "particle": "forest:block/marble_polished",
     "bottom": "forest:block/marble_polished",
     "top": "forest:block/marble_polished",
     "side": "forest:block/marble_polished"

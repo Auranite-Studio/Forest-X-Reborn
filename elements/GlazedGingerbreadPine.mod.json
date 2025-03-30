@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 77,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -9,9 +9,11 @@
     "states": [],
     "name": "Glazed Gingerbread",
     "rarity": "COMMON",
-    "creativeTab": {
-      "value": "CUSTOM:Food"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Food"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 32,
@@ -33,14 +35,15 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "Arrow"
     },
+    "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": 4,
     "saturation": 0.6,
@@ -49,6 +52,9 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "eat"
+    "animation": "eat",
+    "isMusicDisc": false,
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
   }
 }

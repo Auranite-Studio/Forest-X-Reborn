@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "forest:mulberry_log"
+  },
+  "result": {
+    "id": "forest:mulberry_wood",
+    "count": 3
+  }
+}

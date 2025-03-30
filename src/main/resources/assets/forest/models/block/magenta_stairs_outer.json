@@ -1,6 +1,7 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
+    "particle": "forest:block/magenta_planks",
     "bottom": "forest:block/magenta_planks",
     "top": "forest:block/magenta_planks",
     "side": "forest:block/magenta_planks"

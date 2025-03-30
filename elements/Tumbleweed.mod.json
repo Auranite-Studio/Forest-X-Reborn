@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 68,
   "_type": "animatedentity",
   "definition": {
     "mobName": "tumbleweed",
@@ -12,10 +12,12 @@
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
+    "entityDataEntries": [],
     "modelWidth": 0.7999999999999999,
     "modelHeight": 0.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
+    "stepHeight": 0.6,
     "hasSpawnEgg": false,
     "spawnEggBaseColor": {
       "value": -1,
@@ -137,6 +139,15 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "height": 1.0,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ],
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 5,

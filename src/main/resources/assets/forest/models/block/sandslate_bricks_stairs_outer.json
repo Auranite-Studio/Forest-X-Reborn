@@ -1,6 +1,7 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
+    "particle": "forest:block/sandslate_bricks",
     "bottom": "forest:block/sandslate_bricks",
     "top": "forest:block/sandslate_bricks",
     "side": "forest:block/sandslate_bricks"

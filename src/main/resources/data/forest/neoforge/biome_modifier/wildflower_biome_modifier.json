@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "flower_forest",
+    "plains"
+  ],
+  "features": "forest:wildflower",
+  "step": "vegetal_decoration"
+}

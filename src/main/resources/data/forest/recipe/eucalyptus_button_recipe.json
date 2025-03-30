@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    "forest:eucalyptus_planks"
+  ],
+  "result": {
+    "id": "forest:eucalyptus_button",
+    "count": 1
+  }
+}

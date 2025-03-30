@@ -3,44 +3,46 @@ package ru.power_umc.forestxreborn.item;
 
 import ru.power_umc.forestxreborn.procedures.GingerbreadBrickLCProcedure;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.Minecraft;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 public class GingerbreadFormBrickItem extends Item {
-	public GingerbreadFormBrickItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+	public GingerbreadFormBrickItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(1));
 	}
 
 	@Override
-	public boolean hasCraftingRemainingItem() {
-		return true;
-	}
-
-	@Override
-	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
+	public ItemStack getCraftingRemainder(ItemStack itemstack) {
 		return new ItemStack(this);
 	}
 
 	@Override
-	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
+	public float getDestroySpeed(ItemStack itemstack, BlockState state) {
 		return 0f;
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-		Entity entity = itemstack.getEntityRepresentation();
-		double x = entity != null ? entity.getX() : 0.0;
-		double y = entity != null ? entity.getY() : 0.0;
-		double z = entity != null ? entity.getZ() : 0.0;
-		list.add(Component.literal(GingerbreadBrickLCProcedure.execute()));
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay display, Consumer<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, display, list, flag);
+		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
+		String hoverText = GingerbreadBrickLCProcedure.execute();
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.accept(Component.literal(line));
+			}
+		}
 	}
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": "forest:lettuce",
+    "b": "minecraft:cooked_beef"
+  },
+  "result": {
+    "id": "forest:meat_loaf",
+    "count": 1
+  }
+}

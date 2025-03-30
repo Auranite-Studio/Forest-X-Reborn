@@ -4,62 +4,63 @@ package ru.power_umc.forestxreborn.item;
 import ru.power_umc.forestxreborn.world.inventory.QuiverInventoryMenu;
 import ru.power_umc.forestxreborn.procedures.QuiverValueProcedure;
 import ru.power_umc.forestxreborn.procedures.QuiverItemInInventoryTickProcedure;
-import ru.power_umc.forestxreborn.item.inventory.QuiverInventoryCapability;
 
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.common.capabilities.ICapabilityProvider;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemUseAnimation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
-import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.nbt.CompoundTag;
+import net.minecraft.client.Minecraft;
 
-import javax.annotation.Nullable;
-
-import java.util.List;
+import java.util.function.Consumer;
 
 import io.netty.buffer.Unpooled;
 
 public class QuiverItem extends Item {
-	public QuiverItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+	public QuiverItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(1));
 	}
 
 	@Override
-	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.EAT;
+	public ItemUseAnimation getUseAnimation(ItemStack itemstack) {
+		return ItemUseAnimation.EAT;
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-		Entity entity = itemstack.getEntityRepresentation();
-		double x = entity != null ? entity.getX() : 0.0;
-		double y = entity != null ? entity.getY() : 0.0;
-		double z = entity != null ? entity.getZ() : 0.0;
-		list.add(Component.literal(QuiverValueProcedure.execute(itemstack)));
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay display, Consumer<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, display, list, flag);
+		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
+		String hoverText = QuiverValueProcedure.execute(itemstack);
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.accept(Component.literal(line));
+			}
+		}
 	}
 
 	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+	public InteractionResult use(Level world, Player entity, InteractionHand hand) {
+		InteractionResult ar = super.use(world, entity, hand);
 		if (entity instanceof ServerPlayer serverPlayer) {
-			NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
+			serverPlayer.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
 					return Component.literal("Quiver");
@@ -81,27 +82,8 @@ public class QuiverItem extends Item {
 	}
 
 	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
+	public void inventoryTick(ItemStack itemstack, ServerLevel world, Entity entity, EquipmentSlot slot) {
+		super.inventoryTick(itemstack, world, entity, slot);
 		QuiverItemInInventoryTickProcedure.execute(entity, itemstack);
-	}
-
-	@Override
-	public ICapabilityProvider initCapabilities(ItemStack stack, @Nullable CompoundTag compound) {
-		return new QuiverInventoryCapability();
-	}
-
-	@Override
-	public CompoundTag getShareTag(ItemStack stack) {
-		CompoundTag nbt = stack.getOrCreateTag();
-		stack.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> nbt.put("Inventory", ((ItemStackHandler) capability).serializeNBT()));
-		return nbt;
-	}
-
-	@Override
-	public void readShareTag(ItemStack stack, @Nullable CompoundTag nbt) {
-		super.readShareTag(stack, nbt);
-		if (nbt != null)
-			stack.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> ((ItemStackHandler) capability).deserializeNBT((CompoundTag) nbt.get("Inventory")));
 	}
 }

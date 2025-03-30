@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 77,
   "_type": "biome",
   "definition": {
     "name": "Volcano (Outdated)",
@@ -13,6 +13,10 @@
       "value": "Blocks.BASALT"
     },
     "airColor": {
+      "value": -10066330,
+      "falpha": 0.0
+    },
+    "fogColor": {
       "value": -10066330,
       "falpha": 0.0
     },

@@ -1,27 +1,31 @@
 
 package ru.power_umc.forestxreborn.world.features.treedecorators;
 
-import net.minecraftforge.registries.RegisterEvent;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.levelgen.feature.treedecorators.TrunkVineDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class OldGrowthForestTrunkDecorator extends TrunkVineDecorator {
-	public static Codec<OldGrowthForestTrunkDecorator> CODEC = Codec.unit(OldGrowthForestTrunkDecorator::new);
+	public static MapCodec<OldGrowthForestTrunkDecorator> CODEC = MapCodec.unit(OldGrowthForestTrunkDecorator::new);
 	public static TreeDecoratorType<?> DECORATOR_TYPE = new TreeDecoratorType<>(CODEC);
 
 	@SubscribeEvent
-	public static void registerPointOfInterest(RegisterEvent event) {
-		event.register(ForgeRegistries.Keys.TREE_DECORATOR_TYPES, registerHelper -> registerHelper.register("old_growth_forest_tree_trunk_decorator", DECORATOR_TYPE));
+	public static void registerTreeDecorator(RegisterEvent event) {
+		event.register(Registries.TREE_DECORATOR_TYPE, ResourceLocation.parse("forest:old_growth_forest_tree_trunk_decorator"), () -> DECORATOR_TYPE);
 	}
 
 	@Override
@@ -35,27 +39,37 @@ public class OldGrowthForestTrunkDecorator extends TrunkVineDecorator {
 			if (context.random().nextInt(3) > 0) {
 				BlockPos pos = blockpos.west();
 				if (context.isAir(pos)) {
-					context.setBlock(pos, Blocks.VINE.defaultBlockState());
+					context.setBlock(pos, oriented(Blocks.VINE.defaultBlockState(), Direction.EAST));
 				}
 			}
 			if (context.random().nextInt(3) > 0) {
 				BlockPos pos = blockpos.east();
 				if (context.isAir(pos)) {
-					context.setBlock(pos, Blocks.VINE.defaultBlockState());
+					context.setBlock(pos, oriented(Blocks.VINE.defaultBlockState(), Direction.WEST));
 				}
 			}
 			if (context.random().nextInt(3) > 0) {
 				BlockPos pos = blockpos.north();
 				if (context.isAir(pos)) {
-					context.setBlock(pos, Blocks.VINE.defaultBlockState());
+					context.setBlock(pos, oriented(Blocks.VINE.defaultBlockState(), Direction.SOUTH));
 				}
 			}
 			if (context.random().nextInt(3) > 0) {
 				BlockPos pos = blockpos.south();
 				if (context.isAir(pos)) {
-					context.setBlock(pos, Blocks.VINE.defaultBlockState());
+					context.setBlock(pos, oriented(Blocks.VINE.defaultBlockState(), Direction.NORTH));
 				}
 			}
 		});
+	}
+
+	@SuppressWarnings("deprecation")
+	private static BlockState oriented(BlockState blockstate, Direction direction) {
+		return switch (direction) {
+			case SOUTH -> blockstate.rotate(Rotation.CLOCKWISE_180);
+			case EAST -> blockstate.rotate(Rotation.CLOCKWISE_90);
+			case WEST -> blockstate.rotate(Rotation.COUNTERCLOCKWISE_90);
+			default -> blockstate;
+		};
 	}
 }

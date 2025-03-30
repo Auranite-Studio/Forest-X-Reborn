@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "forest:semidesert",
+  "features": "forest:semidesert_patch",
+  "step": "surface_structures"
+}

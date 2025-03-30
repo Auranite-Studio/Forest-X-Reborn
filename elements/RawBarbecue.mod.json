@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 77,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -9,9 +9,11 @@
     "states": [],
     "name": "Raw barbecue",
     "rarity": "COMMON",
-    "creativeTab": {
-      "value": "CUSTOM:Food"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Food"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 32,
@@ -29,11 +31,12 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": 4,
     "saturation": 0.5,
@@ -42,6 +45,9 @@
     },
     "isMeat": true,
     "isAlwaysEdible": false,
-    "animation": "eat"
+    "animation": "eat",
+    "isMusicDisc": false,
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
   }
 }

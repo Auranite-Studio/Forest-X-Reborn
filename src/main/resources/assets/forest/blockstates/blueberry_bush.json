@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "forest:block/blueberry_bush"
+    },
+    "blockstate=1": {
+      "model": "forest:block/blueberry_bush_blockstates_blockstate_0"
+    }
+  }
+}

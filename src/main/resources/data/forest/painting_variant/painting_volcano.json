@@ -1,0 +1,11 @@
+{
+  "asset_id": "forest:painting_volcano",
+  "height": 2,
+  "width": 2,
+  "title": {
+    "translate": "painting.forest.painting_volcano.title"
+  },
+  "author": {
+    "translate": "painting.forest.painting_volcano.author"
+  }
+}

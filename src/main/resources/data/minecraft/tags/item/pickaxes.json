@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "forest:silver_sickle",
+    "forest:netherite_sickle",
+    "forest:diamond_sickle",
+    "forest:golden_sickle",
+    "forest:iron_sickle",
+    "forest:silver_pickaxe"
+  ]
+}

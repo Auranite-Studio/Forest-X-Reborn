@@ -1,14 +1,15 @@
 package ru.power_umc.forestxreborn.procedures;
 
-import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.items.IItemHandler;
+import net.neoforged.neoforge.capabilities.Capabilities;
 
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-
-import java.util.concurrent.atomic.AtomicReference;
+import net.minecraft.core.component.DataComponents;
 
 public class QuiverItemInInventoryTickProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
@@ -18,229 +19,58 @@ public class QuiverItemInInventoryTickProcedure {
 		double playerSlot = 0;
 		quiverSlot = 0;
 		for (int index0 = 0; index0 < 9; index0++) {
-			if ((new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-					return _retval.get();
-				}
-			}.getItemStack((int) quiverSlot, itemstack)).getItem() == Items.ARROW && !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains((new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-					return _retval.get();
-				}
-			}.getItemStack((int) quiverSlot, itemstack))) : false)) {
+			if ((getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).getItem() == Items.ARROW
+					&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains((getItemStackFromItemStackSlot((int) quiverSlot, itemstack))) : false)) {
 				playerSlot = 0;
 				for (int index1 = 0; index1 < 36; index1++) {
-					if ((new Object() {
-						public ItemStack getItemStack(int sltid, Entity entity) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								_retval.set(capability.getStackInSlot(sltid).copy());
-							});
-							return _retval.get();
-						}
-					}.getItemStack((int) playerSlot, entity)).getCount() == 0) {
-						{
-							final int _slotid = (int) playerSlot;
-							final ItemStack _setstack = (new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-									_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-										_retval.set(capability.getStackInSlot(sltid).copy());
-									});
-									return _retval.get();
-								}
-							}.getItemStack((int) quiverSlot, itemstack));
+					if ((entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler ? _modHandler.getStackInSlot((int) playerSlot).copy() : ItemStack.EMPTY).getCount() == 0) {
+						if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
+							ItemStack _setstack = (getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).copy();
 							_setstack.setCount(1);
-							entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								if (capability instanceof IItemHandlerModifiable _modHandler)
-									_modHandler.setStackInSlot(_slotid, _setstack);
-							});
+							_modHandler.setStackInSlot((int) playerSlot, _setstack);
 						}
-						{
-							ItemStack _isc = itemstack;
-							final ItemStack _setstack = (new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-									_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-										_retval.set(capability.getStackInSlot(sltid).copy());
-									});
-									return _retval.get();
-								}
-							}.getItemStack((int) quiverSlot, itemstack));
-							final int _sltid = (int) quiverSlot;
-							_setstack.setCount((int) ((new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-									_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-										_retval.set(capability.getStackInSlot(sltid).copy());
-									});
-									return _retval.get();
-								}
-							}.getItemStack((int) quiverSlot, itemstack)).getCount() - 1));
-							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								if (capability instanceof IItemHandlerModifiable itemHandlerModifiable) {
-									itemHandlerModifiable.setStackInSlot(_sltid, _setstack);
-								}
-							});
+						if (itemstack.getCapability(Capabilities.ItemHandler.ITEM, null) instanceof IItemHandlerModifiable _modHandlerItemSetSlot) {
+							ItemStack _setstack = (getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).copy();
+							_setstack.setCount((int) ((getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).getCount() - 1));
+							_modHandlerItemSetSlot.setStackInSlot((int) quiverSlot, _setstack);
 						}
 						break;
 					}
 					playerSlot = playerSlot + 1;
 				}
-			} else if ((new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-					return _retval.get();
-				}
-			}.getItemStack((int) quiverSlot, itemstack)).getItem() == Items.SPECTRAL_ARROW && !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains((new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-					return _retval.get();
-				}
-			}.getItemStack((int) quiverSlot, itemstack))) : false)) {
+			} else if ((getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).getItem() == Items.SPECTRAL_ARROW
+					&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains((getItemStackFromItemStackSlot((int) quiverSlot, itemstack))) : false)) {
 				playerSlot = 0;
 				for (int index2 = 0; index2 < 36; index2++) {
-					if ((new Object() {
-						public ItemStack getItemStack(int sltid, Entity entity) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								_retval.set(capability.getStackInSlot(sltid).copy());
-							});
-							return _retval.get();
-						}
-					}.getItemStack((int) playerSlot, entity)).getCount() == 0) {
-						{
-							final int _slotid = (int) playerSlot;
-							final ItemStack _setstack = (new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-									_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-										_retval.set(capability.getStackInSlot(sltid).copy());
-									});
-									return _retval.get();
-								}
-							}.getItemStack((int) quiverSlot, itemstack));
+					if ((entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler ? _modHandler.getStackInSlot((int) playerSlot).copy() : ItemStack.EMPTY).getCount() == 0) {
+						if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
+							ItemStack _setstack = (getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).copy();
 							_setstack.setCount(1);
-							entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								if (capability instanceof IItemHandlerModifiable _modHandler)
-									_modHandler.setStackInSlot(_slotid, _setstack);
-							});
+							_modHandler.setStackInSlot((int) playerSlot, _setstack);
 						}
-						{
-							ItemStack _isc = itemstack;
-							final ItemStack _setstack = (new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-									_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-										_retval.set(capability.getStackInSlot(sltid).copy());
-									});
-									return _retval.get();
-								}
-							}.getItemStack((int) quiverSlot, itemstack));
-							final int _sltid = (int) quiverSlot;
-							_setstack.setCount((int) ((new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-									_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-										_retval.set(capability.getStackInSlot(sltid).copy());
-									});
-									return _retval.get();
-								}
-							}.getItemStack((int) quiverSlot, itemstack)).getCount() - 1));
-							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								if (capability instanceof IItemHandlerModifiable itemHandlerModifiable) {
-									itemHandlerModifiable.setStackInSlot(_sltid, _setstack);
-								}
-							});
+						if (itemstack.getCapability(Capabilities.ItemHandler.ITEM, null) instanceof IItemHandlerModifiable _modHandlerItemSetSlot) {
+							ItemStack _setstack = (getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).copy();
+							_setstack.setCount((int) ((getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).getCount() - 1));
+							_modHandlerItemSetSlot.setStackInSlot((int) quiverSlot, _setstack);
 						}
 						break;
 					}
 					playerSlot = playerSlot + 1;
 				}
-			} else if ((new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-					return _retval.get();
-				}
-			}.getItemStack((int) quiverSlot, itemstack)).getItem() == Items.TIPPED_ARROW && !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains((new Object() {
-				public ItemStack getItemStack(int sltid, ItemStack _isc) {
-					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-						_retval.set(capability.getStackInSlot(sltid).copy());
-					});
-					return _retval.get();
-				}
-			}.getItemStack((int) quiverSlot, itemstack))) : false)) {
+			} else if ((getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).getItem() == Items.TIPPED_ARROW
+					&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains((getItemStackFromItemStackSlot((int) quiverSlot, itemstack))) : false)) {
 				playerSlot = 0;
 				for (int index3 = 0; index3 < 36; index3++) {
-					if ((new Object() {
-						public ItemStack getItemStack(int sltid, Entity entity) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								_retval.set(capability.getStackInSlot(sltid).copy());
-							});
-							return _retval.get();
-						}
-					}.getItemStack((int) playerSlot, entity)).getCount() == 0) {
-						{
-							final int _slotid = (int) playerSlot;
-							final ItemStack _setstack = (new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-									_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-										_retval.set(capability.getStackInSlot(sltid).copy());
-									});
-									return _retval.get();
-								}
-							}.getItemStack((int) quiverSlot, itemstack));
+					if ((entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler ? _modHandler.getStackInSlot((int) playerSlot).copy() : ItemStack.EMPTY).getCount() == 0) {
+						if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
+							ItemStack _setstack = (getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).copy();
 							_setstack.setCount(1);
-							entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								if (capability instanceof IItemHandlerModifiable _modHandler)
-									_modHandler.setStackInSlot(_slotid, _setstack);
-							});
+							_modHandler.setStackInSlot((int) playerSlot, _setstack);
 						}
-						{
-							ItemStack _isc = itemstack;
-							final ItemStack _setstack = (new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-									_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-										_retval.set(capability.getStackInSlot(sltid).copy());
-									});
-									return _retval.get();
-								}
-							}.getItemStack((int) quiverSlot, itemstack));
-							final int _sltid = (int) quiverSlot;
-							_setstack.setCount((int) ((new Object() {
-								public ItemStack getItemStack(int sltid, ItemStack _isc) {
-									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-									_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-										_retval.set(capability.getStackInSlot(sltid).copy());
-									});
-									return _retval.get();
-								}
-							}.getItemStack((int) quiverSlot, itemstack)).getCount() - 1));
-							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								if (capability instanceof IItemHandlerModifiable itemHandlerModifiable) {
-									itemHandlerModifiable.setStackInSlot(_sltid, _setstack);
-								}
-							});
+						if (itemstack.getCapability(Capabilities.ItemHandler.ITEM, null) instanceof IItemHandlerModifiable _modHandlerItemSetSlot) {
+							ItemStack _setstack = (getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).copy();
+							_setstack.setCount((int) ((getItemStackFromItemStackSlot((int) quiverSlot, itemstack)).getCount() - 1));
+							_modHandlerItemSetSlot.setStackInSlot((int) quiverSlot, _setstack);
 						}
 						break;
 					}
@@ -249,78 +79,19 @@ public class QuiverItemInInventoryTickProcedure {
 			}
 			quiverSlot = quiverSlot + 1;
 		}
-		itemstack.getOrCreateTag().putDouble("arrowCount", ((new Object() {
-			public ItemStack getItemStack(int sltid, ItemStack _isc) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-					_retval.set(capability.getStackInSlot(sltid).copy());
-				});
-				return _retval.get();
-			}
-		}.getItemStack(0, itemstack)).getCount() + (new Object() {
-			public ItemStack getItemStack(int sltid, ItemStack _isc) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-					_retval.set(capability.getStackInSlot(sltid).copy());
-				});
-				return _retval.get();
-			}
-		}.getItemStack(1, itemstack)).getCount() + (new Object() {
-			public ItemStack getItemStack(int sltid, ItemStack _isc) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-					_retval.set(capability.getStackInSlot(sltid).copy());
-				});
-				return _retval.get();
-			}
-		}.getItemStack(2, itemstack)).getCount() + (new Object() {
-			public ItemStack getItemStack(int sltid, ItemStack _isc) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-					_retval.set(capability.getStackInSlot(sltid).copy());
-				});
-				return _retval.get();
-			}
-		}.getItemStack(3, itemstack)).getCount() + (new Object() {
-			public ItemStack getItemStack(int sltid, ItemStack _isc) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-					_retval.set(capability.getStackInSlot(sltid).copy());
-				});
-				return _retval.get();
-			}
-		}.getItemStack(4, itemstack)).getCount() + (new Object() {
-			public ItemStack getItemStack(int sltid, ItemStack _isc) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-					_retval.set(capability.getStackInSlot(sltid).copy());
-				});
-				return _retval.get();
-			}
-		}.getItemStack(5, itemstack)).getCount() + (new Object() {
-			public ItemStack getItemStack(int sltid, ItemStack _isc) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-					_retval.set(capability.getStackInSlot(sltid).copy());
-				});
-				return _retval.get();
-			}
-		}.getItemStack(6, itemstack)).getCount() + (new Object() {
-			public ItemStack getItemStack(int sltid, ItemStack _isc) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-					_retval.set(capability.getStackInSlot(sltid).copy());
-				});
-				return _retval.get();
-			}
-		}.getItemStack(7, itemstack)).getCount() + (new Object() {
-			public ItemStack getItemStack(int sltid, ItemStack _isc) {
-				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-					_retval.set(capability.getStackInSlot(sltid).copy());
-				});
-				return _retval.get();
-			}
-		}.getItemStack(8, itemstack)).getCount()));
+		{
+			final String _tagName = "arrowCount";
+			final double _tagValue = ((getItemStackFromItemStackSlot(0, itemstack)).getCount() + (getItemStackFromItemStackSlot(1, itemstack)).getCount() + (getItemStackFromItemStackSlot(2, itemstack)).getCount()
+					+ (getItemStackFromItemStackSlot(3, itemstack)).getCount() + (getItemStackFromItemStackSlot(4, itemstack)).getCount() + (getItemStackFromItemStackSlot(5, itemstack)).getCount()
+					+ (getItemStackFromItemStackSlot(6, itemstack)).getCount() + (getItemStackFromItemStackSlot(7, itemstack)).getCount() + (getItemStackFromItemStackSlot(8, itemstack)).getCount());
+			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+		}
+	}
+
+	private static ItemStack getItemStackFromItemStackSlot(int slotID, ItemStack itemStack) {
+		IItemHandler itemHandler = itemStack.getCapability(Capabilities.ItemHandler.ITEM, null);
+		if (itemHandler != null)
+			return itemHandler.getStackInSlot(slotID).copy();
+		return ItemStack.EMPTY;
 	}
 }

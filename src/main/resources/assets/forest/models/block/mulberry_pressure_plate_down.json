@@ -1,6 +1,7 @@
 {
   "parent": "block/pressure_plate_down",
   "textures": {
+    "particle": "forest:block/mulberry_planks",
     "texture": "forest:block/mulberry_planks"
   },
   "render_type": "solid"

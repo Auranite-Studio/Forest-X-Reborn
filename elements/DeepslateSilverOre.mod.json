@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 77,
   "_type": "block",
   "definition": {
     "texture": "deepslate_silver_ore",
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Deepslate Silver Ore",
     "specialInformation": {
       "fixedValue": []
@@ -41,9 +42,11 @@
     "resistance": 6.915809336112958,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:Ores"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Ores"
+      }
+    ],
     "destroyTool": "pickaxe",
     "customDrop": {
       "value": "CUSTOM:RawSilver"
@@ -100,10 +103,9 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 2,
+    "vanillaToolTier": "IRON",
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,

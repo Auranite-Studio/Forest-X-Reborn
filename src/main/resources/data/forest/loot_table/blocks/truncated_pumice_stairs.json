@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "forest:blocks/truncated_pumice_stairs",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "forest:truncated_pumice_stairs"
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "forest:frozen_swamp",
-    "forest:ice_desert"
+    "forest:ice_desert",
+    "forest:frozen_swamp"
   ]
 }

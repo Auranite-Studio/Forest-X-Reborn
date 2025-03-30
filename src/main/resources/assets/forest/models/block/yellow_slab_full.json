@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "forest:block/yellow_planks",
     "bottom": "forest:block/yellow_planks",
     "top": "forest:block/yellow_planks",
     "side": "forest:block/yellow_planks"

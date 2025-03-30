@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:iron_nugget"
+  },
+  "result": {
+    "id": "forest:gingerbread_form_brick",
+    "count": 1
+  }
+}

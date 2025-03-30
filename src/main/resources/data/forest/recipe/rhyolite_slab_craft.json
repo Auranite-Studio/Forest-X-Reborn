@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "forest:rhyolite",
+  "result": {
+    "id": "forest:rhyolite_slab",
+    "count": 1
+  }
+}

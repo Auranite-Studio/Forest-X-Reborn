@@ -2,7 +2,7 @@
   "parent": "block/cross",
   "textures": {
     "cross": "forest:block/pink_rose_lower",
-    "particle": "forest:block/pink_rose_lower"
+    "particle": "forest:block/pink_rose_upper"
   },
   "render_type": "cutout"
 }

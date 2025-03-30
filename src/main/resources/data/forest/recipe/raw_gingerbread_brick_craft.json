@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "forest:gingerbread_dough",
+    "forest:gingerbread_form_brick"
+  ],
+  "result": {
+    "id": "forest:raw_gingerbread_brick",
+    "count": 1
+  }
+}

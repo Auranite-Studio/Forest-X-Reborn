@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa"
+  ],
+  "key": {
+    "a": "forest:brown_bear_pelt"
+  },
+  "result": {
+    "id": "forest:brown_bear_carpet",
+    "count": 1
+  }
+}

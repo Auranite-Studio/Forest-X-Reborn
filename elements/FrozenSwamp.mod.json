@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 77,
   "_type": "biome",
   "definition": {
     "name": "Frozen Swamp",
@@ -13,6 +13,10 @@
       "value": "Blocks.CLAY"
     },
     "airColor": {
+      "value": -8151297,
+      "falpha": 0.0
+    },
+    "fogColor": {
       "value": -8151297,
       "falpha": 0.0
     },

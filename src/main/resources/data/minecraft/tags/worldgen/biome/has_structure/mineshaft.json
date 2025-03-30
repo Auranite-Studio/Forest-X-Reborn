@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "forest:volcano",
-    "forest:volcanic_peaks"
+    "forest:volcanic_peaks",
+    "forest:volcano"
   ]
 }

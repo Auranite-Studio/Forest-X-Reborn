@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "frozen_peaks",
+    "jagged_peaks",
+    "snowy_slopes",
+    "stony_peaks",
+    "windswept_gravelly_hills",
+    "windswept_hills"
+  ],
+  "features": "forest:rhyolite",
+  "step": "underground_ores"
+}

@@ -1,0 +1,11 @@
+{
+  "asset_id": "forest:painting_pig_in_mood",
+  "height": 2,
+  "width": 2,
+  "title": {
+    "translate": "painting.forest.painting_pig_in_mood.title"
+  },
+  "author": {
+    "translate": "painting.forest.painting_pig_in_mood.author"
+  }
+}

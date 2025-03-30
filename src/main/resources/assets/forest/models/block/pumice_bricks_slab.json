@@ -1,6 +1,7 @@
 {
   "parent": "block/slab",
   "textures": {
+    "particle": "forest:block/pumice_bricks",
     "bottom": "forest:block/pumice_bricks",
     "top": "forest:block/pumice_bricks",
     "side": "forest:block/pumice_bricks"

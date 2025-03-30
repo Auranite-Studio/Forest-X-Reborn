@@ -1,6 +1,7 @@
 {
   "parent": "block/stairs",
   "textures": {
+    "particle": "forest:block/rhyolite",
     "bottom": "forest:block/rhyolite",
     "top": "forest:block/rhyolite",
     "side": "forest:block/rhyolite"

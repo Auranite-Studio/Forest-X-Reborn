@@ -1,6 +1,7 @@
 {
   "parent": "block/door_top_right_open",
   "textures": {
+    "particle": "forest:block/mulberry_door_lower",
     "bottom": "forest:block/mulberry_door_lower",
     "top": "forest:block/mulberry_door_upper"
   },

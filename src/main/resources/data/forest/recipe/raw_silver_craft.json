@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "forest:raw_silver_block"
+  ],
+  "result": {
+    "id": "forest:raw_silver",
+    "count": 9
+  }
+}

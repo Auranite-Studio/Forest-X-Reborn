@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    " a "
+  ],
+  "key": {
+    "a": "minecraft:iron_nugget"
+  },
+  "result": {
+    "id": "forest:gingerbread_form_heart",
+    "count": 1
+  }
+}

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "forest:peatbog",
-    "forest:frozen_swamp"
+    "forest:frozen_swamp",
+    "forest:peatbog"
   ]
 }

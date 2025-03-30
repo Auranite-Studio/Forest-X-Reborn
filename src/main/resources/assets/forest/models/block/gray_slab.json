@@ -1,6 +1,7 @@
 {
   "parent": "block/slab",
   "textures": {
+    "particle": "forest:block/gray_planks",
     "bottom": "forest:block/gray_planks",
     "top": "forest:block/gray_planks",
     "side": "forest:block/gray_planks"

@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "forest:volcano",
+    "forest:volcanic_peaks"
+  ],
+  "features": "forest:lava_patch",
+  "step": "fluid_springs"
+}

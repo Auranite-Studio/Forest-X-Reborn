@@ -9,28 +9,29 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import java.util.List;
+import com.mojang.serialization.MapCodec;
 
 public class MulberryLeavesWithoutBlackBlock extends LeavesBlock {
-	public MulberryLeavesWithoutBlackBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
+	@Override
+	public MapCodec<? extends LeavesBlock> codec() {
+		return null;
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	protected void spawnFallingLeavesParticle(Level level, BlockPos blockPos, RandomSource randomSource) {
+	}
+
+	public MulberryLeavesWithoutBlackBlock(BlockBehaviour.Properties properties) {
+		super(1f, properties.ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 1;
 	}
 
@@ -48,10 +49,7 @@ public class MulberryLeavesWithoutBlackBlock extends LeavesBlock {
 	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		MulberryLeavesWithoutBlackObnovlieniieTikaProcedure.execute(world, x, y, z);
+		MulberryLeavesWithoutBlackObnovlieniieTikaProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		world.scheduleTick(pos, this, 1800);
 	}
 }

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "forest:blocks/eucalyptus_door",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "forest:eucalyptus_door",
+          "conditions": [
+            {
+              "block": "forest:eucalyptus_door",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

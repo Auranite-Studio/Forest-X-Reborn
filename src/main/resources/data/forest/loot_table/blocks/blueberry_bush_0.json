@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "forest:blocks/blueberry_bush_0",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:empty"
+        }
+      ]
+    }
+  ]
+}

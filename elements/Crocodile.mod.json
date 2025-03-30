@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 68,
   "_type": "animatedentity",
   "definition": {
     "mobName": "Crocodile",
@@ -7,22 +7,25 @@
     "mobModelTexture": "crocodile.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "Baby_Model"
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
-    "modelWidth": 3.0,
-    "modelHeight": 1.5,
+    "entityDataEntries": [],
+    "modelWidth": 2.0,
+    "modelHeight": 0.8,
     "modelShadowSize": 1.0,
     "mountedYOffset": 0.0,
+    "stepHeight": 0.7999999999999999,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -15706871,
+      "value": -10459597,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -10394052,
+      "value": -5002379,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -51,15 +54,15 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 8,
+    "attackStrength": 7,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.19999999999999998,
-    "movementSpeed": 0.25,
+    "movementSpeed": 0.2,
     "armorBaseValue": 0.5,
-    "trackingRange": 16,
-    "followRange": 8,
+    "trackingRange": 64,
+    "followRange": 32,
     "health": 35,
-    "xpAmount": 20,
+    "xpAmount": 5,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -101,7 +104,7 @@
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayerMP</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityAnimal</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityCreature</field><field name=\"condition\">null,null</field><next><block type=\"follow_entity\"><field name=\"speed\">1</field><field name=\"maxrange\">8</field><field name=\"followarea\">4</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"swim\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"follow_entity\"><field name=\"speed\">1</field><field name=\"maxrange\">8</field><field name=\"followarea\">4</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"swim\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityCreature</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "model": "crocodile.geo.json",
     "groupName": "animation.common.look_at_target",
     "animation1": "animation.crocodile.siting",
@@ -127,7 +130,7 @@
     "tameable": false,
     "disableDeathRotation": false,
     "headMovement": false,
-    "eyeHeight": false,
+    "eyeHeight": true,
     "breedTriggerItems": [],
     "ranged": false,
     "rangedAttackItem": {
@@ -136,10 +139,19 @@
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
-    "height": 1.0,
+    "height": 0.6,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ],
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 15,
+    "spawningProbability": 14,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 2,

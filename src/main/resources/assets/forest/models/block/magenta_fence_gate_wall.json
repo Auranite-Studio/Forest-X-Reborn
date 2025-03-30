@@ -1,6 +1,7 @@
 {
   "parent": "block/template_fence_gate_wall",
   "textures": {
+    "particle": "forest:block/magenta_planks",
     "texture": "forest:block/magenta_planks"
   },
   "render_type": "solid"

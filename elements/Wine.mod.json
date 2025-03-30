@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 77,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -9,9 +9,11 @@
     "states": [],
     "name": "Wine",
     "rarity": "COMMON",
-    "creativeTab": {
-      "value": "CUSTOM:Food"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Food"
+      }
+    ],
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 48,
@@ -33,7 +35,6 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
@@ -41,9 +42,11 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "Arrow"
     },
+    "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": 0,
     "saturation": 0.19999999999999998,
@@ -52,6 +55,9 @@
     },
     "isMeat": false,
     "isAlwaysEdible": true,
-    "animation": "drink"
+    "animation": "drink",
+    "isMusicDisc": false,
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
   }
 }

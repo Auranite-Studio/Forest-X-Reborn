@@ -1,13 +1,10 @@
+
 package ru.power_umc.forestxreborn.block.entity;
 
 import ru.power_umc.forestxreborn.world.inventory.FermentationBarrelScreenMenu;
 import ru.power_umc.forestxreborn.init.ForestModBlockEntities;
 
-import net.minecraftforge.items.wrapper.SidedInvWrapper;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-import net.minecraftforge.common.capabilities.Capability;
+import net.neoforged.neoforge.items.wrapper.SidedInvWrapper;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
@@ -21,6 +18,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.NonNullList;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -32,25 +30,25 @@ import io.netty.buffer.Unpooled;
 
 public class FermentationBarrelBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(3, ItemStack.EMPTY);
-	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+	private final SidedInvWrapper handler = new SidedInvWrapper(this, null);
 
 	public FermentationBarrelBlockEntity(BlockPos position, BlockState state) {
 		super(ForestModBlockEntities.FERMENTATION_BARREL.get(), position, state);
 	}
 
 	@Override
-	public void load(CompoundTag compound) {
-		super.load(compound);
+	public void loadAdditional(CompoundTag compound, HolderLookup.Provider lookupProvider) {
+		super.loadAdditional(compound, lookupProvider);
 		if (!this.tryLoadLootTable(compound))
 			this.stacks = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
-		ContainerHelper.loadAllItems(compound, this.stacks);
+		ContainerHelper.loadAllItems(compound, this.stacks, lookupProvider);
 	}
 
 	@Override
-	public void saveAdditional(CompoundTag compound) {
-		super.saveAdditional(compound);
+	public void saveAdditional(CompoundTag compound, HolderLookup.Provider lookupProvider) {
+		super.saveAdditional(compound, lookupProvider);
 		if (!this.trySaveLootTable(compound)) {
-			ContainerHelper.saveAllItems(compound, this.stacks);
+			ContainerHelper.saveAllItems(compound, this.stacks, lookupProvider);
 		}
 	}
 
@@ -60,8 +58,8 @@ public class FermentationBarrelBlockEntity extends RandomizableContainerBlockEnt
 	}
 
 	@Override
-	public CompoundTag getUpdateTag() {
-		return this.saveWithFullMetadata();
+	public CompoundTag getUpdateTag(HolderLookup.Provider lookupProvider) {
+		return this.saveWithFullMetadata(lookupProvider);
 	}
 
 	@Override
@@ -120,12 +118,12 @@ public class FermentationBarrelBlockEntity extends RandomizableContainerBlockEnt
 	}
 
 	@Override
-	public boolean canPlaceItemThroughFace(int index, ItemStack stack, @Nullable Direction direction) {
-		return this.canPlaceItem(index, stack);
+	public boolean canPlaceItemThroughFace(int index, ItemStack itemstack, @Nullable Direction direction) {
+		return this.canPlaceItem(index, itemstack);
 	}
 
 	@Override
-	public boolean canTakeItemThroughFace(int index, ItemStack stack, Direction direction) {
+	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
 		if (index == 0)
 			return false;
 		if (index == 1)
@@ -133,17 +131,7 @@ public class FermentationBarrelBlockEntity extends RandomizableContainerBlockEnt
 		return true;
 	}
 
-	@Override
-	public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
-		if (!this.remove && facing != null && capability == ForgeCapabilities.ITEM_HANDLER)
-			return handlers[facing.ordinal()].cast();
-		return super.getCapability(capability, facing);
-	}
-
-	@Override
-	public void setRemoved() {
-		super.setRemoved();
-		for (LazyOptional<? extends IItemHandler> handler : handlers)
-			handler.invalidate();
+	public SidedInvWrapper getItemHandler() {
+		return handler;
 	}
 }

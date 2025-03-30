@@ -1,6 +1,7 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
+    "particle": "forest:block/lime_planks",
     "bottom": "forest:block/lime_planks",
     "top": "forest:block/lime_planks",
     "side": "forest:block/lime_planks"

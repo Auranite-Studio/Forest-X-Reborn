@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": "minecraft:stick",
+    "b": "minecraft:iron_ingot",
+    "c": "minecraft:barrel"
+  },
+  "result": {
+    "id": "forest:fermentation_barrel",
+    "count": 1
+  }
+}

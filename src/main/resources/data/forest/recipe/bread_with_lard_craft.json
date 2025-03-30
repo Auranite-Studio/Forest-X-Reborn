@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "forest:lard",
+    "minecraft:bread"
+  ],
+  "result": {
+    "id": "forest:bread_with_lard",
+    "count": 2
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aaa",
+    " a "
+  ],
+  "key": {
+    "a": "forest:eucalyptus_planks"
+  },
+  "result": {
+    "id": "forest:eucalyptus_parquet",
+    "count": 5
+  }
+}

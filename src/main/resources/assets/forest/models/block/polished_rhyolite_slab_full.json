@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "forest:block/polished_rhyolite",
     "bottom": "forest:block/polished_rhyolite",
     "top": "forest:block/polished_rhyolite",
     "side": "forest:block/polished_rhyolite"

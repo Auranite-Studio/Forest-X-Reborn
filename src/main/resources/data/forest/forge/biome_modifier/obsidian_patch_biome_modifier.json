@@ -1,9 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": [
-    "forest:volcano",
-    "forest:volcanic_peaks"
-  ],
-  "features": "forest:obsidian_patch",
-  "step": "surface_structures"
-}

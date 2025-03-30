@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 77,
   "_type": "tool",
   "definition": {
     "toolType": "Special",
@@ -12,15 +12,19 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:ToolsAndArmor"
-    },
-    "harvestLevel": 2,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:ToolsAndArmor"
+      }
+    ],
     "efficiency": 9.0,
     "attackSpeed": 1.2,
     "enchantability": 15,
     "damageVsEntity": 6.0,
     "usageCount": 2032,
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "IRON",
     "blocksAffected": [
       {
         "value": "Blocks.WHEAT"
@@ -35,8 +39,6 @@
         "value": "Blocks.CARROTS"
       }
     ],
-    "repairItems": [],
-    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onBlockDestroyedWithTool": {

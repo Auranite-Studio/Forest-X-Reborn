@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc"
+  ],
+  "key": {
+    "a": "minecraft:wheat",
+    "b": "minecraft:egg",
+    "c": "minecraft:honey_bottle"
+  },
+  "result": {
+    "id": "forest:gingerbread_dough",
+    "count": 1
+  }
+}

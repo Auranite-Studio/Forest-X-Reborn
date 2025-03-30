@@ -2,7 +2,7 @@
   "parent": "block/cross",
   "textures": {
     "cross": "forest:block/cattail_lower",
-    "particle": "forest:block/cattail_lower"
+    "particle": "forest:block/cattail_upper"
   },
   "render_type": "cutout"
 }

@@ -1,6 +1,7 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
+    "particle": "forest:block/white_planks",
     "bottom": "forest:block/white_planks",
     "top": "forest:block/white_planks",
     "side": "forest:block/white_planks"

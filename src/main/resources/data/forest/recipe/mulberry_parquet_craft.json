@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aaa",
+    " a "
+  ],
+  "key": {
+    "a": "forest:mulberry_planks"
+  },
+  "result": {
+    "id": "forest:mulberry_parquet",
+    "count": 5
+  }
+}

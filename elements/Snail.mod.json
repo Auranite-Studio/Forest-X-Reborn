@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 68,
   "_type": "animatedentity",
   "definition": {
     "mobName": "Snail",
@@ -7,22 +7,28 @@
     "mobModelTexture": "snail.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "Baby_Model"
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
+    "solidBoundingBox": {
+      "name": "SnailRamkaghranitsaSploshnaia"
+    },
+    "entityDataEntries": [],
     "modelWidth": 0.6,
-    "modelHeight": 1.0,
+    "modelHeight": 0.7000000000000001,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
+    "stepHeight": 0.8,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -10792133,
+      "value": -3489370,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -3489370,
+      "value": -11781328,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -49,17 +55,17 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 0,
     "attackKnockback": 0.0,
-    "knockbackResistance": 0.0,
-    "movementSpeed": 0.05,
+    "knockbackResistance": 0.30000000000000004,
+    "movementSpeed": 0.08,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "followRange": 16,
+    "followRange": 8,
     "health": 6,
-    "xpAmount": 3,
+    "xpAmount": 1,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -75,7 +81,7 @@
     "immuneToArrows": false,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
-    "immuneToDrowning": false,
+    "immuneToDrowning": true,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
@@ -99,9 +105,12 @@
     "stepSound": {
       "value": ""
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"panic_when_attacked\"><field name=\"speed\">0.1</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></xml>",
     "model": "snail.geo.json",
     "groupName": "",
     "animation1": "animation.snail.idle",
@@ -127,7 +136,7 @@
     "tameable": false,
     "disableDeathRotation": false,
     "headMovement": false,
-    "eyeHeight": false,
+    "eyeHeight": true,
     "breedTriggerItems": [],
     "ranged": false,
     "rangedAttackItem": {
@@ -136,10 +145,19 @@
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
-    "height": 0.0,
+    "height": 0.35,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ],
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
+    "spawningProbability": 15,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 2,
     "maxNumberOfMobsPerGroup": 6,

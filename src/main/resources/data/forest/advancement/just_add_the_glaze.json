@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "forest:glazed_gingerbread_men"
+    },
+    "title": {
+      "translate": "advancements.just_add_the_glaze.title"
+    },
+    "description": {
+      "translate": "advancements.just_add_the_glaze.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "just_add_the_glaze_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "forest:glazed_gingerbread_men"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "forest:forest_x_starting"
+}

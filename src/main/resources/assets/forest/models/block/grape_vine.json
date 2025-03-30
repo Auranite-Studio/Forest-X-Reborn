@@ -1,0 +1,9 @@
+{
+  "parent": "forest:custom/vine",
+  "textures": {
+    "all": "forest:block/grape_vine0",
+    "particle": "forest:block/grape_vine0",
+    "missing": "forest:block/grape_vine0"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "forest:frozen_swamp",
+  "features": "forest:ice_lakes",
+  "step": "lakes"
+}

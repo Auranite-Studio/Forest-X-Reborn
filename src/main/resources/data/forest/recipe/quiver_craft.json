@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "baa",
+    "baa"
+  ],
+  "key": {
+    "a": "minecraft:leather",
+    "b": "minecraft:string"
+  },
+  "result": {
+    "id": "forest:quiver",
+    "count": 1
+  }
+}

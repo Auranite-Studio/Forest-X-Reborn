@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "forest:mulberry_leaves_with_black",
+    "forest:mulberry_leaves_with_white",
+    "forest:mulberry_leaves_without_black",
+    "forest:mulberry_leaves_without_white",
+    "forest:eucalyptus_leaves"
+  ]
+}

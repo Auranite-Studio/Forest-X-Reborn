@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "forest:gingerbread_dough",
+    "forest:gingerbread_dough",
+    "forest:gingerbread_dough",
+    "forest:gingerbread_dough",
+    "forest:gingerbread_dough",
+    "forest:gingerbread_dough",
+    "forest:gingerbread_dough",
+    "forest:gingerbread_dough",
+    "forest:gingerbread_dough"
+  ],
+  "result": {
+    "id": "forest:raw_gingerbread_block",
+    "count": 1
+  }
+}

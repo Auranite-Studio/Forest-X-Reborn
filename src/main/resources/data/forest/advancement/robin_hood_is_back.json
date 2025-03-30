@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "forest:quiver"
+    },
+    "title": {
+      "translate": "advancements.robin_hood_is_back.title"
+    },
+    "description": {
+      "translate": "advancements.robin_hood_is_back.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "robin_hood_is_back_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "forest:forest_x_starting"
+}

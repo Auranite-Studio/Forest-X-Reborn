@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "swamp",
+    "forest:peatbog",
+    "forest:frozen_swamp"
+  ],
+  "features": "forest:cattail",
+  "step": "vegetal_decoration"
+}

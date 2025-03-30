@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "forest:ash_cover",
+    "forest:ash_block",
+    "forest:peat"
+  ]
+}

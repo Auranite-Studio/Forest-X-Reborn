@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 77,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -28,7 +28,8 @@
             "name": "AddQuiverAch"
           },
           "x": 132,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -49,7 +50,8 @@
             "name": "AddQuiverAch"
           },
           "x": 150,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -70,7 +72,8 @@
             "name": "AddQuiverAch"
           },
           "x": 168,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -91,7 +94,8 @@
             "name": "AddQuiverAch"
           },
           "x": 186,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -112,7 +116,8 @@
             "name": "AddQuiverAch"
           },
           "x": 204,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -133,7 +138,8 @@
             "name": "AddQuiverAch"
           },
           "x": 222,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -154,7 +160,8 @@
             "name": "AddQuiverAch"
           },
           "x": 240,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -175,7 +182,8 @@
             "name": "AddQuiverAch"
           },
           "x": 258,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -196,7 +204,8 @@
             "name": "AddQuiverAch"
           },
           "x": 276,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -205,7 +214,8 @@
           "image": "quiver_inv.png",
           "use1Xscale": false,
           "x": 125,
-          "y": 37
+          "y": 37,
+          "locked": false
         }
       },
       {
@@ -214,7 +224,8 @@
           "image": "quiver_inventory.png",
           "use1Xscale": false,
           "x": 125,
-          "y": 37
+          "y": 37,
+          "locked": false
         }
       }
     ],

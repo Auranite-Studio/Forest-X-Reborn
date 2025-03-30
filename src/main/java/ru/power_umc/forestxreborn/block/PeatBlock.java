@@ -6,26 +6,16 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import java.util.List;
-
 public class PeatBlock extends Block {
-	public PeatBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).strength(0.75f, 10f));
+	public PeatBlock(BlockBehaviour.Properties properties) {
+		super(properties.sound(SoundType.MUD).strength(0.75f, 10f));
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state) {
 		return 15;
 	}
 

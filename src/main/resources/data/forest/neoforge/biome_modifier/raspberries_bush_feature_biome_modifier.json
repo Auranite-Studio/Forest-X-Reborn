@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "forest",
+    "old_growth_birch_forest",
+    "forest:old_growth_oak_forest"
+  ],
+  "features": "forest:raspberries_bush_feature",
+  "step": "surface_structures"
+}

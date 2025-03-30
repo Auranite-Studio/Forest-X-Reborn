@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "forest:polished_rhyolite"
-  },
-  "result": "forest:polished_rhyolite_stairs"
-}

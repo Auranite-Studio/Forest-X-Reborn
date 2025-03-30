@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 68,
   "_type": "animatedentity",
   "definition": {
     "mobName": "Blue Butterfly",
@@ -7,22 +7,25 @@
     "mobModelTexture": "blue_butterfly.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "Baby_Model"
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
-    "modelWidth": 0.8,
-    "modelHeight": 1.0,
-    "modelShadowSize": 0.5,
+    "entityDataEntries": [],
+    "modelWidth": 0.7000000000000001,
+    "modelHeight": 0.7000000000000001,
+    "modelShadowSize": 0.4,
     "mountedYOffset": 0.0,
+    "stepHeight": 0.6,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16724737,
+      "value": -16727814,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -13421773,
+      "value": -13483967,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -54,12 +57,12 @@
     "attackStrength": 0,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.30000000000000004,
+    "movementSpeed": 0.19999999999999998,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
     "health": 4,
-    "xpAmount": 4,
+    "xpAmount": 1,
     "waterMob": false,
     "flyingMob": true,
     "guiBoundTo": "<NONE>",
@@ -101,7 +104,7 @@
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"avoid_entity\"><field name=\"entity\">EntityLiving</field><field name=\"radius\">8</field><field name=\"farspeed\">1</field><field name=\"nearspeed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"follow_entity\"><field name=\"speed\">1</field><field name=\"maxrange\">8</field><field name=\"followarea\">4</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"avoid_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">8</field><field name=\"farspeed\">1.2</field><field name=\"nearspeed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"follow_entity\"><field name=\"speed\">1</field><field name=\"maxrange\">8</field><field name=\"followarea\">4</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "model": "butterfly.geo.json",
     "groupName": "animation.common.look_at_target",
     "animation1": "animation.butterfly.idle",
@@ -137,9 +140,18 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "height": 1.0,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ],
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 5,
+    "spawningProbability": 4,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 2,

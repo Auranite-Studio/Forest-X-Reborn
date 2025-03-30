@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 68,
   "_type": "animatedentity",
   "definition": {
     "mobName": "Fire Salamander",
@@ -7,22 +7,25 @@
     "mobModelTexture": "fire_salamander.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "Baby_Model"
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
-    "modelWidth": 1.0,
+    "entityDataEntries": [],
+    "modelWidth": 0.9,
     "modelHeight": 0.5,
-    "modelShadowSize": 0.0,
+    "modelShadowSize": 0.4,
     "mountedYOffset": 0.0,
+    "stepHeight": 0.7999999999999999,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -13261,
+      "value": -13882324,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16777216,
+      "value": -1005568,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -49,17 +52,17 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 1,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.2,
+    "movementSpeed": 0.18,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
     "health": 5,
-    "xpAmount": 5,
+    "xpAmount": 2,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -99,9 +102,12 @@
     "stepSound": {
       "value": ""
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Items.MAGMA_CREAM</field></block></value><next><block type=\"breed\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field><next><block type=\"breed\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Items.MAGMA_CREAM</field></block></value><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "model": "fire_salamander.geo.json",
     "groupName": "animation.common.look_at_target",
     "animation1": "animation.fire_salamander.idle",
@@ -127,7 +133,7 @@
     "tameable": false,
     "disableDeathRotation": false,
     "headMovement": true,
-    "eyeHeight": false,
+    "eyeHeight": true,
     "breedTriggerItems": [
       {
         "value": "Items.MAGMA_CREAM"
@@ -140,10 +146,19 @@
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
-    "height": 1.0,
+    "height": 0.30000000000000004,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ],
     "spawnThisMob": true,
-    "doesDespawnWhenIdle": false,
-    "spawningProbability": 100,
+    "doesDespawnWhenIdle": true,
+    "spawningProbability": 20,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 2,
     "maxNumberOfMobsPerGroup": 3,

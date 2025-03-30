@@ -1,6 +1,7 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
+    "particle": "forest:block/polished_pumice",
     "bottom": "forest:block/polished_pumice",
     "top": "forest:block/polished_pumice",
     "side": "forest:block/polished_pumice"

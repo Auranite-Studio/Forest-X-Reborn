@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "forest:pumice_wall",
+    "forest:pumice_stairs",
+    "forest:pumice_slab",
+    "forest:truncated_pumice_wall",
+    "forest:truncated_pumice_stairs",
+    "forest:truncated_pumice_slab",
+    "forest:pumice_bricks_wall",
+    "forest:pumice_bricks_stairs",
+    "forest:pumice_bricks_slab",
+    "forest:polished_pumice_wall",
+    "forest:polished_pumice_stairs",
+    "forest:polished_pumice_slab",
+    "forest:truncated_carved_pumice",
+    "forest:truncated_pumice",
+    "forest:pumice_bricks",
+    "forest:polished_pumice",
+    "forest:pumice"
+  ]
+}

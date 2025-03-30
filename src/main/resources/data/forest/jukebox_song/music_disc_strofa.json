@@ -1,0 +1,8 @@
+{
+  "comparator_output": 13,
+  "description": {
+    "translate": "item.forest.music_disc_strofa.desc"
+  },
+  "length_in_seconds": 176,
+  "sound_event": "forest:record.strofa"
+}
