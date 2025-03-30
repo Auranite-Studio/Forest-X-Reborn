@@ -4225,24 +4225,6 @@
       "path": "~/Achievement"
     },
     {
-      "name": "OldGrowthForest",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "old_growth_forest",
-      "metadata": {
-        "files": [
-          "src/main/java/ru/power_umc/forestxreborn/world/features/treedecorators/OldGrowthForestFruitDecorator.java",
-          "src/main/resources/data/forest/worldgen/configured_feature/old_growth_forest_tree.json",
-          "src/main/resources/data/forest/worldgen/biome/old_growth_forest.json",
-          "src/main/resources/data/forest/worldgen/placed_feature/old_growth_forest_tree.json",
-          "src/main/java/ru/power_umc/forestxreborn/world/features/treedecorators/OldGrowthForestTrunkDecorator.java",
-          "src/main/java/ru/power_umc/forestxreborn/world/features/treedecorators/OldGrowthForestLeaveDecorator.java"
-        ]
-      },
-      "path": "~/Biomes/OutdatedBiomes"
-    },
-    {
       "name": "Sunshroom",
       "type": "plant",
       "compiles": true,
@@ -7064,19 +7046,6 @@
         ]
       },
       "path": "~/ToolsEquipments/Quiver"
-    },
-    {
-      "name": "Volcano",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "volcano",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forest/worldgen/biome/volcano.json"
-        ]
-      },
-      "path": "~/Biomes/OutdatedBiomes"
     },
     {
       "name": "ObsidianPatch",
@@ -10260,7 +10229,8 @@
     "BIOMES:minecraft:is_hot": [
       "CUSTOM:Semidesert",
       "CUSTOM:DryThornForest",
-      "CUSTOM:VolcanicPeaks"
+      "CUSTOM:VolcanicPeaks",
+      "CUSTOM:EucalyptusForest"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:SilverSword"
@@ -10292,8 +10262,7 @@
       "CUSTOM:MushroomsCaves"
     ],
     "BIOMES:minecraft:has_structure/buried_treasure": [
-      "~CUSTOM:VolcanicPeaks",
-      "~CUSTOM:Volcano"
+      "~CUSTOM:VolcanicPeaks"
     ],
     "BIOMES:minecraft:is_dry": [
       "CUSTOM:Semidesert",
@@ -10523,12 +10492,10 @@
       "CUSTOM:VolcanicPeaks"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
-      "~CUSTOM:VolcanicPeaks",
-      "~CUSTOM:Volcano"
+      "~CUSTOM:VolcanicPeaks"
     ],
     "BIOMES:minecraft:has_structure/village_plains": [
       "~CUSTOM:OldGrowthOakForest",
-      "~CUSTOM:OldGrowthForest",
       "~CUSTOM:DryThornForest"
     ],
     "ITEMS:minecraft:leg_armor": [
@@ -10760,8 +10727,7 @@
       "~CUSTOM:DesertRose"
     ],
     "BIOMES:minecraft:has_structure/ruined_portal_nether": [
-      "~CUSTOM:VolcanicPeaks",
-      "~CUSTOM:Volcano"
+      "~CUSTOM:VolcanicPeaks"
     ],
     "ITEMS:forest:silver_axe_repair_items": [
       "~CUSTOM:SilverIngot"
@@ -10986,7 +10952,6 @@
       "item.forest.pumice": "Pumice",
       "block.forest.silver_ore": "Silver Ore",
       "block.forest.truncated_pumice_wall": "Truncated Pumice Wall",
-      "biome.forest.old_growth_forest": "Old Growth Forest (Outdated)",
       "item.forest.moonshroom": "Moonshroom",
       "biome.forest.marble_caves": "Marble Caves",
       "block.forest.charred_fence": "Charred Fence",
@@ -11291,7 +11256,6 @@
       "item.forest.baby_wither_skeleton_spawn_egg": "Baby Wither Skeleton Spawn Egg",
       "item.forest.green_fence_gate": "Green Fence Gate",
       "item.forest.warped_parquet": "Warped Parquet",
-      "biome.forest.volcano": "Volcano (Outdated)",
       "item.forest.snail_spawn_egg": "Snail Spawn Egg",
       "subtitles.rat.ambient": "",
       "item.forest.light_gray_slab": "Light Blue Slab",
@@ -11660,7 +11624,7 @@
   "workspaceSettings": {
     "modid": "forest",
     "modName": "Forest X Reborn",
-    "version": "1.4.5",
+    "version": "2.0.0.1",
     "description": "The revival of the legendary Forest X Second Edition addon, but only for Minecraft Java Edition. ",
     "author": "Environment Studios",
     "websiteURL": "https://power-umc.ru/minecraft-java-edition/mods/5-forest-x-reborn.html",
