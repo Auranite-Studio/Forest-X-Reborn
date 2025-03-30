@@ -306,7 +306,7 @@ public class ForestModTabs {
 				tabData.accept(ForestModBlocks.FERMENTATION_BARREL.get().asItem());
 			}).withTabsBefore(MISC.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MOBS = REGISTRY.register("mobs",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.mobs")).icon(() -> new ItemStack(ForestModItems.RACCON_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(ForestModItems.RACCON_SPAWN_EGG.get());
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.forest.mobs")).icon(() -> new ItemStack(ForestModItems.RACOON_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(ForestModItems.RACOON_SPAWN_EGG.get());
 			}).withTabsBefore(INTERACTION_BLOCKS.getId()).build());
 }

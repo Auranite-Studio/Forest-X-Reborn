@@ -346,7 +346,6 @@ public class ForestModItems {
 	public static final DeferredItem<Item> RASPBERRY_BUSH_3 = block(ForestModBlocks.RASPBERRY_BUSH_3);
 	public static final DeferredItem<Item> CATTAIL = doubleBlock(ForestModBlocks.CATTAIL);
 	public static final DeferredItem<Item> BREAD_WITH_LARD = register("bread_with_lard", BreadWithLardItem::new);
-	public static final DeferredItem<Item> RACCON_SPAWN_EGG = register("raccon_spawn_egg", properties -> new SpawnEggItem(ForestModEntities.RACCON.get(), properties));
 	public static final DeferredItem<Item> IRON_SICKLE = register("iron_sickle", IronSickleItem::new);
 	public static final DeferredItem<Item> GOLDEN_SICKLE = register("golden_sickle", GoldenSickleItem::new);
 	public static final DeferredItem<Item> DIAMOND_SICKLE = register("diamond_sickle", DiamondSickleItem::new);
@@ -364,6 +363,7 @@ public class ForestModItems {
 	public static final DeferredItem<Item> LETTUCE_SEEDS = register("lettuce_seeds", LettuceSeedsItem::new);
 	public static final DeferredItem<Item> RYE = register("rye", RyeItem::new);
 	public static final DeferredItem<Item> MUSIC_DISC_STROFA = register("music_disc_strofa", MusicDiscStrofaItem::new);
+	public static final DeferredItem<Item> RACOON_SPAWN_EGG = register("racoon_spawn_egg", properties -> new SpawnEggItem(ForestModEntities.RACOON.get(), properties));
 
 	// Start of user code block custom items
 	// End of user code block custom items

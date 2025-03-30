@@ -2,7 +2,7 @@
 package ru.power_umc.forestxreborn.client.renderer;
 
 import ru.power_umc.forestxreborn.procedures.Baby_ModelProcedure;
-import ru.power_umc.forestxreborn.entity.RacconEntity;
+import ru.power_umc.forestxreborn.entity.RacoonEntity;
 import ru.power_umc.forestxreborn.client.model.ModelRacoonModel;
 
 import net.minecraft.world.level.Level;
@@ -13,10 +13,10 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 
-public class RacconRenderer extends MobRenderer<RacconEntity, LivingEntityRenderState, ModelRacoonModel> {
-	private RacconEntity entity = null;
+public class RacoonRenderer extends MobRenderer<RacoonEntity, LivingEntityRenderState, ModelRacoonModel> {
+	private RacoonEntity entity = null;
 
-	public RacconRenderer(EntityRendererProvider.Context context) {
+	public RacoonRenderer(EntityRendererProvider.Context context) {
 		super(context, new ModelRacoonModel(context.bakeLayer(ModelRacoonModel.LAYER_LOCATION)), 0.5f);
 	}
 
@@ -26,7 +26,7 @@ public class RacconRenderer extends MobRenderer<RacconEntity, LivingEntityRender
 	}
 
 	@Override
-	public void extractRenderState(RacconEntity entity, LivingEntityRenderState state, float partialTicks) {
+	public void extractRenderState(RacoonEntity entity, LivingEntityRenderState state, float partialTicks) {
 		super.extractRenderState(entity, state, partialTicks);
 		this.entity = entity;
 	}

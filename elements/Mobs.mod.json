@@ -4,7 +4,7 @@
   "definition": {
     "name": "Mobs",
     "icon": {
-      "value": "CUSTOM:Raccon.spawn_egg"
+      "value": "CUSTOM:Racoon.spawn_egg"
     },
     "showSearch": false
   }

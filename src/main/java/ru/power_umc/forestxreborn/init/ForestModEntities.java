@@ -4,7 +4,7 @@
  */
 package ru.power_umc.forestxreborn.init;
 
-import ru.power_umc.forestxreborn.entity.RacconEntity;
+import ru.power_umc.forestxreborn.entity.RacoonEntity;
 import ru.power_umc.forestxreborn.ForestMod;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -24,8 +24,8 @@ import net.minecraft.core.registries.Registries;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class ForestModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, ForestMod.MODID);
-	public static final DeferredHolder<EntityType<?>, EntityType<RacconEntity>> RACCON = register("raccon",
-			EntityType.Builder.<RacconEntity>of(RacconEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+	public static final DeferredHolder<EntityType<?>, EntityType<RacoonEntity>> RACOON = register("racoon",
+			EntityType.Builder.<RacoonEntity>of(RacoonEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 0.7f));
 
@@ -37,11 +37,11 @@ public class ForestModEntities {
 
 	@SubscribeEvent
 	public static void init(RegisterSpawnPlacementsEvent event) {
-		RacconEntity.init(event);
+		RacoonEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(RACCON.get(), RacconEntity.createAttributes().build());
+		event.put(RACOON.get(), RacoonEntity.createAttributes().build());
 	}
 }

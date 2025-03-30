@@ -33,8 +33,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-public class RacconEntity extends Animal {
-	public RacconEntity(EntityType<RacconEntity> type, Level world) {
+public class RacoonEntity extends Animal {
+	public RacoonEntity(EntityType<RacoonEntity> type, Level world) {
 		super(type, world);
 		xpReward = 10;
 		setNoAi(false);
@@ -64,7 +64,7 @@ public class RacconEntity extends Animal {
 
 	@Override
 	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
-		RacconEntity retval = ForestModEntities.RACCON.get().create(serverWorld, EntitySpawnReason.BREEDING);
+		RacoonEntity retval = ForestModEntities.RACOON.get().create(serverWorld, EntitySpawnReason.BREEDING);
 		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), EntitySpawnReason.BREEDING, null);
 		return retval;
 	}
@@ -75,7 +75,7 @@ public class RacconEntity extends Animal {
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
-		event.register(ForestModEntities.RACCON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		event.register(ForestModEntities.RACOON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8), RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 

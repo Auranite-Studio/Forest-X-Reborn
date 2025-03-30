@@ -9231,21 +9231,6 @@
       "path": "~/WoodSets/Mulberry Wood Set"
     },
     {
-      "name": "Raccon",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "raccon",
-      "metadata": {
-        "files": [
-          "src/main/java/ru/power_umc/forestxreborn/client/renderer/RacconRenderer.java",
-          "src/main/java/ru/power_umc/forestxreborn/entity/RacconEntity.java",
-          "src/main/resources/data/forest/neoforge/biome_modifier/raccon_biome_modifier.json"
-        ]
-      },
-      "path": "~/Animals"
-    },
-    {
       "name": "IronSickle",
       "type": "tool",
       "compiles": true,
@@ -10074,6 +10059,23 @@
         ]
       },
       "path": "~/Biomes"
+    },
+    {
+      "name": "Racoon",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "racoon",
+      "metadata": {
+        "files": [
+          "src/main/java/ru/power_umc/forestxreborn/client/renderer/RacoonRenderer.java",
+          "src/main/resources/data/forest/neoforge/biome_modifier/racoon_biome_modifier.json",
+          "src/main/java/ru/power_umc/forestxreborn/entity/RacoonEntity.java",
+          "src/main/resources/assets/forest/items/racoon_spawn_egg.json",
+          "src/main/resources/assets/forest/models/item/racoon_spawn_egg.json"
+        ]
+      },
+      "path": "~/Animals"
     }
   ],
   "variable_elements": [
@@ -10272,6 +10274,12 @@
     "ITEMS:minecraft:head_armor": [
       "~CUSTOM:SilverArmor.helmet"
     ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:RawSilverBlock",
+      "~CUSTOM:DeepslateSilverOre",
+      "~CUSTOM:SilverBlock",
+      "~CUSTOM:SilverOre"
+    ],
     "BLOCKS:minecraft:logs": [
       "CUSTOM:EucalyptusLog",
       "CUSTOM:StrippedEucalyptusLog",
@@ -10281,12 +10289,6 @@
       "CUSTOM:StrippedEucalyptusWood",
       "CUSTOM:MulberryWood",
       "CUSTOM:StrippedMulberryWood"
-    ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~CUSTOM:RawSilverBlock",
-      "~CUSTOM:DeepslateSilverOre",
-      "~CUSTOM:SilverBlock",
-      "~CUSTOM:SilverOre"
     ],
     "BLOCKS:mod:painted_blocks": [
       "CUSTOM:BlackFence",
@@ -11013,15 +11015,15 @@
       "FermentationBarrel"
     ],
     "CUSTOM:Mobs": [
-      "Raccon"
+      "Racoon"
     ]
   },
   "language_map": {
     "en_us": {
       "block.forest.charred_planks": "Charred Planks",
       "item.forest.white_fence": "White Fence",
-      "gui.forest.fermentation_barrel_screen.label_fermentation_barrel": "Fermentation barrel",
       "block.forest.brown_fence": "Brown Fence",
+      "gui.forest.fermentation_barrel_screen.label_fermentation_barrel": "Fermentation barrel",
       "desc.gingerbread_brick": "Brick",
       "item.forest.pink_fence": "Pink Fence",
       "item.forest.oak_parquet": "Oak Parquet",
@@ -11052,8 +11054,8 @@
       "item.forest.mulberry_leaves_without_black": "Mulberry Leaves",
       "block.forest.charred_parquet": "Charred Parquet",
       "item.forest.cattail": "Cattail",
-      "item.forest.gingerbread_form_man": "Gingerbread Form",
       "item.forest.barbecue": "Barbecue",
+      "item.forest.gingerbread_form_man": "Gingerbread Form",
       "block.forest.light_gray_stairs": "Light Gray Stairs",
       "entity.forest.scorpion": "Scorpion",
       "block.forest.waxed_exposed_copper_ladder": "Waxed Exposed Copper Ladder",
@@ -11138,7 +11140,6 @@
       "block.forest.blue_fence": "Blue Fence",
       "block.forest.grape_vine_1": "Grape Vine",
       "block.forest.light_blue_stairs": "Light Blue Stairs",
-      "entity.forest.raccon": "Racoon",
       "item.forest.light_gray_fence": "Light Gray Fence",
       "block.forest.red_crushed_sandstone_stairs": "Red crushed sandstone stairs",
       "item.forest.peat_piece": "Peat Piece",
@@ -11319,7 +11320,6 @@
       "entity.forest.baby_wither_skeleton": "Baby Wither Skeleton",
       "item.forest.pink_slab": "Pink Slab",
       "item.forest.rhyolite": "Rhyolite",
-      "item.forest.raccon_spawn_egg": "Racoon Spawn Egg",
       "block.forest.tropical_parquet": "Tropical Parquet",
       "item.forest.brown_stairs": "Brown Stairs",
       "block.forest.polished_pumice_slab": "Polished Pumice Slab",
@@ -11333,6 +11333,7 @@
       "item.forest.mulberry_stairs": "Mulberry Stairs",
       "item.forest.polished_rhyolite_slab": "Polished Rhyolite",
       "block.forest.rhyolite_wall": "Rhyolite Wall",
+      "item.forest.racoon_spawn_egg": "Racoon Spawn Egg",
       "block.forest.copper_ladder": "Copper Ladder",
       "item.forest.polished_marble_wall": "Polished Marble Wall",
       "painting.forest.painting_pig_in_mood.title": "Pig in mood",
@@ -11599,6 +11600,7 @@
       "block.forest.white_rose_bush": "White Rose Bush",
       "desc.gingerbread_round": "Round",
       "block.forest.rhyolite_stairs": "Rhyolite Stairs",
+      "entity.forest.racoon": "Racoon",
       "item.forest.brown_bear_spawn_egg": "Brown Bear Spawn Egg",
       "item.forest.mangrove_parquet": "Mangrove Parquet",
       "biome.forest.eucalyptus_forest": "Eucalyptus Forest",
@@ -11862,15 +11864,6 @@
       {
         "name": "Paintings",
         "children": []
-      },
-      {
-        "name": "Mobs",
-        "children": [
-          {
-            "name": "Skeletons",
-            "children": []
-          }
-        ]
       },
       {
         "name": "AnimalsTriggers",
